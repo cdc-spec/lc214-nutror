@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@netlify/blobs": "^7.5.0"
+    "@netlify/blobs": "^7.4.0"
   }
 }
+
