@@ -1,7 +1,3 @@
-[build]
-  functions = "netlify/functions"
-
 [functions]
   [functions.blobs]
     store = "tokens_de_acesso"
-    # Habilita o acesso ao "banco de dados" de tokens
