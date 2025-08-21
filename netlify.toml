@@ -1,3 +1,9 @@
-[functions]
-  [functions.blobs]
-    store = "tokens_de_acesso"
+[build]
+  functions = "netlify/functions"
+  edge_functions = "netlify/edge-functions"
+
+[[edge_functions]]
+  path = "/quiz/*"
+  function = "guarda"
+
+
