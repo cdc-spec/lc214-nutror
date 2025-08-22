@@ -111,11 +111,31 @@ exports.handler = async (event) => {
       "sec-fetch-user": headers["sec-fetch-user"] || headers["Sec-Fetch-User"] || "(vazio)",
       fallback: ALLOW_FETCH_METADATA_FALLBACK ? "on" : "off",
     };
+    const DEBUG_ERRORS = String(process.env.DEBUG_ERRORS || "false").toLowerCase() === "true";
+if (!viaReferer && !viaFetchMD) {
+  if (DEBUG_ERRORS) {
+    const dbg = {
+      allowed: ALLOWED_REFERRERS,
+      referer: referer || "(vazio)",
+      "sec-fetch-site": headers["sec-fetch-site"] || headers["Sec-Fetch-Site"] || "(vazio)",
+      "sec-fetch-mode": headers["sec-fetch-mode"] || headers["Sec-Fetch-Mode"] || "(vazio)",
+      "sec-fetch-user": headers["sec-fetch-user"] || headers["Sec-Fetch-User"] || "(vazio)",
+      fallback: ALLOW_FETCH_METADATA_FALLBACK ? "on" : "off",
+    };
     return {
       statusCode: 401,
       headers: { "content-type": "application/json; charset=utf-8", "cache-control": "no-store" },
       body: JSON.stringify({ error: "Acesso negado (origem não autorizada).", dbg }, null, 2),
     };
+  }
+  // Produção: HTML simples
+  return {
+    statusCode: 401,
+    headers: { "content-type": "text/html; charset=utf-8", "cache-control": "no-store" },
+    body: `<meta charset="utf-8"><p>Acesso negado (origem não autorizada).</p>`,
+  };
+}
+
   }
 
   // Gera sessão
