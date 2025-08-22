@@ -1,8 +1,6 @@
 // netlify/edge-functions/guarda.js
-// Netlify Edge Runtime (Web APIs + Web Crypto)
-
 const COOKIE_NAME = Deno.env.get("SESSION_COOKIE_NAME") || "quiz_sess";
-const LINK_KEY = Deno.env.get("LINK_KEY"); // mesma chave da função entrar
+const LINK_KEY = Deno.env.get("LINK_KEY");
 const TTL_SECONDS = Number(Deno.env.get("SESSION_TTL_SECONDS") || 12 * 60 * 60);
 const RENEW_WINDOW_SECONDS = Number(Deno.env.get("RENEW_WINDOW_SECONDS") || 2 * 60 * 60);
 const COOKIE_PATH = Deno.env.get("SESSION_COOKIE_PATH") || "/quiz";
@@ -11,18 +9,13 @@ const enc = new TextEncoder();
 
 function parseCookies(h) {
   const c = {};
-  (h || "")
-    .split(";")
-    .map(x => x.trim())
-    .forEach(kv => {
-      const i = kv.indexOf("=");
-      if (i > -1) c[kv.slice(0, i)] = kv.slice(i + 1);
-    });
+  (h || "").split(";").map(x => x.trim()).forEach(kv => {
+    const i = kv.indexOf("="); if (i > -1) c[kv.slice(0, i)] = kv.slice(i + 1);
+  });
   return c;
 }
 function toBase64Url(bytes) {
-  let s = "";
-  for (let i = 0; i < bytes.length; i++) s += String.fromCharCode(bytes[i]);
+  let s = ""; for (let i = 0; i < bytes.length; i++) s += String.fromCharCode(bytes[i]);
   const b64 = btoa(s);
   return b64.replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/g, "");
 }
@@ -48,15 +41,19 @@ function buildCookie(token) {
 }
 
 export default async (request, context) => {
-  if (!LINK_KEY) {
-    return new Response("Configuração ausente (LINK_KEY).", { status: 500 });
-  }
+  if (!LINK_KEY) return new Response("Configuração ausente (LINK_KEY).", { status: 500 });
 
   const url = new URL(request.url);
+
+  // 1) Se alguém passou ?token=..., eliminamos da URL para não “propagar segredo”
+  if (url.searchParams.has("token")) {
+    url.searchParams.delete("token");
+    return Response.redirect(url.toString(), 302);
+  }
+
   const cookies = parseCookies(request.headers.get("cookie") || request.headers.get("Cookie") || "");
   const raw = cookies[COOKIE_NAME];
 
-  // Bloqueia por padrão se não houver sessão:
   if (!raw) {
     const body = `<meta charset="utf-8"><p>Acesso restrito. Abra o quiz pelo botão do Nutror.</p>`;
     return new Response(body, {
@@ -65,22 +62,15 @@ export default async (request, context) => {
     });
   }
 
-  // token = payloadB64url + "." + assinaturaB64url
   const dot = raw.lastIndexOf(".");
-  if (dot <= 0) {
-    return new Response("Sessão inválida.", { status: 401, headers: { "cache-control": "no-store" } });
-  }
+  if (dot <= 0) return new Response("Sessão inválida.", { status: 401, headers: { "cache-control": "no-store" } });
 
   const body64 = raw.slice(0, dot);
   const sig = raw.slice(dot + 1);
 
-  // confere assinatura
   const expected = await hmacBase64Url(body64);
-  if (expected !== sig) {
-    return new Response("Sessão inválida (assinatura).", { status: 401, headers: { "cache-control": "no-store" } });
-  }
+  if (expected !== sig) return new Response("Sessão inválida (assinatura).", { status: 401, headers: { "cache-control": "no-store" } });
 
-  // decodifica payload
   let payload;
   try {
     const json = atob(body64.replace(/-/g, "+").replace(/_/g, "/"));
@@ -95,18 +85,15 @@ export default async (request, context) => {
     return new Response(body, { status: 401, headers: { "content-type": "text/html; charset=utf-8", "cache-control": "no-store" } });
   }
 
-  // vínculo leve ao UA
   const ua = request.headers.get("user-agent") || "";
   const uaHash = await sha256Hex(ua);
   if (payload.ua !== uaHash) {
     return new Response("Sessão inválida (contexto diferente).", { status: 401, headers: { "cache-control": "no-store" } });
   }
 
-  // Se estiver dentro da janela de renovação, gera novo token (renovação silenciosa)
-  let shouldRefresh = (payload.exp - nowSec) <= RENEW_WINDOW_SECONDS;
+  // Renovação silenciosa perto do fim
   let setCookieHeader = null;
-
-  if (shouldRefresh) {
+  if ((payload.exp - nowSec) <= RENEW_WINDOW_SECONDS) {
     const newPayload = { v: 1, ua: uaHash, iat: nowSec, exp: nowSec + TTL_SECONDS };
     const newBody = toBase64Url(enc.encode(JSON.stringify(newPayload)));
     const newSig = await hmacBase64Url(newBody);
@@ -114,16 +101,8 @@ export default async (request, context) => {
     setCookieHeader = buildCookie(newToken);
   }
 
-  // segue para o conteúdo real
   const response = await context.next();
-
-  // anexa o Set-Cookie de renovação somente quando preciso
-  if (setCookieHeader) {
-    response.headers.append("Set-Cookie", setCookieHeader);
-  }
-
-  // reforço: não armazenar respostas privadas em caches públicos
+  if (setCookieHeader) response.headers.append("Set-Cookie", setCookieHeader);
   response.headers.set("Cache-Control", "private, max-age=0, no-store");
-
   return response;
 };
