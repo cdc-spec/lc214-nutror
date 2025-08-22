@@ -20,7 +20,7 @@ exports.handler = async (event) => {
 
   // 2) gerar um carimbo simples com expiração
   const expiraEm = Math.floor(Date.now() / 1000) + COOKIE_MAX_AGE;
-  const dado = String(expiraEn);
+  const dado = String(expiraEm);
   const assinatura = crypto.createHmac("sha256", LINK_KEY).update(dado).digest("hex");
   const token = `${expiraEm}.${assinatura}`;
 
