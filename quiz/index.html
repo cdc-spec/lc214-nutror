@@ -127,524 +127,494 @@
     </div>
 
     <script>
-        // --- BANCO DE QUESTÕES (Será carregado do JSON) ---
-        let allQuestions = [];
+  // --- BANCO DE QUESTÕES (Será carregado do JSON) ---
+  let allQuestions = [];
 
-        // --- ELEMENTOS DA PÁGINA (DOM) ---
-        const appContainer = document.getElementById('app-container');
-        const loadingScreen = document.getElementById('loading-screen');
-        const loadingMessage = document.getElementById('loading-message');
-        const htmlEl = document.documentElement;
-        const setupScreen = document.getElementById('setup-screen');
-        const quizScreen = document.getElementById('quiz-screen');
-        const resultsScreen = document.getElementById('results-screen');
-        const quizContainer = document.getElementById('quiz-container');
-        const startQuizBtn = document.getElementById('start-quiz-btn');
-        const restartQuizBtn = document.getElementById('restart-quiz-btn');
-        const scoreEl = document.getElementById('score');
-        const totalQuestionsEl = document.getElementById('total-questions');
-        const scorePercentageEl = document.getElementById('score-percentage');
-        const difficultyFilterContainer = document.getElementById('difficulty-filter');
-        const formatFilterContainer = document.getElementById('format-filter');
-        const subtopicFilterContainer = document.getElementById('subtopic-filter');
-        const filterError = document.getElementById('filter-error');
-        const filteredCountDisplay = document.getElementById('filtered-count-display');
-        const questionCounter = document.getElementById('question-counter');
-        const performanceFeedback = document.getElementById('performance-feedback');
-        const quizNavigation = document.getElementById('quiz-navigation');
-        const backToMenuBtn = document.getElementById('back-to-menu-btn');
-        const modalContainer = document.getElementById('confirmation-modal-container');
-        const modalTitle = document.getElementById('modal-title');
-        const modalMessage = document.getElementById('modal-message');
-        const cancelBtn = document.getElementById('cancel-btn');
-        const confirmBtn = document.getElementById('confirm-btn');
-        const searchInput = document.getElementById('search-id-input');
-        const quantityLimitInput = document.getElementById('quantity-limit-input');
-        const filtersContainer = document.getElementById('filters-container');
-        const themeToggle = document.getElementById('theme-toggle');
-        const darkIcon = document.getElementById('theme-toggle-dark-icon');
-        const lightIcon = document.getElementById('theme-toggle-light-icon');
+  // --- ELEMENTOS DA PÁGINA (DOM) ---
+  const appContainer = document.getElementById('app-container');
+  const loadingScreen = document.getElementById('loading-screen');
+  const loadingMessage = document.getElementById('loading-message');
+  const htmlEl = document.documentElement;
+  const setupScreen = document.getElementById('setup-screen');
+  const quizScreen = document.getElementById('quiz-screen');
+  const resultsScreen = document.getElementById('results-screen');
+  const quizContainer = document.getElementById('quiz-container');
+  const startQuizBtn = document.getElementById('start-quiz-btn');
+  const restartQuizBtn = document.getElementById('restart-quiz-btn');
+  const scoreEl = document.getElementById('score');
+  const totalQuestionsEl = document.getElementById('total-questions');
+  const scorePercentageEl = document.getElementById('score-percentage');
+  const difficultyFilterContainer = document.getElementById('difficulty-filter');
+  const formatFilterContainer = document.getElementById('format-filter');
+  const subtopicFilterContainer = document.getElementById('subtopic-filter');
+  const filterError = document.getElementById('filter-error');
+  const filteredCountDisplay = document.getElementById('filtered-count-display');
+  const questionCounter = document.getElementById('question-counter');
+  const performanceFeedback = document.getElementById('performance-feedback');
+  const quizNavigation = document.getElementById('quiz-navigation');
+  const backToMenuBtn = document.getElementById('back-to-menu-btn');
+  const modalContainer = document.getElementById('confirmation-modal-container');
+  const modalTitle = document.getElementById('modal-title');
+  const modalMessage = document.getElementById('modal-message');
+  const cancelBtn = document.getElementById('cancel-btn');
+  const confirmBtn = document.getElementById('confirm-btn');
+  const searchInput = document.getElementById('search-id-input');
+  const quantityLimitInput = document.getElementById('quantity-limit-input');
+  const filtersContainer = document.getElementById('filters-container');
+  const themeToggle = document.getElementById('theme-toggle');
+  const darkIcon = document.getElementById('theme-toggle-dark-icon');
+  const lightIcon = document.getElementById('theme-toggle-light-icon');
 
-        let filteredQuestions = [];
-        let userAnswers = [];
-        let answeredInTreino = [];
-        let currentQuestionIndex = 0;
-        let score = 0;
-        let quizMode = 'simulado';
-        let confirmAction = null;
-        const REVIEW_PAGE_SIZE = 10;
-        let reviewCurrentPage = 1;
+  let filteredQuestions = [];
+  let userAnswers = [];
+  let answeredInTreino = [];
+  let currentQuestionIndex = 0;
+  let score = 0;
+  let quizMode = 'simulado';
+  let confirmAction = null;
+  const REVIEW_PAGE_SIZE = 10;
+  let reviewCurrentPage = 1;
 
-        // --- LÓGICA DO TEMA ---
-        
-        function setupInitialTheme() {
-            if (htmlEl.classList.contains('dark')) {
-                lightIcon.classList.remove('hidden');
-                darkIcon.classList.add('hidden');
-            } else {
-                darkIcon.classList.remove('hidden');
-                lightIcon.classList.add('hidden');
-            }
-        }
+  // --- LÓGICA DO TEMA ---
+  function setupInitialTheme() {
+    if (htmlEl.classList.contains('dark')) {
+      lightIcon.classList.remove('hidden');
+      darkIcon.classList.add('hidden');
+    } else {
+      darkIcon.classList.remove('hidden');
+      lightIcon.classList.add('hidden');
+    }
+  }
 
-        function toggleTheme() {
-            htmlEl.classList.toggle('dark');
-            const isNowDark = htmlEl.classList.contains('dark');
-            
-            if (isNowDark) {
-                localStorage.theme = 'dark';
-                lightIcon.classList.remove('hidden');
-                darkIcon.classList.add('hidden');
-            } else {
-                localStorage.theme = 'light';
-                darkIcon.classList.remove('hidden');
-                lightIcon.classList.add('hidden');
-            }
-        }
+  function toggleTheme() {
+    htmlEl.classList.toggle('dark');
+    const isNowDark = htmlEl.classList.contains('dark');
+    if (isNowDark) {
+      localStorage.theme = 'dark';
+      lightIcon.classList.remove('hidden');
+      darkIcon.classList.add('hidden');
+    } else {
+      localStorage.theme = 'light';
+      darkIcon.classList.remove('hidden');
+      lightIcon.classList.add('hidden');
+    }
+  }
 
-        // --- LÓGICA DO QUIZ ---
+  // --- FILTROS / FUNÇÕES AUXILIARES ---
+  function updateFilteredCount() {
+    const selectedDifficulties = [...document.querySelectorAll('input[name="difficulty"]:checked')].map(cb => cb.value);
+    const selectedFormats = [...document.querySelectorAll('input[name="format"]:checked')].map(cb => cb.value);
+    const selectedSubtopics = [...document.querySelectorAll('input[name="subtopic"]:checked')].map(cb => cb.value);
+    const questionsPool = allQuestions.filter(q =>
+      (selectedDifficulties.includes('Todos') || selectedDifficulties.includes(q.difficulty)) &&
+      (selectedFormats.includes('Todos') || selectedFormats.includes(q.format)) &&
+      (selectedSubtopics.includes('Todos') || selectedSubtopics.includes(q.subtopic))
+    );
+    filteredCountDisplay.textContent = `${questionsPool.length} questões encontradas`;
+  }
 
-        function updateFilteredCount() {
-            const selectedDifficulties = [...document.querySelectorAll('input[name="difficulty"]:checked')].map(cb => cb.value);
-            const selectedFormats = [...document.querySelectorAll('input[name="format"]:checked')].map(cb => cb.value);
-            const selectedSubtopics = [...document.querySelectorAll('input[name="subtopic"]:checked')].map(cb => cb.value);
+  function populateFilters() {
+    const difficulties = [...new Set(allQuestions.map(q => q.difficulty))];
+    const formats = [...new Set(allQuestions.map(q => q.format))];
+    const subtopics = [...new Set(allQuestions.map(q => q.subtopic))];
+    createCheckboxGroup(difficultyFilterContainer, 'difficulty', difficulties);
+    createCheckboxGroup(formatFilterContainer, 'format', formats);
+    createCheckboxGroup(subtopicFilterContainer, 'subtopic', subtopics);
+    updateFilteredCount();
+  }
 
-            const questionsPool = allQuestions.filter(q => 
-                (selectedDifficulties.includes('Todos') || selectedDifficulties.includes(q.difficulty)) &&
-                (selectedFormats.includes('Todos') || selectedFormats.includes(q.format)) &&
-                (selectedSubtopics.includes('Todos') || selectedSubtopics.includes(q.subtopic))
-            );
-            
-            filteredCountDisplay.textContent = `${questionsPool.length} questões encontradas`;
-        }
+  function createCheckboxGroup(container, name, options) {
+    container.innerHTML = `<div class="flex items-center"><input id="${name}-Todos" name="${name}" type="checkbox" value="Todos" checked class="w-5 h-5 text-blue-600"><label for="${name}-Todos" class="ml-2 text-sm font-medium">Todos</label></div>`;
+    options.forEach(option => {
+      container.innerHTML += `<div class="flex items-center"><input id="${name}-${option}" name="${name}" type="checkbox" value="${option}" checked class="w-5 h-5 text-blue-600"><label for="${name}-${option}" class="ml-2 text-sm font-medium">${option}</label></div>`;
+    });
 
-        function populateFilters() {
-            const difficulties = [...new Set(allQuestions.map(q => q.difficulty))];
-            const formats = [...new Set(allQuestions.map(q => q.format))];
-            const subtopics = [...new Set(allQuestions.map(q => q.subtopic))];
-            createCheckboxGroup(difficultyFilterContainer, 'difficulty', difficulties);
-            createCheckboxGroup(formatFilterContainer, 'format', formats);
-            createCheckboxGroup(subtopicFilterContainer, 'subtopic', subtopics);
-            updateFilteredCount();
-        }
+    const allCheckbox = container.querySelector(`input[value="Todos"]`);
+    const otherCheckboxes = container.querySelectorAll(`input:not([value="Todos"])`);
 
-        function createCheckboxGroup(container, name, options) {
-            container.innerHTML = `<div class="flex items-center"><input id="${name}-Todos" name="${name}" type="checkbox" value="Todos" checked class="w-5 h-5 text-blue-600"><label for="${name}-Todos" class="ml-2 text-sm font-medium">Todos</label></div>`;
-            options.forEach(option => {
-                container.innerHTML += `<div class="flex items-center"><input id="${name}-${option}" name="${name}" type="checkbox" value="${option}" checked class="w-5 h-5 text-blue-600"><label for="${name}-${option}" class="ml-2 text-sm font-medium">${option}</label></div>`;
-            });
-            
-            const allCheckbox = container.querySelector(`input[value="Todos"]`);
-            const otherCheckboxes = container.querySelectorAll(`input:not([value="Todos"])`);
+    allCheckbox.addEventListener('change', () => {
+      otherCheckboxes.forEach(cb => cb.checked = allCheckbox.checked);
+      updateFilteredCount();
+    });
+    otherCheckboxes.forEach(cb => {
+      cb.addEventListener('change', () => {
+        allCheckbox.checked = [...otherCheckboxes].every(other => other.checked);
+        updateFilteredCount();
+      });
+    });
+  }
 
-            allCheckbox.addEventListener('change', () => {
-                otherCheckboxes.forEach(cb => cb.checked = allCheckbox.checked);
-                updateFilteredCount();
-            });
+  function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  }
 
-            otherCheckboxes.forEach(cb => {
-                cb.addEventListener('change', () => {
-                    allCheckbox.checked = [...otherCheckboxes].every(other => other.checked);
-                    updateFilteredCount();
-                });
-            });
-        }
+  // --- QUIZ ---
+  function startQuiz() {
+    const searchTerm = searchInput.value.trim();
+    quizMode = document.querySelector('input[name="quizMode"]:checked').value;
+    let questionsPool = [];
 
-        function shuffleArray(array) {
-            for (let i = array.length - 1; i > 0; i--) {
-                const j = Math.floor(Math.random() * (i + 1));
-                [array[i], array[j]] = [array[j], array[i]];
-            }
-            return array;
-        }
+    if (searchTerm) {
+      const searchId = `LC214-${searchTerm.padStart(3, '0')}`;
+      questionsPool = allQuestions.filter(q => q.id === searchId);
+    } else {
+      const selectedDifficulties = [...document.querySelectorAll('input[name="difficulty"]:checked')].map(cb => cb.value);
+      const selectedFormats = [...document.querySelectorAll('input[name="format"]:checked')].map(cb => cb.value);
+      const selectedSubtopics = [...document.querySelectorAll('input[name="subtopic"]:checked')].map(cb => cb.value);
+      questionsPool = allQuestions.filter(q =>
+        (selectedDifficulties.includes('Todos') || selectedDifficulties.includes(q.difficulty)) &&
+        (selectedFormats.includes('Todos') || selectedFormats.includes(q.format)) &&
+        (selectedSubtopics.includes('Todos') || selectedSubtopics.includes(q.subtopic))
+      );
+    }
 
-        function startQuiz() {
-            const searchTerm = searchInput.value.trim();
-            quizMode = document.querySelector('input[name="quizMode"]:checked').value;
-            let questionsPool = [];
+    const limit = parseInt(quantityLimitInput.value, 10);
+    if (!isNaN(limit) && limit > 0 && limit < questionsPool.length) {
+      filteredQuestions = shuffleArray([...questionsPool]).slice(0, limit);
+    } else {
+      filteredQuestions = questionsPool;
+    }
 
-            if (searchTerm) {
-                const searchId = `LC214-${searchTerm.padStart(3, '0')}`;
-                questionsPool = allQuestions.filter(q => q.id === searchId);
-            } else {
-                const selectedDifficulties = [...document.querySelectorAll('input[name="difficulty"]:checked')].map(cb => cb.value);
-                const selectedFormats = [...document.querySelectorAll('input[name="format"]:checked')].map(cb => cb.value);
-                const selectedSubtopics = [...document.querySelectorAll('input[name="subtopic"]:checked')].map(cb => cb.value);
-                questionsPool = allQuestions.filter(q => 
-                    (selectedDifficulties.includes('Todos') || selectedDifficulties.includes(q.difficulty)) &&
-                    (selectedFormats.includes('Todos') || selectedFormats.includes(q.format)) &&
-                    (selectedSubtopics.includes('Todos') || selectedSubtopics.includes(q.subtopic))
-                );
-            }
+    if (filteredQuestions.length > 0) {
+      userAnswers = new Array(filteredQuestions.length).fill(-1);
+      answeredInTreino = new Array(filteredQuestions.length).fill(false);
+      filterError.classList.add('hidden');
+      setupScreen.classList.add('hidden');
+      quizScreen.classList.remove('hidden');
+      currentQuestionIndex = 0;
+      score = 0;
+      renderQuestion();
+      window.scrollTo(0, 0);
+    } else {
+      filterError.classList.remove('hidden');
+    }
+  }
 
-            const limit = parseInt(quantityLimitInput.value, 10);
-            if (!isNaN(limit) && limit > 0 && limit < questionsPool.length) {
-                filteredQuestions = shuffleArray([...questionsPool]).slice(0, limit);
-            } else {
-                filteredQuestions = questionsPool;
-            }
+  function renderQuestion() {
+    quizContainer.innerHTML = createQuestionHTML(filteredQuestions[currentQuestionIndex], currentQuestionIndex);
+    questionCounter.textContent = `Questão ${currentQuestionIndex + 1} de ${filteredQuestions.length}`;
+    updateNavigation();
 
-            if (filteredQuestions.length > 0) {
-                userAnswers = new Array(filteredQuestions.length).fill(-1);
-                answeredInTreino = new Array(filteredQuestions.length).fill(false);
-                filterError.classList.add('hidden');
-                setupScreen.classList.add('hidden');
-                quizScreen.classList.remove('hidden');
-                currentQuestionIndex = 0;
-                score = 0;
-                renderQuestion();
-                window.scrollTo(0, 0);
-            } else {
-                filterError.classList.remove('hidden');
-            }
-        }
-        
-        function renderQuestion() {
-            quizContainer.innerHTML = createQuestionHTML(filteredQuestions[currentQuestionIndex], currentQuestionIndex);
-            questionCounter.textContent = `Questão ${currentQuestionIndex + 1} de ${filteredQuestions.length}`;
-            updateNavigation();
-            
-            const options = document.querySelectorAll(`input[name="question_${currentQuestionIndex}"]`);
-            options.forEach(option => {
-                option.addEventListener('change', () => {
-                    userAnswers[currentQuestionIndex] = parseInt(option.value);
-                });
-            });
+    const options = document.querySelectorAll(`input[name="question_${currentQuestionIndex}"]`);
+    options.forEach(option => {
+      option.addEventListener('change', () => {
+        userAnswers[currentQuestionIndex] = parseInt(option.value);
+      });
+    });
 
-            if (answeredInTreino[currentQuestionIndex]) {
-                showFeedback(currentQuestionIndex, userAnswers[currentQuestionIndex], false);
-                quizContainer.querySelectorAll(`input[name="question_${currentQuestionIndex}"]`).forEach(input => input.disabled = true);
-            }
-        }
+    if (answeredInTreino[currentQuestionIndex]) {
+      showFeedback(currentQuestionIndex, userAnswers[currentQuestionIndex], false);
+      quizContainer.querySelectorAll(`input[name="question_${currentQuestionIndex}"]`).forEach(input => input.disabled = true);
+    }
+  }
 
-        function createQuestionHTML(q, index) {
-            const userAnswer = userAnswers[index];
-            const optionsHTML = q.options.map((option, i) => `
-                <div class="relative">
-                    <input type="radio" id="q${index}_option${i}" name="question_${index}" value="${i}" class="sr-only" ${userAnswer === i ? 'checked' : ''}>
-                    <label for="q${index}_option${i}" class="block w-full p-4 border-2 border-gray-300 dark:border-gray-600 rounded-lg cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-200">
-                        <span class="font-bold mr-2">${String.fromCharCode(65 + i)})</span> ${option}
-                    </label>
-                </div>
-            `).join('');
+  function createQuestionHTML(q, index) {
+    const userAnswer = userAnswers[index];
+    const optionsHTML = q.options.map((option, i) => `
+      <div class="relative">
+        <input type="radio" id="q${index}_option${i}" name="question_${index}" value="${i}" class="sr-only" ${userAnswer === i ? 'checked' : ''}>
+        <label for="q${index}_option${i}" class="block w-full p-4 border-2 border-gray-300 dark:border-gray-600 rounded-lg cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-200">
+          <span class="font-bold mr-2">${String.fromCharCode(65 + i)})</span> ${option}
+        </label>
+      </div>
+    `).join('');
 
-            return `
-                <div id="card-q${index}" class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-xl border border-transparent transition-all duration-300">
-                    <div class="flex justify-between items-start mb-4">
-                        <p class="text-sm font-bold text-blue-600 dark:text-blue-400 bg-blue-100 dark:bg-gray-700 px-3 py-1 rounded-full inline-block">${q.id}</p>
-                        <div class="text-right">
-                            <span class="subject-toggle text-sm text-blue-600 dark:text-blue-400 underline cursor-pointer" data-subject="${q.subtopic}">Ver assunto</span>
-                        </div>
-                    </div>
-                    <p class="text-lg leading-relaxed mb-6 whitespace-pre-wrap">${q.question}</p>
-                    <div class="space-y-4">${optionsHTML}</div>
-                    <div id="feedback-q${index}" class="mt-6 hidden"></div>
-                </div>
-            `;
-        }
-        
-        function updateNavigation() {
-            const baseButtonClasses = "font-bold py-3 px-6 rounded-lg transition-colors";
-            const prevButton = `<button id="prev-btn" class="${baseButtonClasses} bg-gray-200 dark:bg-gray-600 hover:bg-gray-300 dark:hover:bg-gray-500 ${currentQuestionIndex === 0 ? 'opacity-50 cursor-not-allowed' : ''}" ${currentQuestionIndex === 0 ? 'disabled' : ''}>Anterior</button>`;
-            const nextButton = `<button id="next-btn" class="${baseButtonClasses} bg-blue-600 hover:bg-blue-700 text-white">Próxima</button>`;
-            const checkAllButton = `<button id="check-all-btn" class="${baseButtonClasses} bg-green-600 hover:bg-green-700 text-white">Verificar Respostas</button>`;
-            const confirmButton = `<button id="confirm-single-btn" class="${baseButtonClasses} bg-blue-600 hover:bg-blue-700 text-white">Confirmar Resposta</button>`;
-            
-            let navHTML = prevButton;
-            if (quizMode === 'simulado') {
-                if (currentQuestionIndex === filteredQuestions.length - 1) {
-                    navHTML += checkAllButton;
-                } else {
-                    navHTML += nextButton;
-                }
-            } else { // Modo Treino
-                if (!answeredInTreino[currentQuestionIndex]) {
-                    navHTML += confirmButton;
-                }
-                if (currentQuestionIndex < filteredQuestions.length - 1) {
-                    navHTML += nextButton;
-                } else {
-                    navHTML += `<button id="show-results-btn" class="${baseButtonClasses} bg-green-600 hover:bg-green-700 text-white">Ver Resultado Final</button>`;
-                }
-            }
-            quizNavigation.innerHTML = navHTML;
+    return `
+      <div id="card-q${index}" class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-xl border border-transparent transition-all duration-300">
+        <div class="flex justify-between items-start mb-4">
+          <p class="text-sm font-bold text-blue-600 dark:text-blue-400 bg-blue-100 dark:bg-gray-700 px-3 py-1 rounded-full inline-block">${q.id}</p>
+          <div class="text-right">
+            <span class="subject-toggle text-sm text-blue-600 dark:text-blue-400 underline cursor-pointer" data-subject="${q.subtopic}">Ver assunto</span>
+          </div>
+        </div>
+        <p class="text-lg leading-relaxed mb-6 whitespace-pre-wrap">${q.question}</p>
+        <div class="space-y-4">${optionsHTML}</div>
+        <div id="feedback-q${index}" class="mt-6 hidden"></div>
+      </div>
+    `;
+  }
 
-            // Adiciona os event listeners
-            document.getElementById('prev-btn')?.addEventListener('click', () => navigate(-1));
-            document.getElementById('next-btn')?.addEventListener('click', () => navigate(1));
-            document.getElementById('check-all-btn')?.addEventListener('click', handleCheckAll);
-            document.getElementById('confirm-single-btn')?.addEventListener('click', checkSingleAnswer);
-            document.getElementById('show-results-btn')?.addEventListener('click', handleShowResults);
-        }
-        
-        function navigate(direction) {
-            const newIndex = currentQuestionIndex + direction;
-            if (newIndex >= 0 && newIndex < filteredQuestions.length) {
-                currentQuestionIndex = newIndex;
-                renderQuestion();
-            }
-        }
+  function updateNavigation() {
+    const baseButtonClasses = "font-bold py-3 px-6 rounded-lg transition-colors";
+    const prevButton = `<button id="prev-btn" class="${baseButtonClasses} bg-gray-200 dark:bg-gray-600 hover:bg-gray-300 dark:hover:bg-gray-500 ${currentQuestionIndex === 0 ? 'opacity-50 cursor-not-allowed' : ''}" ${currentQuestionIndex === 0 ? 'disabled' : ''}>Anterior</button>`;
+    const nextButton = `<button id="next-btn" class="${baseButtonClasses} bg-blue-600 hover:bg-blue-700 text-white">Próxima</button>`;
+    const checkAllButton = `<button id="check-all-btn" class="${baseButtonClasses} bg-green-600 hover:bg-green-700 text-white">Verificar Respostas</button>`;
+    const confirmButton = `<button id="confirm-single-btn" class="${baseButtonClasses} bg-blue-600 hover:bg-blue-700 text-white">Confirmar Resposta</button>`;
 
-        function handleCheckAll() {
-            const unansweredCount = userAnswers.filter(ans => ans === -1).length;
-            if (unansweredCount > 0) {
-                showModal('Confirmar Finalização', `Você deixou ${unansweredCount} questão(ões) em branco. Elas serão consideradas erradas. Deseja prosseguir?`, checkAllAnswers);
-            } else {
-                checkAllAnswers();
-            }
-        }
-        
-        function handleShowResults() {
-            const unansweredCount = answeredInTreino.filter(answered => !answered).length;
-            if (unansweredCount > 0) {
-                showModal('Confirmar Finalização', `Você não respondeu ${unansweredCount} questão(ões). Elas não contarão para a sua pontuação. Deseja ver o resultado final mesmo assim?`, showResults);
-            } else {
-                showResults();
-            }
-        }
+    let navHTML = prevButton;
+    if (quizMode === 'simulado') {
+      if (currentQuestionIndex === filteredQuestions.length - 1) {
+        navHTML += checkAllButton;
+      } else {
+        navHTML += nextButton;
+      }
+    } else { // Modo Treino
+      if (!answeredInTreino[currentQuestionIndex]) {
+        navHTML += confirmButton;
+      }
+      if (currentQuestionIndex < filteredQuestions.length - 1) {
+        navHTML += nextButton;
+      } else {
+        navHTML += `<button id="show-results-btn" class="${baseButtonClasses} bg-green-600 hover:bg-green-700 text-white">Ver Resultado Final</button>`;
+      }
+    }
+    quizNavigation.innerHTML = navHTML;
 
-        function checkAllAnswers() {
-            score = 0;
-            userAnswers.forEach((answer, index) => {
-                if (answer === filteredQuestions[index].answer) score++;
-            });
-            reviewCurrentPage = 1;
-            renderReviewPage(reviewCurrentPage);
-        }
+    document.getElementById('prev-btn')?.addEventListener('click', () => navigate(-1));
+    document.getElementById('next-btn')?.addEventListener('click', () => navigate(1));
+    document.getElementById('check-all-btn')?.addEventListener('click', handleCheckAll);
+    document.getElementById('confirm-single-btn')?.addEventListener('click', checkSingleAnswer);
+    document.getElementById('show-results-btn')?.addEventListener('click', handleShowResults);
+  }
 
-        function renderReviewPage(page) {
-            quizContainer.innerHTML = '';
-            const totalPages = Math.ceil(filteredQuestions.length / REVIEW_PAGE_SIZE);
-            page = Math.max(1, Math.min(page, totalPages));
-            reviewCurrentPage = page;
+  function navigate(direction) {
+    const newIndex = currentQuestionIndex + direction;
+    if (newIndex >= 0 && newIndex < filteredQuestions.length) {
+      currentQuestionIndex = newIndex;
+      renderQuestion();
+    }
+  }
 
-            const startIndex = (page - 1) * REVIEW_PAGE_SIZE;
-            const endIndex = Math.min(startIndex + REVIEW_PAGE_SIZE, filteredQuestions.length);
+  function handleCheckAll() {
+    const unansweredCount = userAnswers.filter(ans => ans === -1).length;
+    if (unansweredCount > 0) {
+      showModal('Confirmar Finalização', `Você deixou ${unansweredCount} questão(ões) em branco. Elas serão consideradas erradas. Deseja prosseguir?`, checkAllAnswers);
+    } else {
+      checkAllAnswers();
+    }
+  }
 
-            for (let i = startIndex; i < endIndex; i++) {
-                quizContainer.innerHTML += createQuestionHTML(filteredQuestions[i], i);
-            }
-            for (let i = startIndex; i < endIndex; i++) {
-                showFeedback(i, userAnswers[i]);
-            }
-            
-            quizContainer.querySelectorAll('input[type="radio"]').forEach(input => input.disabled = true);
-            renderReviewNavigation();
-            window.scrollTo(0, 0);
-        }
+  function handleShowResults() {
+    const unansweredCount = answeredInTreino.filter(answered => !answered).length;
+    if (unansweredCount > 0) {
+      showModal('Confirmar Finalização', `Você não respondeu ${unansweredCount} questão(ões). Elas não contarão para a sua pontuação. Deseja ver o resultado final mesmo assim?`, showResults);
+    } else {
+      showResults();
+    }
+  }
 
-        function renderReviewNavigation() {
-            const totalPages = Math.ceil(filteredQuestions.length / REVIEW_PAGE_SIZE);
-            if (totalPages <= 1) {
-                quizNavigation.innerHTML = `<div class="w-full text-center"><button id="show-results-btn-final" class="font-bold py-3 px-6 rounded-lg transition-colors bg-green-600 hover:bg-green-700 text-white">Ver Pontuação Final</button></div>`;
-            } else {
-                const prevDisabled = reviewCurrentPage === 1;
-                const nextDisabled = reviewCurrentPage === totalPages;
-                quizNavigation.innerHTML = `
-                    <div class="w-full flex flex-col items-center gap-4">
-                        <div class="flex items-center justify-center gap-4">
-                            <button id="review-prev-btn" class="font-bold py-2 px-4 rounded-lg transition-colors bg-gray-200 dark:bg-gray-600 hover:bg-gray-300 dark:hover:bg-gray-500" ${prevDisabled ? 'disabled' : ''}>Anterior</button>
-                            <span class="font-semibold text-gray-700 dark:text-gray-300">Página ${reviewCurrentPage} de ${totalPages}</span>
-                            <button id="review-next-btn" class="font-bold py-2 px-4 rounded-lg transition-colors bg-gray-200 dark:bg-gray-600 hover:bg-gray-300 dark:hover:bg-gray-500" ${nextDisabled ? 'disabled' : ''}>Próxima</button>
-                        </div>
-                        <button id="show-results-btn-final" class="font-bold py-3 px-6 rounded-lg transition-colors bg-green-600 hover:bg-green-700 text-white">Ver Pontuação Final</button>
-                    </div>
-                `;
-                document.getElementById('review-prev-btn').addEventListener('click', () => renderReviewPage(reviewCurrentPage - 1));
-                document.getElementById('review-next-btn').addEventListener('click', () => renderReviewPage(reviewCurrentPage + 1));
-            }
-            document.getElementById('show-results-btn-final').addEventListener('click', showResults);
-        }
+  function checkAllAnswers() {
+    score = 0;
+    userAnswers.forEach((answer, index) => {
+      if (answer === filteredQuestions[index].answer) score++;
+    });
+    reviewCurrentPage = 1;
+    renderReviewPage(reviewCurrentPage);
+  }
 
+  function renderReviewPage(page) {
+    quizContainer.innerHTML = '';
+    const totalPages = Math.ceil(filteredQuestions.length / REVIEW_PAGE_SIZE);
+    page = Math.max(1, Math.min(page, totalPages));
+    reviewCurrentPage = page;
 
-        function checkSingleAnswer() {
-            const index = currentQuestionIndex;
-            const userAnswer = userAnswers[index];
-            if (userAnswer === -1) {
-                showModal('Atenção', 'Por favor, selecione uma alternativa antes de confirmar.', null);
-                return;
-            }
-            if (userAnswer === filteredQuestions[index].answer) score++;
-            answeredInTreino[index] = true;
-            showFeedback(index, userAnswer, true);
-            quizContainer.querySelectorAll(`input[name="question_${index}"]`).forEach(input => input.disabled = true);
-            updateNavigation();
-        }
+    const startIndex = (page - 1) * REVIEW_PAGE_SIZE;
+    const endIndex = Math.min(startIndex + REVIEW_PAGE_SIZE, filteredQuestions.length);
 
-        function showFeedback(index, userAnswer, showResultMessage = false) {
-            const q = filteredQuestions[index];
-            const correctAnswer = q.answer;
-            const feedbackContainer = document.getElementById(`feedback-q${index}`);
-            
-            if (!feedbackContainer) return; // Safety check
-            feedbackContainer.classList.remove('hidden');
-            
-            let resultMessage = '';
-            if (showResultMessage) {
-                if (userAnswer === correctAnswer) resultMessage = `<p class="text-xl font-bold text-green-500 dark:text-green-400 mb-4">Correto!</p>`;
-                else if (userAnswer !== -1) resultMessage = `<p class="text-xl font-bold text-red-500 dark:text-red-400 mb-4">Errado!</p>`;
-            }
+    for (let i = startIndex; i < endIndex; i++) {
+      quizContainer.innerHTML += createQuestionHTML(filteredQuestions[i], i);
+    }
+    for (let i = startIndex; i < endIndex; i++) {
+      showFeedback(i, userAnswers[i]);
+    }
 
-            let justificationHTML = `<div class="text-left p-4 bg-gray-100 dark:bg-gray-900 rounded-lg mt-4">${resultMessage}<div class="flex flex-wrap gap-4 mb-3"><span class="text-xs font-semibold bg-yellow-200 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300 px-2 py-1 rounded-full">${q.difficulty}</span><span class="text-xs font-semibold bg-purple-200 text-purple-800 dark:bg-purple-900 dark:text-purple-300 px-2 py-1 rounded-full">${q.format}</span></div><h4 class="text-lg font-semibold mb-3 border-b border-gray-300 dark:border-gray-500 pb-2">Justificativa</h4>`;
-            if (Array.isArray(q.justifications)) {
-                justificationHTML += `<ul class="space-y-3 text-sm">`;
-                q.justifications.forEach((just, i) => {
-                    let textClass = i === correctAnswer ? 'text-green-600 dark:text-green-400' : 'text-gray-600 dark:text-gray-400';
-                    justificationHTML += `<li><strong class="${textClass}">${String.fromCharCode(65 + i)}:</strong> <span>${just}</span></li>`;
-                });
-                justificationHTML += `</ul>`;
-            } else {
-                justificationHTML += `<ul class="space-y-3 text-sm">`;
-                for (const key in q.justifications) {
-                   justificationHTML += `<li><strong class="text-blue-600 dark:text-blue-400">${key}:</strong> <span>${q.justifications[key]}</span></li>`;
-                }
-                justificationHTML += `</ul>`;
-            }
-            feedbackContainer.innerHTML = justificationHTML + '</div>';
+    quizContainer.querySelectorAll('input[type="radio"]').forEach(input => input.disabled = true);
+    renderReviewNavigation();
+    window.scrollTo(0, 0);
+  }
 
-            const correctLabel = document.querySelector(`label[for="q${index}_option${correctAnswer}"]`);
-            if (correctLabel) {
-                correctLabel.style.cssText = 'border-color: #22c55e !important; background-color: #dcfce7 !important;';
-                document.querySelector(`html.dark label[for="q${index}_option${correctAnswer}"]`)?.style.setProperty('background-color', '#14532d', 'important');
-            }
+  function renderReviewNavigation() {
+    const totalPages = Math.ceil(filteredQuestions.length / REVIEW_PAGE_SIZE);
+    if (totalPages <= 1) {
+      quizNavigation.innerHTML = `<div class="w-full text-center"><button id="show-results-btn-final" class="font-bold py-3 px-6 rounded-lg transition-colors bg-green-600 hover:bg-green-700 text-white">Ver Pontuação Final</button></div>`;
+    } else {
+      const prevDisabled = reviewCurrentPage === 1;
+      const nextDisabled = reviewCurrentPage === totalPages;
+      quizNavigation.innerHTML = `
+        <div class="w-full flex flex-col items-center gap-4">
+          <div class="flex items-center justify-center gap-4">
+            <button id="review-prev-btn" class="font-bold py-2 px-4 rounded-lg transition-colors bg-gray-200 dark:bg-gray-600 hover:bg-gray-300 dark:hover:bg-gray-500" ${prevDisabled ? 'disabled' : ''}>Anterior</button>
+            <span class="font-semibold text-gray-700 dark:text-gray-300">Página ${reviewCurrentPage} de ${totalPages}</span>
+            <button id="review-next-btn" class="font-bold py-2 px-4 rounded-lg transition-colors bg-gray-200 dark:bg-gray-600 hover:bg-gray-300 dark:hover:bg-gray-500" ${nextDisabled ? 'disabled' : ''}>Próxima</button>
+          </div>
+          <button id="show-results-btn-final" class="font-bold py-3 px-6 rounded-lg transition-colors bg-green-600 hover:bg-green-700 text-white">Ver Pontuação Final</button>
+        </div>
+      `;
+      document.getElementById('review-prev-btn').addEventListener('click', () => renderReviewPage(reviewCurrentPage - 1));
+      document.getElementById('review-next-btn').addEventListener('click', () => renderReviewPage(reviewCurrentPage + 1));
+    }
+    document.getElementById('show-results-btn-final').addEventListener('click', showResults);
+  }
 
-            if (userAnswer !== -1 && userAnswer !== correctAnswer) {
-                const wrongLabel = document.querySelector(`label[for="q${index}_option${userAnswer}"]`);
-                if (wrongLabel) {
-                    wrongLabel.style.cssText = 'border-color: #ef4444 !important; background-color: #fee2e2 !important;';
-                    document.querySelector(`html.dark label[for="q${index}_option${userAnswer}"]`)?.style.setProperty('background-color', '#7f1d1d', 'important');
-                }
-            }
-        }
+  function checkSingleAnswer() {
+    const index = currentQuestionIndex;
+    const userAnswer = userAnswers[index];
+    if (userAnswer === -1) {
+      showModal('Atenção', 'Por favor, selecione uma alternativa antes de confirmar.', null);
+      return;
+    }
+    if (userAnswer === filteredQuestions[index].answer) score++;
+    answeredInTreino[index] = true;
+    showFeedback(index, userAnswer, true);
+    quizContainer.querySelectorAll(`input[name="question_${index}"]`).forEach(input => input.disabled = true);
+    updateNavigation();
+  }
 
-        function showResults() {
-            scoreEl.textContent = score;
-            totalQuestionsEl.textContent = filteredQuestions.length;
-            const percentage = filteredQuestions.length > 0 ? Math.round((score / filteredQuestions.length) * 100) : 0;
-            scorePercentageEl.textContent = `${percentage}%`;
+  function showFeedback(index, userAnswer, showResultMessage = false) {
+    const q = filteredQuestions[index];
+    const correctAnswer = q.answer;
+    const feedbackContainer = document.getElementById(`feedback-q${index}`);
+    if (!feedbackContainer) return;
+    feedbackContainer.classList.remove('hidden');
 
-            if (percentage === 100) {
-                performanceFeedback.textContent = "Gabaritou! Desempenho impecável.";
-                performanceFeedback.className = "text-xl mb-8 text-green-600 dark:text-green-400";
-            } else if(percentage >= 80) {
-                performanceFeedback.textContent = "Excelente desempenho! Você está no caminho certo para a aprovação. Continue assim.";
-                performanceFeedback.className = "text-xl mb-8 text-green-600 dark:text-green-400";
-            } else if (percentage >= 65) {
-                performanceFeedback.textContent = "Bom resultado! Você tem uma base sólida. Foque na revisão dos erros para melhorar ainda mais.";
-                performanceFeedback.className = "text-xl mb-8 text-yellow-500 dark:text-yellow-400";
-            } else if (percentage >= 50) {
-                performanceFeedback.textContent = "Resultado regular. Você está no começo da jornada. A prática constante levará à melhora.";
-                performanceFeedback.className = "text-xl mb-8 text-yellow-500 dark:text-yellow-400";
-            } else {
-                performanceFeedback.textContent = "Não desanime! Revise a teoria e refaça as questões para fixar o conteúdo.";
-                performanceFeedback.className = "text-xl mb-8 text-red-500 dark:text-red-400";
-            }
-            quizScreen.classList.add('hidden');
-            resultsScreen.classList.remove('hidden');
-            window.scrollTo(0, 0);
-        }
-        
-        function showModal(title, message, onConfirm) {
-            modalTitle.textContent = title;
-            modalMessage.textContent = message;
-            confirmAction = onConfirm;
-            confirmBtn.style.display = onConfirm ? 'inline-flex' : 'none';
-            cancelBtn.textContent = onConfirm ? 'Cancelar' : 'Fechar';
-            modalContainer.classList.remove('hidden');
-        }
+    let resultMessage = '';
+    if (showResultMessage) {
+      if (userAnswer === correctAnswer) resultMessage = `<p class="text-xl font-bold text-green-500 dark:text-green-400 mb-4">Correto!</p>`;
+      else if (userAnswer !== -1) resultMessage = `<p class="text-xl font-bold text-red-500 dark:text-red-400 mb-4">Errado!</p>`;
+    }
 
-        function resetQuiz() {
-            setupScreen.classList.remove('hidden');
-            quizScreen.classList.add('hidden');
-            resultsScreen.classList.add('hidden');
-            modalContainer.classList.add('hidden');
-            searchInput.value = '';
-            quantityLimitInput.value = '';
-            quantityLimitInput.disabled = false;
-            filtersContainer.style.display = 'block';
-        }
+    let justificationHTML = `<div class="text-left p-4 bg-gray-100 dark:bg-gray-900 rounded-lg mt-4">${resultMessage}<div class="flex flex-wrap gap-4 mb-3"><span class="text-xs font-semibold bg-yellow-200 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300 px-2 py-1 rounded-full">${q.difficulty}</span><span class="text-xs font-semibold bg-purple-200 text-purple-800 dark:bg-purple-900 dark:text-purple-300 px-2 py-1 rounded-full">${q.format}</span></div><h4 class="text-lg font-semibold mb-3 border-b border-gray-300 dark:border-gray-500 pb-2">Justificativa</h4>`;
+    if (Array.isArray(q.justifications)) {
+      justificationHTML += `<ul class="space-y-3 text-sm">`;
+      q.justifications.forEach((just, i) => {
+        let textClass = i === correctAnswer ? 'text-green-600 dark:text-green-400' : 'text-gray-600 dark:text-gray-400';
+        justificationHTML += `<li><strong class="${textClass}">${String.fromCharCode(65 + i)}:</strong> <span>${just}</span></li>`;
+      });
+      justificationHTML += `</ul>`;
+    } else {
+      justificationHTML += `<ul class="space-y-3 text-sm">`;
+      for (const key in q.justifications) {
+        justificationHTML += `<li><strong class="text-blue-600 dark:text-blue-400">${key}:</strong> <span>${q.justifications[key]}</span></li>`;
+      }
+      justificationHTML += `</ul>`;
+    }
+    feedbackContainer.innerHTML = justificationHTML + '</div>';
 
+    const correctLabel = document.querySelector(`label[for="q${index}_option${correctAnswer}"]`);
+    if (correctLabel) {
+      correctLabel.style.cssText = 'border-color: #22c55e !important; background-color: #dcfce7 !important;';
+      document.querySelector(`html.dark label[for="q${index}_option${correctAnswer}"]`)?.style.setProperty('background-color', '#14532d', 'important');
+    }
+    if (userAnswer !== -1 && userAnswer !== correctAnswer) {
+      const wrongLabel = document.querySelector(`label[for="q${index}_option${userAnswer}"]`);
+      if (wrongLabel) {
+        wrongLabel.style.cssText = 'border-color: #ef4444 !important; background-color: #fee2e2 !important;';
+        document.querySelector(`html.dark label[for="q${index}_option${userAnswer}"]`)?.style.setProperty('background-color', '#7f1d1d', 'important');
+      }
+    }
+  }
 
-       
+  function showResults() {
+    scoreEl.textContent = score;
+    totalQuestionsEl.textContent = filteredQuestions.length;
+    const percentage = filteredQuestions.length > 0 ? Math.round((score / filteredQuestions.length) * 100) : 0;
+    scorePercentageEl.textContent = `${percentage}%`;
+
+    if (percentage === 100) {
+      performanceFeedback.textContent = "Gabaritou! Desempenho impecável.";
+      performanceFeedback.className = "text-xl mb-8 text-green-600 dark:text-green-400";
+    } else if (percentage >= 80) {
+      performanceFeedback.textContent = "Excelente desempenho! Você está no caminho certo para a aprovação. Continue assim.";
+      performanceFeedback.className = "text-xl mb-8 text-green-600 dark:text-green-400";
+    } else if (percentage >= 65) {
+      performanceFeedback.textContent = "Bom resultado! Você tem uma base sólida. Foque na revisão dos erros para melhorar ainda mais.";
+      performanceFeedback.className = "text-xl mb-8 text-yellow-500 dark:text-yellow-400";
+    } else if (percentage >= 50) {
+      performanceFeedback.textContent = "Resultado regular. Você está no começo da jornada. A prática constante levará à melhora.";
+      performanceFeedback.className = "text-xl mb-8 text-yellow-500 dark:text-yellow-400";
+    } else {
+      performanceFeedback.textContent = "Não desanime! Revise a teoria e refaça as questões para fixar o conteúdo.";
+      performanceFeedback.className = "text-xl mb-8 text-red-500 dark:text-red-400";
+    }
+    quizScreen.classList.add('hidden');
+    resultsScreen.classList.remove('hidden');
+    window.scrollTo(0, 0);
+  }
+
+  function showModal(title, message, onConfirm) {
+    modalTitle.textContent = title;
+    modalMessage.textContent = message;
+    confirmAction = onConfirm;
+    confirmBtn.style.display = onConfirm ? 'inline-flex' : 'none';
+    cancelBtn.textContent = onConfirm ? 'Cancelar' : 'Fechar';
+    modalContainer.classList.remove('hidden');
+  }
+
+  function resetQuiz() {
+    setupScreen.classList.remove('hidden');
+    quizScreen.classList.add('hidden');
+    resultsScreen.classList.add('hidden');
+    modalContainer.classList.add('hidden');
+    searchInput.value = '';
+    quantityLimitInput.value = '';
+    quantityLimitInput.disabled = false;
+    filtersContainer.style.display = 'block';
+  }
+
+  // --- INICIALIZAÇÃO ---
   document.addEventListener('DOMContentLoaded', () => {
-    // Se o index carregou, o GUARD (edge) já autorizou via cookie.
-
-    // Carrega as questões
+    // Carrega as questões (passou pelo guarda => já está autenticado via cookie)
     fetch('questoes.json', { cache: 'no-store' })
       .then(response => {
-        if (!response.ok) {
-          throw new Error('Erro ao carregar o arquivo de questões.');
-        }
+        if (!response.ok) throw new Error('Erro ao carregar o arquivo de questões.');
         return response.json();
       })
       .then(data => {
-        // Estas variáveis/funções já existiam no seu index.
-        // Se algum nome for diferente no seu código, mantenha os seus.
         window.allQuestions = data;
-
-        // Exemplo de telas já existentes:
-        // - loadingScreen: elemento da tela de "Carregando..."
-        // - setupScreen: tela inicial de configuração do quiz
-        // - loadingMessage: onde aparece mensagem de erro
-        // - setupInitialTheme / populateFilters: suas funções existentes
-        if (typeof loadingScreen !== 'undefined') loadingScreen.classList.add('hidden');
-        if (typeof setupScreen !== 'undefined') setupScreen.classList.remove('hidden');
-        if (typeof setupInitialTheme === 'function') setupInitialTheme();
-        if (typeof populateFilters === 'function') populateFilters();
+        loadingScreen.classList.add('hidden');
+        setupScreen.classList.remove('hidden');
+        setupInitialTheme();
+        populateFilters();
       })
       .catch(error => {
         console.error('Erro:', error);
-        if (typeof loadingMessage !== 'undefined') {
-          loadingMessage.innerHTML = `
-            <div class="text-red-500">
-              <h1 class="text-2xl font-bold">Erro Crítico</h1>
-              <p>Não foi possível carregar o arquivo <strong>questoes.json</strong>. 
-              Verifique se o arquivo está na mesma pasta que o <strong>index.html</strong>.</p>
-            </div>`;
-        } else {
-          alert('Erro ao carregar as questões. Verifique o arquivo questoes.json.');
-        }
+        loadingMessage.innerHTML = `
+          <div class="text-red-500">
+            <h1 class="text-2xl font-bold">Erro Crítico</h1>
+            <p>Não foi possível carregar o arquivo <strong>questoes.json</strong>. 
+            Verifique se o arquivo está na mesma pasta que o <strong>index.html</strong>.</p>
+          </div>`;
       });
 
-    // PING opcional para manter a sessão viva durante simulados longos
-    // (passa pelo guarda e renova o cookie perto do vencimento)
+    // PING opcional para manter sessão viva em simulados longos
     setInterval(() => {
       fetch('/quiz/__ping__.json', { cache: 'no-store' }).catch(()=>{});
-    }, 8 * 60 * 1000); // a cada 8 minutos
+    }, 8 * 60 * 1000);
+
+    // Listeners de UI
+    startQuizBtn.addEventListener('click', startQuiz);
+    restartQuizBtn.addEventListener('click', resetQuiz);
+    backToMenuBtn.addEventListener('click', () => showModal('Voltar ao Início', 'Todo o seu progresso será perdido. Deseja continuar?', resetQuiz));
+    cancelBtn.addEventListener('click', () => modalContainer.classList.add('hidden'));
+    confirmBtn.addEventListener('click', () => {
+      if (typeof confirmAction === 'function') confirmAction();
+      modalContainer.classList.add('hidden');
+    });
+    searchInput.addEventListener('input', () => {
+      const hasSearchTerm = searchInput.value.trim() !== '';
+      filtersContainer.style.display = hasSearchTerm ? 'none' : 'block';
+      quantityLimitInput.disabled = hasSearchTerm;
+    });
+    themeToggle.addEventListener('click', toggleTheme);
+    quizContainer.addEventListener('click', (e) => {
+      if (e.target.classList.contains('subject-toggle')) {
+        const subject = e.target.dataset.subject;
+        if (e.target.textContent === 'Ver assunto') {
+          e.target.textContent = subject;
+          e.target.classList.remove('underline');
+          e.target.classList.add('font-semibold', 'no-underline', 'text-gray-500', 'dark:text-gray-400');
+        } else {
+          e.target.textContent = 'Ver assunto';
+          e.target.classList.add('underline', 'text-blue-600', 'dark:text-blue-400');
+          e.target.classList.remove('font-semibold', 'no-underline', 'text-gray-500', 'dark:text-gray-400');
+        }
+      }
+    });
   });
-
-
-
-        startQuizBtn.addEventListener('click', startQuiz);
-        restartQuizBtn.addEventListener('click', resetQuiz);
-        backToMenuBtn.addEventListener('click', () => showModal('Voltar ao Início', 'Todo o seu progresso será perdido. Deseja continuar?', resetQuiz));
-        cancelBtn.addEventListener('click', () => modalContainer.classList.add('hidden'));
-        confirmBtn.addEventListener('click', () => {
-            if (typeof confirmAction === 'function') {
-                confirmAction();
-            }
-            modalContainer.classList.add('hidden');
-        });
-        searchInput.addEventListener('input', () => {
-            const hasSearchTerm = searchInput.value.trim() !== '';
-            filtersContainer.style.display = hasSearchTerm ? 'none' : 'block';
-            quantityLimitInput.disabled = hasSearchTerm;
-        });
-        themeToggle.addEventListener('click', toggleTheme);
-        quizContainer.addEventListener('click', (e) => {
-            if (e.target.classList.contains('subject-toggle')) {
-                const subject = e.target.dataset.subject;
-                if (e.target.textContent === 'Ver assunto') {
-                    e.target.textContent = subject;
-                    e.target.classList.remove('underline');
-                    e.target.classList.add('font-semibold', 'no-underline', 'text-gray-500', 'dark:text-gray-400');
-                } else {
-                    e.target.textContent = 'Ver assunto';
-                    e.target.classList.add('underline', 'text-blue-600', 'dark:text-blue-400');
-                    e.target.classList.remove('font-semibold', 'no-underline', 'text-gray-500', 'dark:text-gray-400');
-                }
-            }
-        });
-    </script>
+</script>
 </body>
 </html>
