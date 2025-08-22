@@ -565,7 +565,7 @@
         }
 
 
-       <script>
+       
   document.addEventListener('DOMContentLoaded', () => {
     // Se o index carregou, o GUARD (edge) já autorizou via cookie.
 
@@ -612,7 +612,7 @@
       fetch('/quiz/__ping__.json', { cache: 'no-store' }).catch(()=>{});
     }, 8 * 60 * 1000); // a cada 8 minutos
   });
-</script>
+
 
 
         startQuizBtn.addEventListener('click', startQuiz);
