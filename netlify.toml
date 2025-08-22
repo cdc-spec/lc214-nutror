@@ -1,9 +1,14 @@
 [build]
   functions = "netlify/functions"
 
+# APLIQUE o guarda tanto em /quiz QUANTO em /quiz/*
 [[edge_functions]]
-path = "/quiz/*"
 function = "guarda"
+path = "/quiz"
+
+[[edge_functions]]
+function = "guarda"
+path = "/quiz/*"
 
 [functions]
   node_bundler = "esbuild"
