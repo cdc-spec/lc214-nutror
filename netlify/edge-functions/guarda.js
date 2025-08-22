@@ -1,85 +1,129 @@
 // netlify/edge-functions/guarda.js
+// Netlify Edge Runtime (Web APIs + Web Crypto)
 
-const COOKIE_MAX_AGE = 60;  // 8h
-const RENEW_IF_LT   = 15;      // renova se faltar < 15min
+const COOKIE_NAME = Deno.env.get("SESSION_COOKIE_NAME") || "quiz_sess";
+const LINK_KEY = Deno.env.get("LINK_KEY"); // mesma chave da função entrar
+const TTL_SECONDS = Number(Deno.env.get("SESSION_TTL_SECONDS") || 12 * 60 * 60);
+const RENEW_WINDOW_SECONDS = Number(Deno.env.get("RENEW_WINDOW_SECONDS") || 2 * 60 * 60);
+const COOKIE_PATH = Deno.env.get("SESSION_COOKIE_PATH") || "/quiz";
 
-export default async (request, context) => {
-  const url = new URL(request.url);
-  const LINK_KEY = Deno.env.get("LINK_KEY") || "";
-  const cookies = parseCookies(request.headers.get("cookie") || "");
-  let token = cookies["quiz_auth"];
+const enc = new TextEncoder();
 
-  // Plano B: se veio com ?token= (ou ?k=) e ainda não tem cookie, emite e limpa query
-  if (!token) {
-    const incoming = url.searchParams.get("token") || url.searchParams.get("k") || "";
-    if (LINK_KEY && incoming && incoming === LINK_KEY) {
-      const exp = Math.floor(Date.now() / 1000) + COOKIE_MAX_AGE;
-      const sig = await hmacSha256(LINK_KEY, String(exp));
-      const newToken = `${exp}.${sig}`;
-      const headers = new Headers({ Location: url.pathname });
-      headers.append("Set-Cookie", buildCookie(newToken, COOKIE_MAX_AGE));
-      return new Response("", { status: 302, headers });
-    }
-    return deny();
-  }
-
-  const [expStr, sig] = token.split(".");
-  const exp = parseInt(expStr, 10);
-  if (!exp || !sig) return deny();
-
-  const now = Math.floor(Date.now() / 1000);
-  if (now > exp) return deny("Seu acesso expirou. Clique novamente no botão da plataforma.");
-
-  const expected = await hmacSha256(LINK_KEY, expStr);
-  if (sig !== expected) return deny();
-
-  // Ok, entrega o recurso
-  const response = await context.next();
-
-  // Renovação silenciosa
-  const remaining = exp - now;
-  if (remaining < RENEW_IF_LT) {
-    const newExp = now + COOKIE_MAX_AGE;
-    const newSig = await hmacSha256(LINK_KEY, String(newExp));
-    const refreshed = `${newExp}.${newSig}`;
-    response.headers.append("Set-Cookie", buildCookie(refreshed, COOKIE_MAX_AGE));
-  }
-
-  return response;
-};
-
-function parseCookies(str) {
-  const out = {};
-  str.split(";").forEach((p) => {
-    const [k, v] = p.trim().split("=");
-    if (k) out[k] = decodeURIComponent(v || "");
-  });
-  return out;
+function parseCookies(h) {
+  const c = {};
+  (h || "")
+    .split(";")
+    .map(x => x.trim())
+    .forEach(kv => {
+      const i = kv.indexOf("=");
+      if (i > -1) c[kv.slice(0, i)] = kv.slice(i + 1);
+    });
+  return c;
 }
-
-function buildCookie(value, maxAge) {
-  return [
-    `quiz_auth=${value}`,
-    "Path=/",
+function toBase64Url(bytes) {
+  let s = "";
+  for (let i = 0; i < bytes.length; i++) s += String.fromCharCode(bytes[i]);
+  const b64 = btoa(s);
+  return b64.replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/g, "");
+}
+async function hmacBase64Url(data) {
+  const key = await crypto.subtle.importKey("raw", enc.encode(LINK_KEY), { name: "HMAC", hash: "SHA-256" }, false, ["sign"]);
+  const sig = await crypto.subtle.sign("HMAC", key, enc.encode(data));
+  return toBase64Url(new Uint8Array(sig));
+}
+async function sha256Hex(str) {
+  const buf = await crypto.subtle.digest("SHA-256", enc.encode(str || ""));
+  return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, "0")).join("").slice(0, 16);
+}
+function buildCookie(token) {
+  const parts = [
+    `${COOKIE_NAME}=${token}`,
+    `Path=${COOKIE_PATH}`,
     "HttpOnly",
     "Secure",
     "SameSite=Lax",
-    `Max-Age=${maxAge}`,
-  ].join("; ");
+    `Max-Age=${TTL_SECONDS}`,
+  ];
+  return parts.join("; ");
 }
 
-async function hmacSha256(secret, text) {
-  const enc = new TextEncoder();
-  const key = await crypto.subtle.importKey(
-    "raw", enc.encode(secret), { name: "HMAC", hash: "SHA-256" }, false, ["sign"]
-  );
-  const sig = await crypto.subtle.sign("HMAC", key, enc.encode(text));
-  return Array.from(new Uint8Array(sig)).map(b => b.toString(16).padStart(2, "0")).join("");
-}
+export default async (request, context) => {
+  if (!LINK_KEY) {
+    return new Response("Configuração ausente (LINK_KEY).", { status: 500 });
+  }
 
-function deny(msg = "Acesso negado. Abra o quiz pelo botão dentro da plataforma.") {
-  return new Response(
-    `<!doctype html><meta charset="utf-8"><h1>${msg}</h1>`,
-    { status: 403, headers: { "content-type": "text/html; charset=utf-8" } }
-  );
-}
+  const url = new URL(request.url);
+  const cookies = parseCookies(request.headers.get("cookie") || request.headers.get("Cookie") || "");
+  const raw = cookies[COOKIE_NAME];
+
+  // Bloqueia por padrão se não houver sessão:
+  if (!raw) {
+    const body = `<meta charset="utf-8"><p>Acesso restrito. Abra o quiz pelo botão do Nutror.</p>`;
+    return new Response(body, {
+      status: 401,
+      headers: { "content-type": "text/html; charset=utf-8", "cache-control": "no-store" },
+    });
+  }
+
+  // token = payloadB64url + "." + assinaturaB64url
+  const dot = raw.lastIndexOf(".");
+  if (dot <= 0) {
+    return new Response("Sessão inválida.", { status: 401, headers: { "cache-control": "no-store" } });
+  }
+
+  const body64 = raw.slice(0, dot);
+  const sig = raw.slice(dot + 1);
+
+  // confere assinatura
+  const expected = await hmacBase64Url(body64);
+  if (expected !== sig) {
+    return new Response("Sessão inválida (assinatura).", { status: 401, headers: { "cache-control": "no-store" } });
+  }
+
+  // decodifica payload
+  let payload;
+  try {
+    const json = atob(body64.replace(/-/g, "+").replace(/_/g, "/"));
+    payload = JSON.parse(json);
+  } catch {
+    return new Response("Sessão inválida (payload).", { status: 401, headers: { "cache-control": "no-store" } });
+  }
+
+  const nowSec = Math.floor(Date.now() / 1000);
+  if (!payload.exp || nowSec >= payload.exp) {
+    const body = `<meta charset="utf-8"><p>Sessão expirada. Volte ao Nutror e clique no botão do quiz.</p>`;
+    return new Response(body, { status: 401, headers: { "content-type": "text/html; charset=utf-8", "cache-control": "no-store" } });
+  }
+
+  // vínculo leve ao UA
+  const ua = request.headers.get("user-agent") || "";
+  const uaHash = await sha256Hex(ua);
+  if (payload.ua !== uaHash) {
+    return new Response("Sessão inválida (contexto diferente).", { status: 401, headers: { "cache-control": "no-store" } });
+  }
+
+  // Se estiver dentro da janela de renovação, gera novo token (renovação silenciosa)
+  let shouldRefresh = (payload.exp - nowSec) <= RENEW_WINDOW_SECONDS;
+  let setCookieHeader = null;
+
+  if (shouldRefresh) {
+    const newPayload = { v: 1, ua: uaHash, iat: nowSec, exp: nowSec + TTL_SECONDS };
+    const newBody = toBase64Url(enc.encode(JSON.stringify(newPayload)));
+    const newSig = await hmacBase64Url(newBody);
+    const newToken = `${newBody}.${newSig}`;
+    setCookieHeader = buildCookie(newToken);
+  }
+
+  // segue para o conteúdo real
+  const response = await context.next();
+
+  // anexa o Set-Cookie de renovação somente quando preciso
+  if (setCookieHeader) {
+    response.headers.append("Set-Cookie", setCookieHeader);
+  }
+
+  // reforço: não armazenar respostas privadas em caches públicos
+  response.headers.set("Cache-Control", "private, max-age=0, no-store");
+
+  return response;
+};
