@@ -564,71 +564,56 @@
             filtersContainer.style.display = 'block';
         }
 
-        // --- INICIALIZAÇÃO E EVENTOS ---
 
-        // Função de verificação de acesso ATUALIZADA E DEFINITIVA
-        async function checkAccess() {
-            // Pega os parâmetros da URL atual
-            const urlParams = new URLSearchParams(window.location.search);
-            const token = urlParams.get('token');
+       <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Se o index carregou, o GUARD (edge) já autorizou via cookie.
 
-            // Se o aluno chegou aqui sem um token, acesso negado na hora.
-            if (!token) {
-                appContainer.innerHTML = `<div class="text-center p-8">
-                        <h1 class="text-2xl font-bold text-red-500">🚫 Acesso Inválido</h1>
-                        <p class="text-gray-600 dark:text-gray-300 mt-2">Este conteúdo é exclusivo para alunos. Por favor, acesse através da plataforma.</p>
-                    </div>`;
-                loadingScreen.classList.add('hidden');
-                return false;
-            }
-
-            try {
-                // Envia o token para a nossa função validadora no servidor
-                const response = await fetch(`/.netlify/functions/validar-token?token=${token}`);
-                const data = await response.json();
-
-                // Se a resposta do servidor for que o token é válido, permite o acesso.
-                if (response.ok && data.success) {
-                    return true;
-                }
-            } catch (error) {
-                console.error("Erro ao validar token:", error);
-            }
-
-            // Se a validação falhou por qualquer motivo (expirado, inválido, já usado, erro de rede), nega o acesso.
-            appContainer.innerHTML = `<div class="text-center p-8">
-                    <h1 class="text-2xl font-bold text-red-500">🚫 Acesso Negado</h1>
-                    <p class="text-gray-600 dark:text-gray-300 mt-2">Este link é inválido, expirado ou já foi utilizado. Por favor, gere um novo acesso na plataforma.</p>
-                </div>`;
-            loadingScreen.classList.add('hidden');
-            return false;
+    // Carrega as questões
+    fetch('questoes.json', { cache: 'no-store' })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Erro ao carregar o arquivo de questões.');
         }
+        return response.json();
+      })
+      .then(data => {
+        // Estas variáveis/funções já existiam no seu index.
+        // Se algum nome for diferente no seu código, mantenha os seus.
+        window.allQuestions = data;
 
-        document.addEventListener('DOMContentLoaded', async () => { // Adicionado 'async'
-            if (!(await checkAccess())) { // Adicionado 'await'
-                return; // Interrompe a execução se o acesso for negado
-            }
+        // Exemplo de telas já existentes:
+        // - loadingScreen: elemento da tela de "Carregando..."
+        // - setupScreen: tela inicial de configuração do quiz
+        // - loadingMessage: onde aparece mensagem de erro
+        // - setupInitialTheme / populateFilters: suas funções existentes
+        if (typeof loadingScreen !== 'undefined') loadingScreen.classList.add('hidden');
+        if (typeof setupScreen !== 'undefined') setupScreen.classList.remove('hidden');
+        if (typeof setupInitialTheme === 'function') setupInitialTheme();
+        if (typeof populateFilters === 'function') populateFilters();
+      })
+      .catch(error => {
+        console.error('Erro:', error);
+        if (typeof loadingMessage !== 'undefined') {
+          loadingMessage.innerHTML = `
+            <div class="text-red-500">
+              <h1 class="text-2xl font-bold">Erro Crítico</h1>
+              <p>Não foi possível carregar o arquivo <strong>questoes.json</strong>. 
+              Verifique se o arquivo está na mesma pasta que o <strong>index.html</strong>.</p>
+            </div>`;
+        } else {
+          alert('Erro ao carregar as questões. Verifique o arquivo questoes.json.');
+        }
+      });
 
-            fetch('questoes.json')
-                .then(response => {
-                    if (!response.ok) { throw new Error('Erro ao carregar o arquivo de questões.'); }
-                    return response.json();
-                })
-                .then(data => {
-                    allQuestions = data;
-                    loadingScreen.classList.add('hidden');
-                    setupScreen.classList.remove('hidden');
-                    setupInitialTheme();
-                    populateFilters();
-                })
-                .catch(error => {
-                    console.error('Erro:', error);
-                    loadingMessage.innerHTML = `<div class="text-red-500">
-                        <h1 class="text-2xl font-bold">Erro Crítico</h1>
-                        <p>Não foi possível carregar o arquivo <strong>questoes.json</strong>. Verifique se o arquivo está na mesma pasta que o <strong>index.html</strong>.</p>
-                    </div>`;
-                });
-        });
+    // PING opcional para manter a sessão viva durante simulados longos
+    // (passa pelo guarda e renova o cookie perto do vencimento)
+    setInterval(() => {
+      fetch('/quiz/__ping__.json', { cache: 'no-store' }).catch(()=>{});
+    }, 8 * 60 * 1000); // a cada 8 minutos
+  });
+</script>
+
 
         startQuizBtn.addEventListener('click', startQuiz);
         restartQuizBtn.addEventListener('click', resetQuiz);
