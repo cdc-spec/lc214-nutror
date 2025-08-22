@@ -1,27 +1,54 @@
 // netlify/edge-functions/guarda.js
 
+const COOKIE_MAX_AGE = 60;  // 8h
+const RENEW_IF_LT   = 15;      // renova se faltar < 15min
+
 export default async (request, context) => {
-  const cookies = lerCookies(request.headers.get("cookie") || "");
-  const token = cookies["quiz_auth"];
-  if (!token) return negar();
-
-  const [expStr, assinatura] = token.split(".");
-  const exp = parseInt(expStr, 10);
-  if (!exp || !assinatura) return negar();
-
-  const agora = Math.floor(Date.now() / 1000);
-  if (agora > exp) return negar("Seu acesso expirou. Volte pelo botão da plataforma.");
-
-  // revalida a assinatura usando a mesma LINK_KEY
+  const url = new URL(request.url);
   const LINK_KEY = Deno.env.get("LINK_KEY") || "";
-  const esperada = await hmacSha256(LINK_KEY, expStr);
-  if (assinatura !== esperada) return negar();
+  const cookies = parseCookies(request.headers.get("cookie") || "");
+  let token = cookies["quiz_auth"];
 
-  // liberado: entrega o arquivo solicitado (/quiz/...)
-  return context.next();
+  // Plano B: se veio com ?token= (ou ?k=) e ainda não tem cookie, emite e limpa query
+  if (!token) {
+    const incoming = url.searchParams.get("token") || url.searchParams.get("k") || "";
+    if (LINK_KEY && incoming && incoming === LINK_KEY) {
+      const exp = Math.floor(Date.now() / 1000) + COOKIE_MAX_AGE;
+      const sig = await hmacSha256(LINK_KEY, String(exp));
+      const newToken = `${exp}.${sig}`;
+      const headers = new Headers({ Location: url.pathname });
+      headers.append("Set-Cookie", buildCookie(newToken, COOKIE_MAX_AGE));
+      return new Response("", { status: 302, headers });
+    }
+    return deny();
+  }
+
+  const [expStr, sig] = token.split(".");
+  const exp = parseInt(expStr, 10);
+  if (!exp || !sig) return deny();
+
+  const now = Math.floor(Date.now() / 1000);
+  if (now > exp) return deny("Seu acesso expirou. Clique novamente no botão da plataforma.");
+
+  const expected = await hmacSha256(LINK_KEY, expStr);
+  if (sig !== expected) return deny();
+
+  // Ok, entrega o recurso
+  const response = await context.next();
+
+  // Renovação silenciosa
+  const remaining = exp - now;
+  if (remaining < RENEW_IF_LT) {
+    const newExp = now + COOKIE_MAX_AGE;
+    const newSig = await hmacSha256(LINK_KEY, String(newExp));
+    const refreshed = `${newExp}.${newSig}`;
+    response.headers.append("Set-Cookie", buildCookie(refreshed, COOKIE_MAX_AGE));
+  }
+
+  return response;
 };
 
-function lerCookies(str) {
+function parseCookies(str) {
   const out = {};
   str.split(";").forEach((p) => {
     const [k, v] = p.trim().split("=");
@@ -30,22 +57,27 @@ function lerCookies(str) {
   return out;
 }
 
-async function hmacSha256(chave, texto) {
-  const enc = new TextEncoder();
-  const key = await crypto.subtle.importKey(
-    "raw",
-    enc.encode(chave),
-    { name: "HMAC", hash: "SHA-256" },
-    false,
-    ["sign"]
-  );
-  const assinatura = await crypto.subtle.sign("HMAC", key, enc.encode(texto));
-  return Array.from(new Uint8Array(assinatura))
-    .map((b) => b.toString(16).padStart(2, "0"))
-    .join("");
+function buildCookie(value, maxAge) {
+  return [
+    `quiz_auth=${value}`,
+    "Path=/",
+    "HttpOnly",
+    "Secure",
+    "SameSite=Lax",
+    `Max-Age=${maxAge}`,
+  ].join("; ");
 }
 
-function negar(msg = "Acesso negado. Abra o quiz pelo botão dentro da plataforma.") {
+async function hmacSha256(secret, text) {
+  const enc = new TextEncoder();
+  const key = await crypto.subtle.importKey(
+    "raw", enc.encode(secret), { name: "HMAC", hash: "SHA-256" }, false, ["sign"]
+  );
+  const sig = await crypto.subtle.sign("HMAC", key, enc.encode(text));
+  return Array.from(new Uint8Array(sig)).map(b => b.toString(16).padStart(2, "0")).join("");
+}
+
+function deny(msg = "Acesso negado. Abra o quiz pelo botão dentro da plataforma.") {
   return new Response(
     `<!doctype html><meta charset="utf-8"><h1>${msg}</h1>`,
     { status: 403, headers: { "content-type": "text/html; charset=utf-8" } }
