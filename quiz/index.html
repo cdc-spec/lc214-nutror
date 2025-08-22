@@ -558,7 +558,7 @@
   // --- INICIALIZAÇÃO ---
   document.addEventListener('DOMContentLoaded', () => {
     // Carrega as questões (passou pelo guarda => já está autenticado via cookie)
-    fetch('questoes.json', { cache: 'no-store' })
+    fetch(new URL('questoes.json', window.location.href), { cache: 'no-store' })
       .then(response => {
         if (!response.ok) throw new Error('Erro ao carregar o arquivo de questões.');
         return response.json();
