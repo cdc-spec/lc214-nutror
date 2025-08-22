@@ -1,9 +1,21 @@
+# netlify.toml
+
 [build]
   functions = "netlify/functions"
-  edge_functions = "netlify/edge-functions"
+  # publish = "dist" # se usar build; caso o /quiz esteja na raiz, pode omitir.
 
+# Edge guardando todo o /quiz/*
 [[edge_functions]]
-  path = "/quiz/*"
-  function = "guarda"
+path = "/quiz/*"
+function = "guarda"
 
+[functions]
+  node_bundler = "esbuild"
 
+# Dicas de cabeçalhos de segurança (opcional e ajustável)
+[[headers]]
+  for = "/quiz/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
