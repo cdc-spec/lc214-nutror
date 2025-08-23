@@ -15,7 +15,7 @@
 # BLOQUEAR acesso público a qualquer coisa em /netlify/*
 [[redirects]]
   from = "/netlify/*"
-  to = "/404.html"
+  to = "/"
   status = 404
   force = true
 
@@ -28,3 +28,4 @@
 
 [functions]
   node_bundler = "esbuild"
+
