@@ -1,31 +1,31 @@
 [build]
   functions = "netlify/functions"
-  edge_functions = "netlify/edge-functions"  # ok manter explícito
+  edge_functions = "netlify/edge-functions"
 
-# Aplique a Edge "guarda" em /quiz (rota exata)...
+# Edge "guarda" em /quiz e /quiz/*
 [[edge_functions]]
   function = "guarda"
   path = "/quiz"
 
-# ...e também em tudo dentro de /quiz/*
 [[edge_functions]]
   function = "guarda"
   path = "/quiz/*"
 
-# BLOQUEAR acesso público a qualquer coisa em /netlify/*
+# (opcional) Se você tinha esse bloqueio, pode manter.
+# Ele só impede /netlify/*, que não vamos mais usar.
 [[redirects]]
   from = "/netlify/*"
   to = "/"
   status = 404
   force = true
 
-# ALIAS protegido: rota sob /quiz (envia o cookie mesmo com Path=/quiz)
+# Alias LIMPO: seu front pede /quiz/api/questoes,
+# e o Netlify entrega o arquivo estático sob /quiz/questoes.json
 [[redirects]]
   from = "/quiz/api/questoes"
-  to = "/.netlify/functions/questoes"
+  to = "/quiz/questoes.json"
   status = 200
   force = true
 
 [functions]
   node_bundler = "esbuild"
-
