@@ -558,7 +558,7 @@
   // --- INICIALIZAÇÃO ---
   document.addEventListener('DOMContentLoaded', () => {
     // Carrega as questões (passou pelo guarda => já está autenticado via cookie)
-    fetch('/.netlify/functions/questoes', { cache: 'no-store' })
+    fetch('/quiz/api/questoes', { cache: 'no-store' })
       .then(response => {
         if (!response.ok) throw new Error('Erro ao carregar o arquivo de questões.');
         return response.json();
