@@ -1,0 +1,219 @@
+[
+  {
+    "id": "LC214-001",
+    "question": "Considerando as disposições da Lei Complementar nº 214/2025 sobre o Comitê Gestor do Imposto sobre Bens e Serviços (CGIBS), é correto afirmar que este é uma",
+    "difficulty": "Fácil",
+    "format": "Direta",
+    "subtopic": "Comitê Gestor do IBS (CGIBS) - Natureza Jurídica",
+    "options": [
+      "autarquia federal de regime especial, vinculada hierarquicamente ao Ministério da Fazenda para fins de controle administrativo e orçamentário.",
+      "entidade pública com caráter técnico e operacional sob regime especial, dotado de independência técnica, administrativa, orçamentária e financeira.",
+      "fundação pública de direito privado, com autonomia técnica e administrativa, mas com dependência orçamentária e financeira da União.",
+      "sociedade de economia mista, com sede e foro no Distrito Federal, cuja atuação é caracterizada pela subordinação hierárquica ao Poder Executivo Federal.",
+      "consórcio público formado pelos Estados e Municípios, com atuação caracterizada pela tutela do Tribunal de Contas da União."
+    ],
+    "answer": 1,
+    "justifications": [
+      "Incorreta. Conforme o art. 480, § 1º, o CGIBS terá sua atuação caracterizada pela ausência de vinculação, tutela ou subordinação hierárquica a qualquer órgão da administração pública.",
+      "Correta. A alternativa descreve textualmente a natureza do CGIBS, conforme o art. 480, caput, da Lei Complementar, que o institui como uma entidade pública com caráter técnico e operacional sob regime especial, com sede e foro no Distrito Federal, dotado de independência técnica, administrativa, orçamentária e financeira.",
+      "Incorreta. O CGIBS não é uma fundação e sua independência é técnica, administrativa, orçamentária e financeira, conforme o art. 480, caput.",
+      "Incorreta. O CGIBS não é uma sociedade de economia mista e não possui subordinação hierárquica, de acordo com o art. 480, § 1º.",
+      "Incorreta. Trata-se de uma entidade pública sob regime especial (art. 480, caput), e não um consórcio. Além disso, a fiscalização pelo TCU se limita aos recursos da operação de crédito com a União, conforme o art. 484, § 6º."
+    ]
+  },
+  {
+    "id": "LC214-002",
+    "question": "A Lei Complementar nº 214/2025 estabelece prazos e condições para o ressarcimento de saldos credores de IBS e CBS. A esse respeito, considere:\n\nI. Os créditos de IBS e CBS apropriados em decorrência da aquisição de bens e serviços incorporados ao ativo imobilizado do contribuinte estão sujeitos ao prazo de apreciação de até 60 dias para o pedido de ressarcimento.\nII. A instauração de um procedimento de fiscalização relativo a um pedido de ressarcimento suspende os prazos de apreciação, não podendo tal procedimento estender-se por mais de 360 dias.\nIII. Na hipótese de a administração tributária não se manifestar sobre o pedido de ressarcimento nos prazos legais, o crédito deverá ser ressarcido ao contribuinte nos 15 dias subsequentes ao término do prazo.\nIV. Para os pedidos de ressarcimento que não se enquadrem nas hipóteses de prazo reduzido, como os de aquisição de ativo imobilizado, o prazo geral para apreciação pela autoridade competente será de até 120 dias contados da data da solicitação.\n\nEstá correto o que se afirma APENAS em",
+    "difficulty": "Média",
+    "format": "Assertiva",
+    "subtopic": "Ressarcimento de saldos credores",
+    "options": [
+      "I, II e IV.",
+      "II, III e IV.",
+      "I, II e III.",
+      "I e IV.",
+      "II e III."
+    ],
+    "answer": 2,
+    "justifications": [
+      "Incorreta. A assertiva IV está incorreta. O prazo geral, para os casos não contemplados no Art. 40, é de até 180 dias, e não 120, conforme o Art. 39, § 3º, III.",
+      "Incorreta. A assertiva IV está incorreta, conforme justificativa anterior.",
+      "Correta. A assertiva I está correta, pois a aquisição de ativo imobilizado é uma das hipóteses do Art. 40, I, que remete aos prazos reduzidos do Art. 39, § 3º, II (até 60 dias). A assertiva II está correta, pois descreve precisamente a suspensão do prazo e o limite de duração do procedimento de fiscalização, conforme Art. 39, §§ 5º e 6º. A assertiva III também está correta, reproduzindo a consequência do decurso de prazo sem manifestação, prevista no Art. 39, § 4º.",
+      "Incorreta. A assertiva IV está incorreta, conforme justificativa da alternativa A.",
+      "Incorreta. A assertiva I também está correta. O Art. 40, I, estabelece que aquisições de ativo imobilizado se enquadram nos prazos dos incisos I ou II do § 3º do art. 39 (30 ou 60 dias), tornando a assertiva I correta."
+    ]
+  },
+  {
+    "id": "LC214-003",
+    "question": "A sociedade empresária “Excelência em Gestão Ltda.”, contribuinte do IBS e da CBS no regime regular, realizou diversas aquisições durante o mês de apuração para a manutenção de suas atividades. Dentre elas, constam: a aquisição de dez novos notebooks para uso de seus consultores; a compra de um quadro de um artista renomado para decorar a sala de reuniões da diretoria; a aquisição de café, água e biscoitos para a copa dos funcionários; e a compra de diversas garrafas de vinho para servir em um evento de final de ano para clientes e colaboradores. Todos os fornecedores emitiram os devidos documentos fiscais eletrônicos.\nCom base na situação hipotética e nas regras de não cumulatividade da Lei Complementar nº 214/2025, a “Excelência em Gestão Ltda.” poderá apropriar créditos de IBS e CBS decorrentes da aquisição",
+    "difficulty": "Média",
+    "format": "Contexto",
+    "subtopic": "Vedações e permissões de crédito em bens e serviços (Uso ou Consumo Pessoal)",
+    "options": [
+      "de todos os itens mencionados, uma vez que foram adquiridos pela pessoa jurídica e destinados às suas atividades e relacionamentos comerciais.",
+      "apenas dos notebooks, por serem bens destinados à atividade econômica, e do quadro, por se tratar de um bem para o ambiente corporativo.",
+      "dos notebooks e dos itens de alimentação (café, água e biscoitos) para a copa dos funcionários.",
+      "apenas dos notebooks, pois os demais itens, incluindo a alimentação na copa, são considerados de uso ou consumo pessoal e, portanto, vedados ao creditamento.",
+      "dos notebooks, dos itens de alimentação para a copa e das garrafas de vinho, pois o evento de final de ano é uma despesa corporativa."
+    ],
+    "answer": 2,
+    "justifications": [
+      "Incorreta. O Art. 57 veda a apropriação de créditos sobre bens e serviços considerados de uso ou consumo pessoal, mesmo que adquiridos pela pessoa jurídica. Obras de arte (quadro) e bebidas alcoólicas (vinho)  estão expressamente listadas como de uso ou consumo pessoal no Art. 57, I.",
+      "Incorreta. Embora os notebooks gerem crédito, o quadro é considerado obra de arte e sua aquisição é classificada como de uso ou consumo pessoal, sendo vedada a apropriação de crédito, conforme o Art. 57, I, \"b\" , e § 5º.",
+      "Correta. Os notebooks são insumos da atividade e geram crédito. A alimentação e bebida não alcoólica disponibilizada no estabelecimento do contribuinte para seus empregados durante a jornada de trabalho não é considerada de uso ou consumo pessoal, constituindo uma exceção expressa no Art. 57, § 3º, IV, \"c\", o que permite a apropriação do crédito.",
+      "Incorreta. A alimentação para a copa dos funcionários é uma exceção à regra de uso e consumo pessoal, conforme Art. 57, § 3º, IV, \"c\", e, portanto, permite a apropriação de crédito.",
+      "Incorreta. A aquisição de bebidas alcoólicas é expressamente considerada de uso ou consumo pessoal pelo Art. 57, I, \"c\", sendo vedada a apropriação de créditos sobre essa despesa, independentemente de sua finalidade."
+    ]
+  },
+  {
+    "id": "LC214-004",
+    "question": "De acordo com as normas que regem a responsabilidade tributária das plataformas digitais na Lei Complementar nº 214/2025, no que tange ao IBS e à CBS,",
+    "difficulty": "Difícil",
+    "format": "Direta",
+    "subtopic": "Responsabilidade de Plataformas Digitais",
+    "options": [
+      "na hipótese em que o processo de pagamento da operação não seja iniciado pela plataforma digital, esta não será responsável tributária se cumprir com suas obrigações informacionais e o fornecedor emitir o correspondente documento fiscal eletrônico.",
+      "quando a plataforma for responsável por uma operação de um fornecedor não inscrito no cadastro, os débitos de IBS e CBS serão calculados com base nas regras do Simples Nacional, para simplificar a apuração.",
+      "caso a plataforma seja responsável solidária por débitos de um fornecedor residente no País, o cálculo dos tributos levará em conta as alíquotas de referência, desconsiderando-se os regimes diferenciados ou específicos aplicáveis aos bens e serviços da operação.",
+      "a plataforma digital é obrigada a apresentar informações sobre as operações intermediadas, exceto quando o fornecedor não for contribuinte do IBS e da CBS, hipótese em que a obrigação informacional é dispensada.",
+      "a plataforma digital pode optar por pagar o IBS e a CBS em nome do fornecedor, o que transfere para ela a totalidade da obrigação tributária, eximindo o fornecedor de responsabilidade por eventuais diferenças."
+    ],
+    "answer": 0,
+    "justifications": [
+      "Correta. A alternativa descreve com precisão a hipótese de exclusão de responsabilidade prevista no art. 22, § 8º, da LC 214/2025. ",
+      "Incorreta. O art. 22, § 10, II, estabelece que, nos casos em que o fornecedor não for inscrito, os débitos serão calculados pelas regras do regime regular, e não do Simples Nacional. ",
+      "Incorreta. O art. 22, § 10, I, determina que, sendo o fornecedor inscrito, a responsabilidade solidária da plataforma observará as regras tributárias a ele aplicáveis, o que inclui seus regimes diferenciados ou específicos, e não as alíquotas de referência de forma isolada. ",
+      "Incorreta. Conforme o art. 22, § 5º, a plataforma deve apresentar informações sobre as operações, inclusive identificando o fornecedor, ainda que este não seja contribuinte. ",
+      "Incorreta. O art. 22, § 12, II, permite que a plataforma opte por pagar os tributos, mas estabelece que a obrigação do fornecedor em relação a eventuais diferenças é mantida, não havendo eximição total de sua responsabilidade. "
+    ]
+  },
+  {
+    "id": "LC214-005",
+    "question": "A empresa \"Conecta Vendas S.A.\" opera um site que atua como intermediário em operações de venda, controlando a cobrança e a entrega dos produtos. Um dos seus vendedores, residente no país e contribuinte do IBS, efetua uma venda mas não emite o documento fiscal correspondente.\nConsiderando a situação descrita e as normas da Lei Complementar nº 214/2025,\n\nI. A \"Conecta Vendas S.A.\" é considerada uma plataforma digital para fins de responsabilidade tributária, pois controla elementos essenciais da operação.\nII. A plataforma responderá solidariamente com o vendedor pelo pagamento do IBS e da CBS devidos na operação.\nIII. A responsabilidade da plataforma seria afastada caso o processo de pagamento não tivesse sido iniciado por ela.\n\nEstá correto o que se afirma em",
+    "difficulty": "Fácil",
+    "format": "Contexto-Assertiva",
+    "subtopic": "Responsabilidade de Plataformas Digitais",
+    "options": [
+      "I, apenas.",
+      "III, apenas.",
+      "I e II, apenas.",
+      "II e III, apenas.",
+      "I, II e III."
+    ],
+    "answer": 2,
+    "justifications": {
+      "I": "Correta. A empresa se enquadra na definição de plataforma digital do art. 22, § 1º, pois atua como intermediária e controla elementos essenciais como a cobrança e a entrega. ",
+      "II": "Correta. Como o fornecedor é contribuinte residente no País e não registrou a operação em documento fiscal eletrônico, a plataforma tem responsabilidade solidária, conforme o art. 22, II. ",
+      "III": "Incorreta. Mesmo que o pagamento não fosse iniciado pela plataforma, sua responsabilidade solidária ainda existiria, pois o fato gerador da responsabilidade (vendedor contribuinte que não emitiu documento fiscal) ocorreu. A regra do art. 22, § 8º, que afasta a responsabilidade, exige que o fornecedor emita o documento fiscal, o que não aconteceu no caso. "
+    }
+  },
+  {
+    "id": "LC214-006",
+    "question": "A empresa \"Tecnologia do Amanhã Ltda.\" contratou um serviço de desenvolvimento de software a ser entregue em 60 dias. O pagamento foi acordado em duas parcelas iguais, uma no ato da contratação e outra 30 dias depois, ambas antes da entrega do serviço. Conforme a Lei Complementar nº 214/2025, no que tange ao momento de ocorrência do fato gerador e à exigibilidade do IBS e da CBS,",
+    "difficulty": "Média",
+    "format": "Contexto",
+    "subtopic": "Momento de Ocorrência do Fato Gerador",
+    "options": [
+      "o fato gerador ocorrerá integralmente na data do primeiro pagamento, devendo o valor total dos tributos ser recolhido nessa ocasião.",
+      "o fato gerador ocorrerá apenas na data da efetiva entrega do software, sendo irrelevantes os pagamentos antecipados para fins de apuração.",
+      "o contribuinte poderá optar por reconhecer o fato gerador na data de cada pagamento ou na data da entrega do serviço, conforme seu regime de competência.",
+      "o fato gerador considera-se ocorrido no momento do pagamento para a administração pública, devendo a empresa seguir a mesma regra.",
+      "serão exigidas antecipações dos tributos na data de pagamento de cada parcela, e na data do fornecimento do serviço, os valores definitivos dos tributos serão calculados sobre o valor total da operação."
+    ],
+    "answer": 4,
+    "justifications": [
+      "Incorreta. A lei não determina a ocorrência integral do fato gerador no primeiro pagamento antecipado, mas sim um regime de antecipações seguido de um cálculo definitivo.",
+      "Incorreta. Os pagamentos antecipados são relevantes e geram a obrigação de recolher antecipações dos tributos, conforme o Art. 10, § 4º, I, da LC 214/2025. ",
+      "Incorreta. A lei estabelece um procedimento obrigatório, não facultando ao contribuinte a escolha do momento de reconhecimento do fato gerador em caso de pagamento antecipado.",
+      "Incorreta. A regra do fato gerador ocorrendo no momento do pagamento é específica para aquisições pela administração pública direta, autarquias e fundações públicas (Art. 10, § 2º) , não se aplicando ao caso de uma empresa privada.",
+      "Correta. A alternativa descreve com exatidão o procedimento estabelecido no Art. 10, § 4º, da LC 214/2025 para pagamentos que ocorrem antes do fornecimento, prevendo antecipações em cada parcela paga e o cálculo definitivo na data do fornecimento ."
+    ]
+  },
+  {
+    "id": "LC214-007",
+    "question": "No que tange às normas gerais do IBS e da CBS, a Lei Complementar nº 214/2025 estabelece que",
+    "difficulty": "Média",
+    "format": "Direta",
+    "subtopic": "Princípios e Caracterização das Operações",
+    "options": [
+      "o princípio da neutralidade veda a criação de quaisquer regimes diferenciados, ainda que previstos na Constituição Federal, para não distorcer as decisões de consumo.",
+      "a validade jurídica e os efeitos dos atos ou negócios jurídicos praticados pelo contribuinte são condições essenciais para a caracterização das operações tributáveis.",
+      "o cumprimento de exigências legais, regulamentares ou administrativas, por parte do fornecedor, é condição indispensável para a incidência do IBS e da CBS.",
+      "o IBS e a CBS são informados pelo princípio da neutralidade e, para a caracterização de suas hipóteses de incidência, é irrelevante a obtenção de lucro com a operação.",
+      "o princípio da neutralidade exige que a base de cálculo seja sempre o valor de mercado da operação, inclusive naquelas realizadas entre partes não relacionadas."
+    ],
+    "answer": 3,
+    "justifications": [
+      "Incorreta. O Art. 2º da LC 214/2025, ao apresentar o princípio da neutralidade, ressalva expressamente as exceções previstas na Constituição Federal e na própria Lei Complementar, que incluem os regimes diferenciados. ",
+      "Incorreta. O Art. 4º, § 3º, II, da LC 214/2025 estabelece que a validade jurídica e os efeitos dos atos ou negócios jurídicos são irrelevantes para a caracterização das operações tributáveis. ",
+      "Incorreta. O Art. 4º, § 3º, IV, da LC 214/2025 determina que o cumprimento de exigências legais, regulamentares ou administrativas é irrelevante para a caracterização das operações. ",
+      "Correta. A alternativa sintetiza perfeitamente o disposto no Art. 2º, que institui o princípio da neutralidade, e no Art. 4º, § 3º, III, que afirma ser irrelevante a obtenção de lucro para a caracterização da operação.",
+      "Incorreta. A exigência de que a base de cálculo seja o valor de mercado é uma regra específica para certas situações, como operações entre partes relacionadas (Art. 12, § 4º), e não uma exigência geral do princípio da neutralidade para todas as operações."
+    ]
+  },
+  {
+    "id": "LC214-008",
+    "question": "A empresa Clima Perfeito Ltda. vendeu um sistema de ar-condicionado central para um escritório, e no mesmo contrato, com preço único, incluiu o serviço de instalação, que é uma condição necessária para o funcionamento do equipamento. O sistema de ar-condicionado (bem) está sujeito à alíquota-padrão, enquanto o serviço de instalação, se contratado separadamente, teria uma alíquota reduzida por um regime diferenciado. De acordo com a Lei Complementar nº 214/2025,",
+    "difficulty": "Média",
+    "format": "Contexto",
+    "subtopic": "Fornecimento Conjunto de Bens e Serviços",
+    "options": [
+      "considerar-se-á haver fornecimento único, aplicando-se a ele o tratamento tributário correspondente ao fornecimento principal, que é o bem.",
+      "a empresa será obrigada a especificar o valor de cada fornecimento no documento fiscal, aplicando a respectiva alíquota a cada um.",
+      "a base de cálculo correspondente a cada fornecimento, do bem e do serviço, será arbitrada pela administração tributária por se tratar de cobrança unificada.",
+      "o tratamento tributário aplicável a toda a operação será o do serviço, por ser este a parte que completa o fornecimento.",
+      "a operação será considerada isenta de IBS e CBS, por haver conflito de regras de tributação no mesmo fornecimento."
+    ],
+    "answer": 0,
+    "justifications": [
+      "Correta. O cenário se enquadra na exceção prevista no Art. 7º, II, da LC 214/2025. Como o serviço de instalação pode ser considerado acessório ao fornecimento do bem (sendo condição para o fornecimento principal, conforme § 2º do mesmo artigo), haverá um fornecimento único, ao qual se aplicará o tratamento tributário do bem, que é o principal.",
+      "Incorreta. A obrigação de especificação é a regra geral do Art. 7º, caput, mas a situação descrita se enquadra na exceção do inciso II (fornecimento principal e acessório), que dispensa essa obrigatoriedade. ",
+      "Incorreta. O arbitramento da base de cálculo, previsto no Art. 7º, § 3º, ocorre quando a cobrança unificada é feita em desacordo com a lei, o que não é o caso aqui, pois a situação está amparada pela exceção do fornecimento principal e acessório.",
+      "Incorreta. A lei define como principal o fornecimento que é o objeto central da operação, e o acessório como aquele que é condição ou meio para o principal. Neste caso, a venda do equipamento é o principal, e a instalação, o acessório.",
+      "Incorreta. Não há previsão legal para isenção em caso de fornecimentos conjuntos com tratamentos tributários distintos. A lei, ao contrário, estabelece as regras para solucionar essa situação."
+    ]
+  },
+  {
+    "id": "LC214-009",
+    "question": "Um Município, visando aumentar sua arrecadação, constrói e passa a explorar comercialmente um grande edifício-garagem em uma área turística, cobrando tarifas dos usuários em valores compatíveis com os de mercado e concorrendo com estacionamentos privados. Ao ser questionado pela administração tributária, o Município alega que a receita auferida está amparada pela imunidade tributária recíproca. Conforme as disposições da Lei Complementar nº 214/2025,",
+    "difficulty": "Difícil",
+    "format": "Contexto",
+    "subtopic": "Limites da Imunidade dos Entes Públicos",
+    "options": [
+      "a imunidade é total e incondicionada, aplicando-se a todas as operações realizadas pelo Município, por ser ele pessoa jurídica de direito público.",
+      "a imunidade não se aplica, pois a exploração de atividade econômica regida pelas normas aplicáveis a empreendimentos privados, com contraprestação ou pagamento de tarifas pelo usuário, afasta o benefício.",
+      "a imunidade se aplica, desde que o lucro auferido seja revertido para as finalidades essenciais do Município, como saúde e educação.",
+      "a imunidade se aplica parcialmente, devendo o IBS ser calculado com uma redução de 50% sobre a alíquota-padrão, por se tratar de serviço público.",
+      "a operação é considerada uma hipótese de não incidência, e não de imunidade, não gerando direito a crédito nas aquisições relacionadas."
+    ],
+    "answer": 1,
+    "justifications": [
+      "Incorreta. A imunidade dos entes públicos, embora prevista no Art. 9º, I, não é incondicionada, possuindo limitações expressas em seu § 1º.",
+      "Correta. A alternativa reflete a exata limitação imposta pelo Art. 9º, § 1º, II, da LC 214/2025, que afasta a imunidade das operações relacionadas à exploração de atividades econômicas regidas por normas de direito privado ou em que haja contraprestação ou tarifa paga pelo usuário. ",
+      "Incorreta. A legislação não estabelece a destinação do lucro como critério para aplicação da imunidade. O critério determinante é a natureza da atividade explorada, se é finalidade essencial ou atividade econômica concorrencial.",
+      "Incorreta. Não há previsão na lei para aplicação parcial da imunidade ou para redução de alíquota nesta situação. A regra é clara: ou a operação é imune, ou é tributada normalmente.",
+      "Incorreta. A tributação de entes públicos é tratada no capítulo das imunidades (Art. 9º), e não no de não incidência (Art. 6º). A confusão entre os institutos torna a alternativa errada."
+    ]
+  },
+  {
+    "id": "LC214-010",
+    "question": "Considerando as hipóteses de incidência do IBS e da CBS, previstas na Lei Complementar nº 214/2025, analise as afirmativas abaixo.\n\nI. A incidência dos tributos abrange operações onerosas como locação, dação em pagamento e arrendamento mercantil.\nII. O IBS e a CBS incidem sobre operações com bens do ativo não circulante do contribuinte.\nIII. A incidência do IBS e da CBS sobre uma operação de transmissão de bem imóvel altera a base de cálculo do ITBI.\nIV. A incidência dos tributos depende do título jurídico pelo qual o bem se encontra na posse do fornecedor.\n\nEstá correto o que se afirma APENAS em",
+    "difficulty": "Média",
+    "format": "Assertiva",
+    "subtopic": "Hipóteses de Incidência do IBS e da CBS",
+    "options": [
+      "I e II.",
+      "II e IV.",
+      "I e III.",
+      "III e IV.",
+      "I, II e III."
+    ],
+    "answer": 0,
+    "justifications": {
+      "I": "Correta. A afirmativa está de acordo com o Art. 4º, § 2º, que exemplifica como operações onerosas, entre outras, a dação em pagamento (inciso I), a locação (inciso II) e o arrendamento, inclusive mercantil (inciso VII).",
+      "II": "Correta. A afirmativa reflete o disposto no Art. 4º, § 4º, da LC 214/2025, que estabelece a incidência dos tributos sobre qualquer operação realizada pelo contribuinte, incluindo aquelas realizadas com ativo não circulante. ",
+      "III": "Incorreta. O Art. 4º, § 5º, II, da LC 214/2025 veda expressamente que a incidência do IBS e da CBS altere a base de cálculo do Imposto sobre a Transmissão Inter Vivos de Bens Imóveis (ITBI). ",
+      "IV": "Incorreta. A afirmativa contraria o Art. 4º, § 3º, I, da LC 214/2025, que determina ser irrelevante, para a caracterização das operações, o título jurídico pelo qual o bem se encontra na posse do fornecedor. "
+    }
+  }
+]
