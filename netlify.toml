@@ -1,14 +1,16 @@
 [build]
   functions = "netlify/functions"
+  edge_functions = "netlify/edge-functions"  # opcional; este já é o padrão
 
-# APLIQUE o guarda tanto em /quiz QUANTO em /quiz/*
+# Aplique a Edge Function "guarda" na rota exata /quiz
 [[edge_functions]]
-function = "guarda"
-path = "/quiz"
+  function = "guarda"
+  path = "/quiz"
 
+# ...e em todos os recursos dentro de /quiz/*
 [[edge_functions]]
-function = "guarda"
-path = "/quiz/*"
+  function = "guarda"
+  path = "/quiz/*"
 
 [functions]
   node_bundler = "esbuild"
