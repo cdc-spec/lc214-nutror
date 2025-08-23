@@ -1,16 +1,30 @@
 [build]
   functions = "netlify/functions"
-  edge_functions = "netlify/edge-functions"  # opcional; este já é o padrão
+  edge_functions = "netlify/edge-functions"  # ok manter explícito
 
-# Aplique a Edge Function "guarda" na rota exata /quiz
+# Aplique a Edge "guarda" em /quiz (rota exata)...
 [[edge_functions]]
   function = "guarda"
   path = "/quiz"
 
-# ...e em todos os recursos dentro de /quiz/*
+# ...e também em tudo dentro de /quiz/*
 [[edge_functions]]
   function = "guarda"
   path = "/quiz/*"
+
+# BLOQUEAR acesso público a qualquer coisa em /netlify/*
+[[redirects]]
+  from = "/netlify/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
+# ALIAS protegido: rota sob /quiz (envia o cookie mesmo com Path=/quiz)
+[[redirects]]
+  from = "/quiz/api/questoes"
+  to = "/.netlify/functions/questoes"
+  status = 200
+  force = true
 
 [functions]
   node_bundler = "esbuild"
