@@ -67,6 +67,27 @@
                     <div class="flex items-center"><input id="mode-treino" name="quizMode" type="radio" value="treino" class="w-5 h-5 text-blue-600"><label for="mode-treino" class="ml-2 font-medium">Modo Treino (uma questão por vez)</label></div>
                 </div>
             </div>
+            <div class="mb-6">
+    <h2 class="text-xl font-semibold mb-3 text-gray-700 dark:text-gray-300 border-b border-gray-300 dark:border-gray-600 pb-2">Seleção de Questões</h2>
+    <div id="essencia-filter" class="flex flex-col gap-y-3 sm:flex-row sm:gap-x-6">
+        <div class="flex items-center">
+            <input id="filter-mode-padrao" name="questionFilterMode" type="radio" value="padrao" checked class="w-5 h-5 text-blue-600">
+            <label for="filter-mode-padrao" class="ml-2 font-medium">Usar Filtros Padrão (Assunto, etc.)</label>
+        </div>
+        <div class="flex items-center">
+            <input id="filter-mode-essencia-nucleo" name="questionFilterMode" type="radio" value="essencia_nucleo" class="w-5 h-5 text-blue-600">
+            <label for="filter-mode-essencia-nucleo" class="ml-2 font-medium">Essência da Lei - Núcleo (30 Q)</label>
+        </div>
+        <div class="flex items-center">
+            <input id="filter-mode-essencia-extra" name="questionFilterMode" type="radio" value="essencia_extra" class="w-5 h-5 text-blue-600">
+            <label for="filter-mode-essencia-extra" class="ml-2 font-medium">Essência da Lei - Extra (20 Q)</label>
+        </div>
+        <div class="flex items-center">
+            <input id="filter-mode-essencia-completo" name="questionFilterMode" type="radio" value="essencia_completo" class="w-5 h-5 text-blue-600">
+            <label for="filter-mode-essencia-completo" class="ml-2 font-medium">Essência da Lei - Completo (50 Q)</label>
+        </div>
+    </div>
+</div>
 
             <div id="filters-container">
                 <div class="mb-6">
@@ -129,6 +150,7 @@
     <script>
         // --- BANCO DE QUESTÕES (Será carregado do JSON) ---
         let allQuestions = [];
+let essenciaIds = { Padrão: [], Extra: [] };
 
         // --- ELEMENTOS DA PÁGINA (DOM) ---
         const appContainer = document.getElementById('app-container');
@@ -164,6 +186,8 @@
         const themeToggle = document.getElementById('theme-toggle');
         const darkIcon = document.getElementById('theme-toggle-dark-icon');
         const lightIcon = document.getElementById('theme-toggle-light-icon');
+const questionFilterModeRadios = document.querySelectorAll('input[name="questionFilterMode"]');
+const essenciaFilterContainer = document.getElementById('essencia-filter'); // Container dos radios Essência
 
         let filteredQuestions = [];
         let userAnswers = [];
@@ -259,45 +283,83 @@
         }
 
         function startQuiz() {
-            const searchTerm = searchInput.value.trim();
-            quizMode = document.querySelector('input[name="quizMode"]:checked').value;
-            let questionsPool = [];
+    quizMode = document.querySelector('input[name="quizMode"]:checked').value;
+    const selectedFilterMode = document.querySelector('input[name="questionFilterMode"]:checked').value;
+    const isEssenciaMode = selectedFilterMode.startsWith('essencia_');
 
-            if (searchTerm) {
-                const searchId = `LC214-${searchTerm.padStart(3, '0')}`;
-                questionsPool = allQuestions.filter(q => q.id === searchId);
-            } else {
-                const selectedDifficulties = [...document.querySelectorAll('input[name="difficulty"]:checked')].map(cb => cb.value);
-                const selectedFormats = [...document.querySelectorAll('input[name="format"]:checked')].map(cb => cb.value);
-                const selectedSubtopics = [...document.querySelectorAll('input[name="subtopic"]:checked')].map(cb => cb.value);
-                questionsPool = allQuestions.filter(q => 
-                    (selectedDifficulties.includes('Todos') || selectedDifficulties.includes(q.difficulty)) &&
-                    (selectedFormats.includes('Todos') || selectedFormats.includes(q.format)) &&
-                    (selectedSubtopics.includes('Todos') || selectedSubtopics.includes(q.subtopic))
-                );
-            }
+    let questionsPool = [];
 
-            const limit = parseInt(quantityLimitInput.value, 10);
-            if (!isNaN(limit) && limit > 0 && limit < questionsPool.length) {
-                filteredQuestions = shuffleArray([...questionsPool]).slice(0, limit);
-            } else {
-                filteredQuestions = questionsPool;
-            }
+    // Limpa erro anterior
+    filterError.classList.add('hidden');
 
-            if (filteredQuestions.length > 0) {
-                userAnswers = new Array(filteredQuestions.length).fill(-1);
-                answeredInTreino = new Array(filteredQuestions.length).fill(false);
-                filterError.classList.add('hidden');
-                setupScreen.classList.add('hidden');
-                quizScreen.classList.remove('hidden');
-                currentQuestionIndex = 0;
-                score = 0;
-                renderQuestion();
-                window.scrollTo(0, 0);
-            } else {
-                filterError.classList.remove('hidden');
-            }
+    if (isEssenciaMode) {
+        // --- Lógica para Filtro Essência da Lei ---
+        let idsToUse = [];
+        if (selectedFilterMode === 'essencia_nucleo') {
+            idsToUse = essenciaIds.Padrão || [];
+        } else if (selectedFilterMode === 'essencia_extra') {
+            idsToUse = essenciaIds.Extra || [];
+        } else if (selectedFilterMode === 'essencia_completo') {
+            idsToUse = [...(essenciaIds.Padrão || []), ...(essenciaIds.Extra || [])];
+            // Remove duplicados se houver (não esperado, mas seguro)
+            idsToUse = [...new Set(idsToUse)];
         }
+
+        // Filtra as questões com base nos IDs selecionados
+        questionsPool = allQuestions.filter(q => idsToUse.includes(q.id));
+
+        // Garante a quantidade exata (caso algum ID não seja encontrado no allQuestions)
+        if (questionsPool.length !== idsToUse.length) {
+             console.warn("Alguns IDs do conjunto Essência não foram encontrados em questoes.json");
+        }
+
+         // Define filteredQuestions diretamente, sem limite de quantidade
+         filteredQuestions = shuffleArray([...questionsPool]); // Mantém o shuffle, remova se não quiser embaralhar
+
+    } else {
+        // --- Lógica Original para Filtros Padrão ou Busca por ID ---
+        const searchTerm = searchInput.value.trim();
+
+        if (searchTerm) {
+            const searchId = `LC214-${searchTerm.padStart(3, '0')}`;
+            questionsPool = allQuestions.filter(q => q.id === searchId);
+        } else {
+            const selectedDifficulties = [...document.querySelectorAll('input[name="difficulty"]:checked')].map(cb => cb.value);
+            const selectedFormats = [...document.querySelectorAll('input[name="format"]:checked')].map(cb => cb.value);
+            const selectedSubtopics = [...document.querySelectorAll('input[name="subtopic"]:checked')].map(cb => cb.value);
+            questionsPool = allQuestions.filter(q =>
+                (selectedDifficulties.includes('Todos') || selectedDifficulties.includes(q.difficulty)) &&
+                (selectedFormats.includes('Todos') || selectedFormats.includes(q.format)) &&
+                (selectedSubtopics.includes('Todos') || selectedSubtopics.includes(q.subtopic))
+            );
+        }
+
+        // Aplica limite de quantidade APENAS se não for busca por ID e o limite for válido
+         const limit = parseInt(quantityLimitInput.value, 10);
+         if (!searchTerm && !isNaN(limit) && limit > 0 && limit < questionsPool.length) {
+             filteredQuestions = shuffleArray([...questionsPool]).slice(0, limit);
+         } else {
+             filteredQuestions = shuffleArray([...questionsPool]); // Usa todas (ou a única encontrada por ID)
+         }
+    }
+
+    // --- Lógica Comum para Iniciar o Quiz ---
+    if (filteredQuestions.length > 0) {
+        userAnswers = new Array(filteredQuestions.length).fill(-1);
+        answeredInTreino = new Array(filteredQuestions.length).fill(false);
+        // filterError já foi escondido
+        setupScreen.classList.add('hidden');
+        quizScreen.classList.remove('hidden');
+        currentQuestionIndex = 0;
+        score = 0;
+        renderQuestion();
+        window.scrollTo(0, 0);
+    } else {
+        // Se, mesmo com os filtros, nenhuma questão for encontrada
+        filteredCountDisplay.textContent = '0 questões encontradas'; // Atualiza contador para zero
+        filterError.classList.remove('hidden'); // Mostra a mensagem de erro padrão
+    }
+}
         
         function renderQuestion() {
             quizContainer.innerHTML = createQuestionHTML(filteredQuestions[currentQuestionIndex], currentQuestionIndex);
@@ -567,26 +629,41 @@
         // --- INICIALIZAÇÃO E EVENTOS ---
         
         document.addEventListener('DOMContentLoaded', () => {
-            fetch('questoes.json')
-                .then(response => {
-                    if (!response.ok) { throw new Error('Erro ao carregar o arquivo de questões.'); }
-                    return response.json();
-                })
-                .then(data => {
-                    allQuestions = data;
-                    loadingScreen.classList.add('hidden');
-                    setupScreen.classList.remove('hidden');
-                    setupInitialTheme();
-                    populateFilters();
-                })
-                .catch(error => {
-                    console.error('Erro:', error);
-                    loadingMessage.innerHTML = `<div class="text-red-500">
-                        <h1 class="text-2xl font-bold">Erro Crítico</h1>
-                        <p>Não foi possível carregar o arquivo <strong>questoes.json</strong>. Verifique se o arquivo está na mesma pasta que o <strong>index.html</strong>.</p>
-                    </div>`;
-                });
-        });
+    Promise.all([
+        fetch('questoes.json').then(response => {
+            if (!response.ok) { throw new Error('Erro ao carregar questoes.json.'); }
+            return response.json();
+        }),
+        fetch('essencia.json').then(response => {
+            if (!response.ok) { throw new Error('Erro ao carregar essencia.json.'); }
+            return response.json();
+        })
+    ])
+    .then(([questionsData, essenciaData]) => {
+        allQuestions = questionsData;
+        essenciaIds = essenciaData; // Guarda os IDs carregados
+
+        loadingScreen.classList.add('hidden');
+        setupScreen.classList.remove('hidden');
+        setupInitialTheme();
+        populateFilters();
+        toggleFilterModeUI(); // Chama a função para ajustar a UI inicial
+    })
+    .catch(error => {
+        console.error('Erro no carregamento:', error);
+        let errorMessage = `<div class="text-red-500">
+            <h1 class="text-2xl font-bold">Erro Crítico</h1>`;
+        if (error.message.includes('questoes.json')) {
+            errorMessage += `<p>Não foi possível carregar o arquivo <strong>questoes.json</strong>. Verifique se o arquivo está na mesma pasta que o <strong>index.html</strong> e se o JSON é válido.</p>`;
+        } else if (error.message.includes('essencia.json')) {
+            errorMessage += `<p>Não foi possível carregar o arquivo <strong>essencia.json</strong>. Verifique se o arquivo está na mesma pasta que o <strong>index.html</strong> e se o JSON é válido (contendo as chaves "Padrão" e "Extra" com listas de IDs).</p>`;
+        } else {
+             errorMessage += `<p>Ocorreu um erro inesperado durante o carregamento. Detalhes: ${error.message}</p>`;
+        }
+         errorMessage += `</div>`;
+        loadingMessage.innerHTML = errorMessage;
+    });
+});
 
         startQuizBtn.addEventListener('click', startQuiz);
         restartQuizBtn.addEventListener('click', resetQuiz);
@@ -618,6 +695,57 @@
                 }
             }
         });
+// Função para habilitar/desabilitar filtros com base na seleção Essência/Padrão
+function toggleFilterModeUI() {
+    const selectedMode = document.querySelector('input[name="questionFilterMode"]:checked').value;
+    const isEssenciaMode = selectedMode.startsWith('essencia_');
+
+    // Elementos a serem desabilitados no modo Essência
+    const elementsToToggle = [filtersContainer, quantityLimitInput, searchInput];
+
+    elementsToToggle.forEach(el => {
+        if (el) { // Verifica se o elemento existe
+            el.disabled = isEssenciaMode;
+            if (isEssenciaMode) {
+                el.classList.add('opacity-50', 'pointer-events-none');
+                 // Limpa campos de input quando desabilitados
+                if (el.tagName === 'INPUT') {
+                     //el.value = ''; // Opcional: Limpar ao selecionar Essência
+                }
+            } else {
+                el.classList.remove('opacity-50', 'pointer-events-none');
+            }
+             // Garante que o container de filtros volte a ser block se habilitado
+             if (el === filtersContainer && !isEssenciaMode) {
+                el.style.display = 'block';
+             } else if (el === filtersContainer && isEssenciaMode) {
+                 el.style.display = 'none'; // Esconde os filtros
+             }
+        }
+    });
+
+    // Atualiza a contagem exibida
+    if (isEssenciaMode) {
+         let count = 0;
+         if (selectedMode === 'essencia_nucleo' && essenciaIds.Padrão) {
+             count = essenciaIds.Padrão.length;
+         } else if (selectedMode === 'essencia_extra' && essenciaIds.Extra) {
+             count = essenciaIds.Extra.length;
+         } else if (selectedMode === 'essencia_completo' && essenciaIds.Padrão && essenciaIds.Extra) {
+             // Conta IDs únicos caso haja sobreposição, embora não esperado aqui
+             const combinedIds = new Set([...essenciaIds.Padrão, ...essenciaIds.Extra]);
+             count = combinedIds.size;
+         }
+         filteredCountDisplay.textContent = `${count} questões selecionadas (Essência)`;
+         filterError.classList.add('hidden'); // Esconde erro de filtro padrão
+    } else {
+         updateFilteredCount(); // Usa a função original para filtros padrão
+    }
+}
+// Adiciona listeners para os radios de modo de filtro (Padrão vs Essência)
+questionFilterModeRadios.forEach(radio => {
+    radio.addEventListener('change', toggleFilterModeUI);
+});
     </script>
 </body>
 </html>
