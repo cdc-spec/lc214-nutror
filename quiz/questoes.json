@@ -174,7 +174,7 @@
   },
   {
     "id": "LC214-009",
-    "question": "Um Município, visando aumentar sua arrecadação, constrói e passa a explorar comercialmente um grande edifício-garagem em uma área turística, cobrando tarifas dos usuários em valores compatíveis com os de mercado e concorrendo com estacionamentos privados. Ao ser questionado pela administração tributária, o Município alega que a receita auferida está amparada pela imunidade tributária recíproca. Conforme as disposições da Lei Complementar nº 214/2025,",
+    "question": "Um Município constitui uma empresa pública para construir e explorar comercialmente um grande edifício-garagem em uma área turística, cobrando tarifas dos usuários em valores compatíveis com os de mercado e concorrendo com estacionamentos privados. Ao ser questionada pela administração tributária, a empresa pública alega que a receita auferida está amparada pela imunidade tributária recíproca. Conforme as disposições da Lei Complementar nº 214/2025,",
     "difficulty": "Difícil",
     "format": "Contexto",
     "subtopic": "Princípios, Conceitos e Incidência",
@@ -802,11 +802,11 @@
     "format": "Contexto",
     "subtopic": "Não Cumulatividade e Créditos",
     "options": [
-      "de todos os itens mencionados, uma vez que foram adquiridos pela pessoa jurídica e destinados às suas atividades e relacionamentos comerciais.",
-      "apenas dos notebooks, por serem bens destinados à atividade econômica, e do quadro, por se tratar de um bem para o ambiente corporativo.",
-      "dos notebooks e dos itens de alimentação (café, água e biscoitos) para a copa dos funcionários.",
-      "apenas dos notebooks, pois os demais itens, incluindo a alimentação na copa, são considerados de uso ou consumo pessoal e, portanto, vedados ao creditamento.",
-      "dos notebooks, dos itens de alimentação para a copa e das garrafas de vinho, pois o evento de final de ano é uma despesa corporativa."
+      "de todos os itens mencionados.",
+      "dos notebooks e do quadro.",
+      "dos notebooks e dos itens de alimentação para a copa dos funcionários.",
+      "apenas dos notebooks.",
+      "dos notebooks, dos itens de alimentação para a copa e das garrafas de vinho."
     ],
     "answer": 2,
     "justifications": [
