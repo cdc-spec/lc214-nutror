@@ -150,7 +150,7 @@
     <script>
         // --- BANCO DE QUESTÕES (Será carregado do JSON) ---
         let allQuestions = [];
-let essenciaIds = { Padrão: [], Extra: [] };
+        let essenciaIds = { Padrão: [], Extra: [] };
 
         // --- ELEMENTOS DA PÁGINA (DOM) ---
         const appContainer = document.getElementById('app-container');
@@ -186,8 +186,8 @@ let essenciaIds = { Padrão: [], Extra: [] };
         const themeToggle = document.getElementById('theme-toggle');
         const darkIcon = document.getElementById('theme-toggle-dark-icon');
         const lightIcon = document.getElementById('theme-toggle-light-icon');
-const questionFilterModeRadios = document.querySelectorAll('input[name="questionFilterMode"]');
-const essenciaFilterContainer = document.getElementById('essencia-filter'); // Container dos radios Essência
+        const questionFilterModeRadios = document.querySelectorAll('input[name="questionFilterMode"]');
+        const essenciaFilterContainer = document.getElementById('essencia-filter'); // Container dos radios Essência
 
         let filteredQuestions = [];
         let userAnswers = [];
@@ -337,9 +337,9 @@ const essenciaFilterContainer = document.getElementById('essencia-filter'); // C
         // Aplica limite de quantidade APENAS se não for busca por ID e o limite for válido
          const limit = parseInt(quantityLimitInput.value, 10);
          if (!searchTerm && !isNaN(limit) && limit > 0 && limit < questionsPool.length) {
-             filteredQuestions = shuffleArray([...questionsPool]).slice(0, limit);
+             filteredQuestions = questionsPool.slice(0, limit);
          } else {
-             filteredQuestions = shuffleArray([...questionsPool]); // Usa todas (ou a única encontrada por ID)
+             filteredQuestions = [...questionsPool]; // Usa todas (ou a única encontrada por ID)
          }
     }
 
