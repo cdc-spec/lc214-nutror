@@ -1,31 +1,10 @@
 [build]
+  # Define onde estão as funções normais e as edge functions
   functions = "netlify/functions"
   edge_functions = "netlify/edge-functions"
 
-# Edge "guarda" em /quiz e /quiz/*
-[[edge_functions]]
-  function = "guarda"
-  path = "/quiz"
-
+# Esta regra aplica a função 'guarda' a todos os acessos à pasta /quiz/
+# O '*' garante que tanto /quiz/ quanto /quiz/index.html sejam protegidos.
 [[edge_functions]]
   function = "guarda"
   path = "/quiz/*"
-
-# (opcional) Se você tinha esse bloqueio, pode manter.
-# Ele só impede /netlify/*, que não vamos mais usar.
-[[redirects]]
-  from = "/netlify/*"
-  to = "/"
-  status = 404
-  force = true
-
-# Alias LIMPO: seu front pede /quiz/api/questoes,
-# e o Netlify entrega o arquivo estático sob /quiz/questoes.json
-[[redirects]]
-  from = "/quiz/api/questoes"
-  to = "/quiz/questoes.json"
-  status = 200
-  force = true
-
-[functions]
-  node_bundler = "esbuild"
