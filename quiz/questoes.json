@@ -4830,5 +4830,93 @@
       "Incorreta. O direito ao crédito presumido pela aquisição de produtor rural é do \"contribuinte de IBS e de CBS sujeito ao regime regular\" (Art. 168, caput) , não sendo restrito a cooperativas.",
       "Correta. A alternativa aplica corretamente as duas regras distintas. O crédito do produtor rural (Art. 168, § 8º) permite o ressarcimento: \"Os créditos presumidos [...] poderão ser utilizados para dedução, [...] permitido o ressarcimento...\" . Já o crédito do transportador autônomo (Art. 169, § 7º) é restrito: \"Os créditos presumidos [...] somente poderão ser utilizados para dedução, respectivamente, do valor do IBS e da CBS devidos pelo contribuinte\" , não mencionando η permissão de ressarcimento."
     ]
-  }
+  },
+  {
+    "id": "LC214-225",
+    "question": "A \"Engenharia & Projetos S.A.\", contribuinte do IBS e da CBS, com sede em Belo Horizonte-MG, foi contratada para duas atividades distintas no mês de agosto:\n1. Prestou um serviço de engenharia estrutural diretamente relacionado a um bem imóvel (um edifício comercial) localizado em Salvador-BA.\n2. Adquiriu, de uma galeria de arte, uma escultura (obra de arte) para decorar a sala de seu diretor presidente, registrando-a em seu ativo não circulante.\nConsiderando esse cenário e as disposições da Lei Complementar nº 214/2025:\n\nI. O local da operação referente ao serviço de engenharia estrutural é considerado Belo Horizonte-MG, domicílio do fornecedor.\nII. A empresa poderá apropriar integralmente os créditos de IBS e CBS decorrentes da aquisição da escultura, por se tratar de um bem do ativo não circulante.\nIII. O serviço de engenharia prestado está sujeito ao regime diferenciado que reduz as alíquotas do IBS e da CBS em 60% (sessenta por cento).\n\nEstá correto o que se afirma APENAS em",
+    "difficulty": "Média",
+    "format": "Contexto-Assertiva",
+    "subtopic": "Misto (Princípios, Conceitos e Incidência / Não Cumulatividade e Créditos / Alíquotas e Regras de Arrecadação)",
+    "options": [
+      "I.",
+      "II.",
+      "III.",
+      "I e II.",
+      "Nenhum dos itens."
+    ],
+    "answer": 4,
+    "justifications": [
+      "Incorreta. O item I está incorreto.",
+      "Incorreta. O item II está incorreto.",
+      "Incorreta. O item III está incorreto.",
+      "Incorreta. Os itens I e II estão incorretos.",
+      "Correta. Nenhum dos itens está correto, pelas seguintes razões:\nI (Incorreto): O local da operação de serviços relacionados a bem imóvel é o local onde o imóvel estiver situado . Portanto, o local é Salvador-BA, e não Belo Horizonte-MG. (Art. 11, II).\nII (Incorreto): A aquisição de obras de arte é considerada de uso ou consumo pessoal , sendo expressamente vedada a apropriação de créditos de IBS e CBS sobre ela . (Art. 57, I, 'b', e Art. 57, § 5º).\nIII (Incorreto): Os serviços de engenharia estão listados no regime diferenciado que prevê redução de 30% (trinta por cento) , e não de 60% (sessenta por cento) . (Art. 127, XI)."
+    ]
+  },
+  {
+    "id": "LC214-226",
+    "question": "Considerando as regras de sujeição passiva e responsabilidade tributária do IBS, da CBS e do Imposto Seletivo (IS) na Lei Complementar nº 214/2025, é correto afirmar que",
+    "difficulty": "Média",
+    "format": "Direta",
+    "subtopic": "Misto (Sujeição Passiva e Responsabilidade / Imposto Seletivo)",
+    "options": [
+      "o leiloeiro é responsável subsidiário pelo IBS e pela CBS devidos na operação realizada em leilão.",
+      "o transportador de produtos sujeitos ao Imposto Seletivo, flagrado transportando-os desacompanhados da documentação fiscal, é considerado contribuinte do referido imposto.",
+      "o adquirente de um bem em leilão judicial é considerado contribuinte do IBS e da CBS .",
+      "o varejista que revende bebidas alcoólicas ao consumidor final é considerado contribuinte do Imposto Seletivo nessa operação.",
+      "a mera existência de grupo econômico é suficiente para estabelecer a responsabilidade solidária entre as empresas pelo pagamento do IBS."
+    ],
+    "answer": 2,
+    "justifications": [
+      "Incorreta. A lei define a responsabilidade como \"solidariamente responsáveis\", e não subsidiária. (Art. 24, III: \"são solidariamente responsáveis pelo pagamento do IBS e da CBS: [...] III - o leiloeiro, pelo IBS e pela CBS devidos na operação realizada em leilão;\" ).",
+      "Incorreta. O transportador, nessa hipótese, é classificado como \"responsável\" pelo pagamento do IS, e não como \"contribuinte\". (Art. 425, I: \"São obrigados ao pagamento do Imposto Seletivo como responsáveis...: I - o transportador, em relação aos produtos tributados que transportar desacompanhados da documentação fiscal...\" ).",
+      "Correta. A lei define expressamente o adquirente em leilão judicial como contribuinte. (Art. 21, II, 'b': \"É contribuinte do IBS e da CBS: [...] II - o adquirente... na aquisição de bem: [...] b) em leilão judicial;\" ).",
+      "Incorreta. O Imposto Seletivo é monofásico (incide uma única vez). O contribuinte é o fabricante na primeira comercialização (Art. 424, I) , e não o varejista na revenda.",
+      "Incorreta. A lei afasta expressamente essa presunção. (Art. 24, § 3º: \"Não enseja responsabilidade solidária a mera existência de grupo econômico quando inexistente qualquer ação ou omissão que se enquadre no disposto no inciso V do caput deste artigo.\" )."
+    ]
+  },
+  {
+    "id": "LC214-227",
+    "question": "A empresa \"Importadora de Luxo Ltda.\" realiza a importação de uma aeronave executiva (bem sujeito ao Imposto Seletivo - IS). O Valor Aduaneiro (VA) é de R$ 10.000.000,00 e o Imposto de Importação (II) é de R$ 1.000.000,00. A alíquota do IS para esta aeronave é de 10%.\nCom base nesse cenário e nas disposições da Lei Complementar nº 214/2025:\n\nI. A base de cálculo do IS na importação será o Valor Aduaneiro acrescido do Imposto de Importação, totalizando R$ 11.000.000,00.\nII. O valor do IS devido será de R$ 1.100.000,00.\nIII. A base de cálculo do IBS e da CBS nesta operação será de R$ 12.100.000,00.\nIV. O contribuinte poderá se creditar do IS e do IBS/CBS pagos no desembaraço.\n\nEstá correto o que se afirma APENAS em",
+    "difficulty": "Difícil",
+    "format": "Contexto-Assertiva",
+    "subtopic": "Misto (Tributação sobre Comércio Exterior / Imposto Seletivo / Base de Cálculo e Apuração)",
+    "options": [
+      "I e III.",
+      "I, II e III.",
+      "II e IV.",
+      "III e IV.",
+      "I e II."
+    ],
+    "answer": 1,
+    "justifications": [
+      "Incorreta. O item II também está correto.",
+      "Correta. Os itens I, II e III estão corretos.\nI (Correto): Conforme o Art. 434, § 2º, \"a sua base de cálculo [do IS], na importação, será o valor aduaneiro acrescido do montante do Imposto sobre a Importação\" (R$ 10M + R$ 1M = R$ 11M) .\nII (Correto): O valor do IS devido é a alíquota (10%) sobre a base de cálculo (R$ 11M), resultando em R$ 1.100.000,00.\nIII (Correto): Conforme o Art. 69, a base de cálculo do IBS/CBS na importação é o \"valor aduaneiro acrescido de: I - Imposto sobre a Importação; II - Imposto Seletivo (IS);\" (R$ 10M + R$ 1M + R$ 1.1M = R$ 12.1M) .",
+      "Incorreta. O item IV está incorreto.",
+      "Incorreta. O item IV está incorreto.",
+      "Incorreta. O item III também está correto.\nJustificativa do Item IV (Incorreto): A alternativa erra ao permitir o crédito do IS. O Art. 410 veda expressamente o aproveitamento de crédito do Imposto Seletivo . O contribuinte poderá se creditar apenas do IBS e da CBS pagos (Art. 78) ."
+    ]
+  },
+  {
+  "id": "LC214-228",
+  "question": "Considerando as disposições transitórias da Lei Complementar nº 214/2025 sobre a operacionalização do IBS e da CBS, notadamente quanto à adaptação de sistemas e compartilhamento de documentos fiscais eletrônicos,\n\nI. a União, os Estados, o Distrito Federal e os Municípios ficam obrigados a adaptar seus sistemas autorizadores para utilização de leiaute padronizado, que permita aos contribuintes informar os dados do IBS e da CBS .\nII. os Municípios e o Distrito Federal ficam obrigados, a partir de 1º de janeiro de 2026, a autorizar seus contribuintes a emitir a NFS-e de padrão nacional ou, se possuírem emissor próprio, compartilhar os documentos em leiaute padronizado .\nIII. o padrão e o leiaute da NFS-e a serem observados são aqueles definidos em convênio firmado entre a administração tributária da União, do Distrito Federal e dos Municípios que tiver instituído a NFS-e de padrão nacional .\nIV. o não atendimento, pelos entes federativos, à obrigação de adaptar sistemas e compartilhar documentos fiscais eletrônicos implicará a suspensão temporária das transferências voluntárias.\n\nEstá correto o que se afirma em",
+  "difficulty": "Média",
+  "format": "Assertiva",
+  "subtopic": "Administração e Fiscalização",
+  "options": [
+    "I, II, III e IV.",
+    "I, II e IV, apenas.",
+    "III e IV, apenas.",
+    "II e III, apenas.",
+    "I, III e IV, apenas."
+  ],
+  "answer": 0,
+  "justifications": [
+    "Correta. Todos os itens estão corretos.\nItem I: Descreve a obrigação geral do Art. 62, caput, inciso I: \"Ficam a União, os Estados, o Distrito Federal e os Municípios obrigados a: I - adaptar os sistemas autorizadores [...] para utilização de leiaute padronizado, que permita aos contribuintes informar os dados relativos ao IBS e à CBS...\" .\nItem II: Descreve a obrigação específica e o prazo de início para os Municípios, conforme o Art. 62, § 1º, inciso I: \"os Municípios e o Distrito Federal ficam obrigados, a partir de 1º de janeiro de 2026, a: I - autorizar seus contribuintes a emitir a Nota Fiscal de Serviços Eletrônica de padrão nacional (NFS-e) no ambiente nacional ou, na hipótese de possuir emissor próprio, compartilhar os documentos fiscais eletrônicos gerados, conforme leiaute padronizado...\" .\nItem III: Descreve a origem do padrão a ser seguido, conforme o Art. 62, § 4º: \"O padrão e o leiaute a que se referem os incisos I e II do § 1º deste artigo são aqueles definidos em convênio firmado entre a administração tributária da União, do Distrito Federal e dos Municípios que tiver instituído a NFS-e...\" .\nItem IV: Descreve a sanção prevista no Art. 62, § 7º: \"O não atendimento ao disposto no caput deste artigo [...] implicará a suspensão temporária das transferências voluntárias.\".",
+    "Incorreta. O item III também está correto.",
+    "Incorreta. Os itens I e II também estão corretos.",
+    "Incorreta. Os itens I e IV também estão corretos.",
+    "Incorreta. O item II também está correto."
+  ]
+}
 ]
