@@ -4836,7 +4836,7 @@
     "question": "A \"Engenharia & Projetos S.A.\", contribuinte do IBS e da CBS, com sede em Belo Horizonte-MG, foi contratada para duas atividades distintas no mês de agosto:\n1. Prestou um serviço de engenharia estrutural diretamente relacionado a um bem imóvel (um edifício comercial) localizado em Salvador-BA.\n2. Adquiriu, de uma galeria de arte, uma escultura (obra de arte) para decorar a sala de seu diretor presidente, registrando-a em seu ativo não circulante.\nConsiderando esse cenário e as disposições da Lei Complementar nº 214/2025:\n\nI. O local da operação referente ao serviço de engenharia estrutural é considerado Belo Horizonte-MG, domicílio do fornecedor.\nII. A empresa poderá apropriar integralmente os créditos de IBS e CBS decorrentes da aquisição da escultura, por se tratar de um bem do ativo não circulante.\nIII. O serviço de engenharia prestado está sujeito ao regime diferenciado que reduz as alíquotas do IBS e da CBS em 60% (sessenta por cento).\n\nEstá correto o que se afirma APENAS em",
     "difficulty": "Média",
     "format": "Contexto-Assertiva",
-    "subtopic": "Misto (Princípios, Conceitos e Incidência / Não Cumulatividade e Créditos / Alíquotas e Regras de Arrecadação)",
+    "subtopic": "Misto",
     "options": [
       "I.",
       "II.",
@@ -4858,7 +4858,7 @@
     "question": "Considerando as regras de sujeição passiva e responsabilidade tributária do IBS, da CBS e do Imposto Seletivo (IS) na Lei Complementar nº 214/2025, é correto afirmar que",
     "difficulty": "Média",
     "format": "Direta",
-    "subtopic": "Misto (Sujeição Passiva e Responsabilidade / Imposto Seletivo)",
+    "subtopic": "Misto",
     "options": [
       "o leiloeiro é responsável subsidiário pelo IBS e pela CBS devidos na operação realizada em leilão.",
       "o transportador de produtos sujeitos ao Imposto Seletivo, flagrado transportando-os desacompanhados da documentação fiscal, é considerado contribuinte do referido imposto.",
@@ -4880,7 +4880,7 @@
     "question": "A empresa \"Importadora de Luxo Ltda.\" realiza a importação de uma aeronave executiva (bem sujeito ao Imposto Seletivo - IS). O Valor Aduaneiro (VA) é de R$ 10.000.000,00 e o Imposto de Importação (II) é de R$ 1.000.000,00. A alíquota do IS para esta aeronave é de 10%.\nCom base nesse cenário e nas disposições da Lei Complementar nº 214/2025:\n\nI. A base de cálculo do IS na importação será o Valor Aduaneiro acrescido do Imposto de Importação, totalizando R$ 11.000.000,00.\nII. O valor do IS devido será de R$ 1.100.000,00.\nIII. A base de cálculo do IBS e da CBS nesta operação será de R$ 12.100.000,00.\nIV. O contribuinte poderá se creditar do IS e do IBS/CBS pagos no desembaraço.\n\nEstá correto o que se afirma APENAS em",
     "difficulty": "Difícil",
     "format": "Contexto-Assertiva",
-    "subtopic": "Misto (Tributação sobre Comércio Exterior / Imposto Seletivo / Base de Cálculo e Apuração)",
+    "subtopic": "Misto",
     "options": [
       "I e III.",
       "I, II e III.",
