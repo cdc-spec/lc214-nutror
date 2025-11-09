@@ -1909,7 +1909,7 @@
     "subtopic": "Regimes Específicos",
     "options": [
         "a cooperativa fornece um bem a um associado não sujeito ao regime regular, sem qualquer condição adicional.",
-        "o associado, pessoa física não contribuinte do regime regular, fornece um serviço à cooperativa de que participa.",
+        "o associado, pessoa física não contribuinte do regime regular, fornece um serviço à cooperativa da qual não participa.",
         "a cooperativa fornece um bem ou serviço a um não associado, desde que este seja contribuinte do regime regular.",
         "a cooperativa fornece um bem ou serviço a um associado que seja, ele próprio, sujeito ao regime regular do IBS e da CBS.",
         "um associado fornece um bem para beneficiamento na cooperativa, e o bem retorna posteriormente ao mesmo associado."
@@ -1917,7 +1917,7 @@
     "answer": 3,
     "justifications": [
         "Incorreta. O Art. 271, § 1º, II, permite a alíquota zero nesse caso, mas impõe a condição de que sejam anulados os créditos que a cooperativa tenha apropriado referentes ao bem fornecido.",
-        "Incorreta. O Art. 271, I, prevê a alíquota zero para a operação em que o associado fornece bem ou serviço à cooperativa, mas a alternativa é um distrator que pode gerar dúvida ao especificar a condição de \"não contribuinte\", sendo que o dispositivo legal é mais amplo. A alternativa \"d\" é mais precisa e completa.",
+        "Incorreta. O benefício da alíquota zero, conforme o Art. 271, inciso I , é estritamente limitado à operação em que o associado fornece um bem ou serviço à cooperativa "de que participa".",
         "Incorreta. O benefício da alíquota zero, conforme o Art. 271, é restrito às operações entre a cooperativa e seus associados, ou entre cooperativas, não se estendendo a não associados.",
         "Correta. O Art. 271, II, estabelece textualmente que as alíquotas do IBS e da CBS ficam reduzidas a zero na operação em que a cooperativa fornece bem ou serviço a associado sujeito ao regime regular do IBS e da CBS.",
         "Incorreta. O Art. 168, § 9º, ao tratar de créditos presumidos, excetua da aplicação do regime a hipótese em que o bem é enviado para beneficiamento e retorna ao associado, indicando um tratamento tributário distinto para essa operação."
@@ -4098,24 +4098,24 @@
 },
 {
     "id": "LC214-191",
-    "question": "A Lei Complementar nº 214/2025 define um regime específico de tributação para a maioria dos serviços financeiros. No entanto, a mesma lei determina que certos serviços, mesmo que prestados por instituições financeiras, ficam sujeitos às normas gerais de incidência (regime regular de débito e crédito).\nUm exemplo de serviço que, por essa determinação legal, fica sujeito às normas gerais do IBS e da CBS é:",
-    "difficulty": "Difícil",
+    "question": "Considerando a desoneração da aquisição de bens de capital, conforme a Lei Complementar nº 214/2025, é correto afirmar que:",
+    "difficulty": "Média",
     "format": "Direta",
-    "subtopic": "Regimes Específicos",
+    "subtopic": "Alíquotas e Regras de Arrecadação",
     "options": [
-        "O serviço de manutenção de conta de depósito à vista, remunerado por tarifa.",
-        "A operação de arrendamento mercantil (leasing) financeiro.",
-        "A operação de câmbio.",
-        "A administração e gestão de recursos de fundos de investimento.",
-        "A operação de resseguro."
+        "ficam reduzidas a zero as alíquotas do IBS e da CBS no fornecimento de tratores, máquinas e implementos agrícolas, destinados a produtor rural não contribuinte.",
+        "fica assegurado o crédito integral, mas de forma fracionada ao longo de 48 meses, na aquisição de bens de capital por contribuinte do regime regular.",
+        "a suspensão do pagamento do IBS e da CBS na aquisição de bens de capital converte-se em isenção após a incorporação do bem ao ativo imobilizado.",
+        "para fins de desoneração, são considerados bens incorporados ao ativo imobilizado apenas aqueles classificados contabilmente como tal, excluindo-se ativos de contrato ou financeiros de concessionárias.",
+        "ficam reduzidas a zero as alíquotas no fornecimento de veículos de transporte de carga destinados a transportador autônomo de carga, mesmo que este seja contribuinte do regime regular."
     ],
     "answer": 0,
     "justifications": [
-        "Correta. Esta é a exceção expressamente prevista na lei. O Art. 184, caput, determina: \"Os serviços que, por disposição regulatória, somente possam ser prestados pelas instituições financeiras bancárias e sejam remunerados por tarifas e comissões, incluídos os serviços de abertura, manutenção e encerramento de conta de depósito à vista [...], ficam sujeitos às normas gerais de incidência do IBS e da CBS\".",
-        "Incorreta. O arrendamento mercantil (leasing) está expressamente listado como serviço financeiro sujeito ao regime específico, conforme Art. 182, VI.",
-        "Incorreta. As operações de câmbio estão expressamente listadas como serviço financeiro sujeito ao regime específico, conforme Art. 182, II.",
-        "Incorreta. A gestão e administração de recursos, inclusive de fundos de investimento, estão expressamente listadas como serviço financeiro sujeito ao regime específico, conforme Art. 182, VIII.",
-        "Incorreta. As operações de resseguro estão expressamente listadas como serviço financeiro sujeito ao regime específico, conforme Art. 182, XII."
+        "Correta. A alternativa descreve precisamente o benefício fiscal previsto no Art. 110, inciso I, da LC 214/2025.",
+        "Incorreta. A lei assegura o crédito integral e imediato, e não fracionado. Conforme o Art. 108, \"Fica assegurado o crédito integral e imediato de IBS e CBS [...] na aquisição de bens de capital.\".",
+        "Incorreta. A lei prevê a conversão em \"alíquota zero\", e não \"isenção\". Conforme o Art. 109, § 2º: \"A suspensão do pagamento do IBS e da CBS [...] converte-se em alíquota zero após a incorporação do bem ao ativo imobilizado do adquirente\".",
+        "Incorreta. A alternativa afirma o oposto da lei, que é inclusiva. O Art. 111 determina que \"também serão considerados bens incorporados ao ativo imobilizado aqueles [...] contabilizados por concessionárias de serviços públicos como ativo de contrato, intangível ou financeiro.\".",
+        "Incorreta. O benefício da alíquota zero para veículos de transporte de carga destina-se apenas ao transportador autônomo não contribuinte, conforme o Art. 110, inciso II."
     ]
 },
 {
@@ -4683,7 +4683,7 @@
     "question": "A empresa \"Navegar S.A.\", contribuinte do regime regular, importa uma embarcação de lazer (iate) da Itália, bem sujeito à incidência do Imposto Seletivo. Na Declaração de Importação, a empresa declara o Valor Aduaneiro de R$ 2.000.000,00 e recolhe o Imposto de Importação de R$ 400.000,00. A fiscalização aduaneira, contudo, constata que o valor declarado é \"notoriamente inferior\" ao valor de mercado da embarcação, que é de R$ 5.000.000,00.\nCom base nesse cenário e na Lei Complementar nº 214/2025, considere:\n\nI. A constatação de que o valor declarado é notoriamente inferior ao de mercado autoriza a administração tributária a arbitrar o valor da operação para fins de cálculo do IBS e da CBS.\nII. A base de cálculo do IS na importação será o VA acrescido do Imposto de Importação , devendo ambos ser calculados sobre o valor arbitrado.\nIII. A base de cálculo do IBS e da CBS na importação será composta pelo Valor Aduaneiro acrescido do Imposto de Importação e do Imposto Seletivo incidente.\nIV. Após o desembaraço, a \"Navegar S.A.\" poderá apropriar créditos do IS pago na importação para compensar débitos do IBS, mas não poderá se creditar do IBS e da CBS pagos no mesmo desembaraço.\n\nEstá correto o que se afirma APENAS em",
     "difficulty": "Difícil",
     "format": "Contexto-Assertiva",
-    "subtopic": "Mista",
+    "subtopic": "Misto",
     "options": [
         "I e II.",
         "II e IV.",
@@ -4697,6 +4697,28 @@
         "II. Correta. O Art. 434, § 2º, define a base de cálculo do IS na importação. Se o Valor Aduaneiro foi arbitrado com base no Art. 13, os tributos subsequentes incidirão sobre esse novo valor.\nArt. 434. ... § 2º Caso a alíquota do Imposto Seletivo seja ad valorem, a sua base de cálculo, na importação, será o valor aduaneiro acrescido do montante do Imposto sobre a Importação.",
         "III. Correta. O Art. 69 estabelece que a base de cálculo do IBS e da CBS na importação de bens materiais é o:\nArt. 69. ... valor aduaneiro acrescido de: I - Imposto sobre a Importação; II - Imposto Seletivo (IS);",
         "IV. Incorreta. A lógica está invertida. O Art. 78 permite o crédito de IBS/CBS pagos na importação, enquanto o Art. 410 veda o crédito do IS.\nArt. 78. Quando estiverem sujeitos ao regime regular do IBS e da CBS, os contribuintes [...] poderão apropriar e utilizar créditos correspondentes aos valores do IBS e da CBS efetivamente pagos na importação de bens materiais... Art. 410. O Imposto Seletivo incidirá uma única vez sobre o bem ou serviço, sendo vedado qualquer tipo de aproveitamento de crédito do imposto..."
+    ]
+},
+  {
+    "id": "LC214-219",
+    "question": "Após ser flagrada em prática reiterada de infração à legislação tributária , a empresa \"Comércio Rápido Ltda.\" foi submetida a um Regime Especial de Fiscalização (REF).\n\nA administração tributária, por meio de despacho fundamentado, impôs à empresa a redução pela metade dos períodos de apuração e dos prazos de recolhimento do IBS e da CBS, além do controle especial da emissão de seus documentos fiscais.\n\nDurante a vigência desse regime, uma nova auditoria constatou que a empresa deixou de registrar diversas operações de venda, omitindo receitas. A infração resultou na lavratura de um auto de infração para a cobrança do imposto devido e da respectiva multa de ofício.\n\nNessa situação, de acordo com a Lei Complementar nº 214/2025, a multa de ofício aplicada a esta nova infração",
+    "difficulty": "Média",
+    "format": "Contexto",
+    "subtopic": "Administração e Fiscalização",
+    "options": [
+        "terá seu percentual duplicado, sem prejuízo das demais medidas do REF.",
+        "será cancelada, pois a única penalidade aplicável durante o REF é a redução dos prazos de recolhimento.",
+        "terá seu percentual reduzido pela metade, como incentivo à regularização fiscal.",
+        "será aplicada normalmente, mas encerra automaticamente o Regime Especial de Fiscalização.",
+        "será substituída pela manutenção de fiscalização ininterrupta no estabelecimento."
+    ],
+    "answer": 0,
+    "justifications": [
+        "Correta. A alternativa descreve a consequência exata prevista na lei. A imposição do REF não impede a aplicação de penalidades, e as multas de ofício aplicadas durante sua vigência são agravadas.\n\nTexto Legal (Art. 341, § 1º): \"As multas de ofício aplicáveis à CBS e ao IBS terão percentual duplicado para as infrações cometidas pelo sujeito passivo durante o período em que estiver submetido ao REF, sem prejuízo da adoção de outras medidas previstas na legislação tributária, administrativa ou penal.\" \n\nTexto Legal (Art. 341, caput): \"A imposição do regime especial de fiscalização não elide a aplicação de penalidades previstas na legislação tributária...\"",
+        "Incorreta. A aplicação do REF não cancela outras penalidades , e a redução de prazos é uma das medidas do regime (Art. 339, II), não a única sanção.",
+        "Incorreta. A lei prevê a duplicação (agravamento) da penalidade , e não sua redução.",
+        "Incorreta. A aplicação da multa não encerra o REF. O REF persiste enquanto houver motivos para sua aplicação, conforme Art. 340, § 1º, II .",
+        "Incorreta. A fiscalização ininterrupta (Art. 339, I) é outra medida que pode ser imposta pelo REF, mas ela não substitui a penalidade (multa) decorrente da infração ."
     ]
 }
 ]
