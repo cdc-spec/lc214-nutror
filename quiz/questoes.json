@@ -3925,5 +3925,778 @@
         "Correta. Esta afirmação está correta. O Art. 481, § 1º, inciso II, alínea \"a\", estabelece este método de eleição, prevendo \"14 (quatorze) representantes eleitos com base nos votos de cada Município e do Distrito Federal, com valor igual para todos\".",
         "Correta. Esta afirmação está correta. O Art. 481, § 1º, inciso II, alínea \"b\", estabelece este método de eleição, prevendo \"13 (treze) representantes eleitos com base nos votos de cada Município e do Distrito Federal, ponderados pelas respectivas populações\"."
     ]
+},
+  {
+    "id": "LC214-183",
+    "question": "Considerando o regime específico do IBS e da CBS para planos de assistência à saúde, conforme a LC 214/2025, a base de cálculo será composta pela receita dos serviços, com a dedução de certos valores. Integram as deduções permitidas:\n\nI. As indenizações correspondentes a eventos ocorridos, efetivamente pagas.\nII. As receitas financeiras dos ativos garantidores das reservas técnicas.\nIII. Os valores pagos por serviços de intermediação de planos de saúde.\nIV. As despesas administrativas gerais da operadora, como aluguel e salários.\n\nEstá correto o que se afirma APENAS em",
+    "difficulty": "Média",
+    "format": "Assertiva",
+    "subtopic": "Regimes Específicos",
+    "options": [
+        "II e III.",
+        "I e III.",
+        "II e IV.",
+        "I, III e IV.",
+        "I, II e III."
+    ],
+    "answer": 1,
+    "justifications": [
+        "I. Correta. A lei determina expressamente que as indenizações efetivamente pagas são deduzidas da base de cálculo.\nTexto Legal (Art. 235, II, 'a'): A base de cálculo do IBS e da CBS no regime específico de planos de assistência de saúde será composta [...] II - com a dedução: a) das indenizações correspondentes a eventos ocorridos, efetivamente pagas, pelo regime de caixa;",
+        "II. Incorreta. As receitas financeiras dos ativos garantidores não são uma dedução; pelo contrário, elas compõem a base de cálculo.\nTexto Legal (Art. 235, I, 'b'): A base de cálculo do IBS e da CBS [...] será composta: I - da receita dos serviços, compreendendo: [...] b) as receitas financeiras, no período de apuração, dos ativos garantidores das reservas técnicas, efetivamente liquidadas;",
+        "III. Correta. Os valores pagos a intermediários (corretores, por exemplo) são uma das deduções permitidas.\nTexto Legal (Art. 235, II, 'c'): A base de cálculo [...] será composta [...] II - com a dedução: [...] c) dos valores pagos por serviços de intermediação de planos de saúde;",
+        "IV. Incorreta. A lei apresenta um rol específico de deduções (Art. 235, II) , o qual não inclui despesas administrativas gerais da operadora."
+    ]
+},
+{
+    "id": "LC214-184",
+    "question": "No que tange ao regime específico de incidência do IBS e da CBS para concursos de prognósticos (loterias, apostas, etc.), conforme a Lei Complementar nº 214/2025, considere:\n\nI. A base de cálculo é a receita bruta total (produto da arrecadação), sendo vedada qualquer dedução.\nII. As premiações pagas aos apostadores são deduzidas da base de cálculo do IBS e da CBS.\nIII. As destinações obrigatórias por lei a fundos públicos, pagas pela entidade operadora, não podem ser deduzidas da base de cálculo.\nIV. Fica expressamente vedado o crédito de IBS e de CBS aos apostadores dos concursos de prognósticos.\n\nEstá correto o que se afirma APENAS em",
+    "difficulty": "Fácil",
+    "format": "Assertiva",
+    "subtopic": "Regimes Específicos",
+    "options": [
+        "I e III.",
+        "I, II e III.",
+        "II e III.",
+        "I e IV.",
+        "II e IV."
+    ],
+    "answer": 4,
+    "justifications": [
+        "I) Incorreto. O Art. 245 define a base de cálculo como o produto da arrecadação com deduções7. A alternativa erra ao afirmar que são vedadas deduções.",
+        "II) Correto. O Art. 245, I, autoriza expressamente a dedução das \"premiações pagas\"8.",
+        "III) Incorreto. O Art. 245, II, autoriza expressamente a dedução das \"destinações obrigatórias por lei a órgão ou fundo público e aos demais beneficiários\"9.",
+        "IV) Correto. O Art. 247 dispõe textualmente: \"Fica vedado o crédito de IBS e de CBS aos apostadores dos concursos de prognósticos\"10."
+    ]
+},
+{
+    "id": "LC214-185",
+    "question": "Uma construtora, contribuinte do regime regular, realiza as seguintes operações, todas sujeitas ao regime específico de bens imóveis:\n\nVende um apartamento residencial novo por R$ 800.000,00.\nAluga um escritório comercial por R$ 10.000,00 mensais.\nRealiza a permuta de um terreno por outro de valor equivalente, sem torna, com outra pessoa jurídica.\n\nConsiderando o disposto na LC 214/2025 sobre este regime:\n\nI. Na operação 1 (venda), as alíquotas do IBS e da CBS ficam reduzidas em 50%.\nII. Na operação 2 (locação), as alíquotas do IBS e da CBS ficam reduzidas em 70%.\nIII. Na operação 3 (permuta), o IBS e a CBS incidem normalmente sobre o valor de mercado dos terrenos permutados.\n\nEstá correto o que se afirma APENAS em",
+    "difficulty": "Média",
+    "format": "Contexto-Assertiva",
+    "subtopic": "Regimes Específicos",
+    "options": [
+        "I e II.",
+        "II e III.",
+        "I e III.",
+        "III.",
+        "I, II e III."
+    ],
+    "answer": 0,
+    "justifications": [
+        "I) Correto. O Art. 261, caput, determina: \"As alíquotas do IBS e da CBS relativas às operações de que trata este Capítulo [Bens Imóveis] ficam reduzidas em 50% (cinquenta por cento)\"11. A operação 1 (alienação) enquadra-se nesta regra.",
+        "II) Correto. O Art. 261, parágrafo único, estabelece uma regra específica para locação (operação 2): \"As alíquotas do IBS e da CBS relativas às operações de locação, cessão onerosa e arrendamento de bens imóveis ficam reduzidas em 70% (setenta por cento)\"12.",
+        "III) Incorreto. A permuta sem torna é uma hipótese de não incidência. Conforme o Art. 252, § 2º, I, \"O IBS e a CBS não incidem nas seguintes hipóteses: I - nas operações de permuta de bens imóveis, exceto sobre a torna\"13. Como a operação 3 foi sem torna, não há incidência."
+    ]
+},
+{
+    "id": "LC214-186",
+    "question": "A Lei Complementar nº 214/2025 estabelece um regime específico para bares e restaurantes. No que se refere à base de cálculo do IBS e da CBS, a lei determina que a gorjeta incidente no fornecimento de alimentação",
+    "difficulty": "Fácil",
+    "format": "Direta",
+    "subtopic": "Regimes Específicos",
+    "options": [
+        "fica excluída da base de cálculo, desde que repassada integralmente ao empregado e limitada a 15% do valor total do fornecimento.",
+        "integra a base de cálculo em todos os casos, por compor o valor da operação.",
+        "fica excluída da base de cálculo, independentemente do percentual, desde que repassada integralmente ao empregado.",
+        "fica excluída da base de cálculo, desde que limitada a 10% do valor total do fornecimento, mesmo que não seja repassada ao empregado.",
+        "integra a base de cálculo, mas dá direito a um crédito presumido ao estabelecimento no mesmo valor."
+    ],
+    "answer": 0,
+    "justifications": [
+        "Correta. A alternativa descreve perfeitamente a regra de exclusão da gorjeta. O Art. 274, parágrafo único, I, estabelece que fica excluída da base de cálculo \"a gorjeta incidente no fornecimento de alimentação, desde que: a) seja repassada integralmente ao empregado [...]; e b) seu valor não exceda a 15% (quinze por cento) do valor total do fornecimento de alimento e bebidas\".",
+        "Incorreta. A lei prevê expressamente a exclusão da gorjeta, desde que atendidos os requisitos, conforme Art. 274, parágrafo único, I.",
+        "Incorreta. A alternativa omite o requisito do limite percentual. O Art. 274, parágrafo único, I, 'b', exige que o valor não exceda a 15% do total do fornecimento.",
+        "Incorreta. A alternativa erra o percentual (10% em vez de 15%) e ignora a condição obrigatória do repasse integral ao empregado, ambos definidos no Art. 274, parágrafo único, I.",
+        "Incorreta. A lei não prevê crédito presumido para a gorjeta, mas sim sua exclusão direta da base de cálculo, conforme Art. 274, parágrafo único, I."
+    ]
+},
+{
+    "id": "LC214-187",
+    "question": "Uma pessoa física, contribuinte do regime regular do IBS e da CBS, é proprietária de um apartamento em Recife. Ela disponibiliza este imóvel para locação através de plataformas digitais, com contratos de curta duração. Em um determinado mês, ela aluga o imóvel por 15 dias para um turista e, logo em seguida, por 30 dias para outro.\nDe acordo com a Lei Complementar nº 214/2025, essas operações de locação",
+    "difficulty": "Média",
+    "format": "Contexto",
+    "subtopic": "Regimes Específicos",
+    "options": [
+        "ficam sujeitas ao regime regular do IBS e da CBS, com alíquotas reduzidas em 70%, por se tratar de locação de bem imóvel.",
+        "são isentas de IBS e CBS, pois o período total de locação não excedeu 90 dias.",
+        "ficam sujeitas ao regime regular do IBS e da CBS, com alíquotas reduzidas em 50%, por se tratar de alienação de direito de uso.",
+        "serão tributadas de acordo com as mesmas regras aplicáveis aos serviços de hotelaria, pois o período não foi superior a 90 dias ininterruptos.",
+        "ficam sujeitas ao regime regular do IBS e da CBS, com alíquotas integrais (sem redução), pois a locação por temporada é equiparada à prestação de serviço comum."
+    ],
+    "answer": 3,
+    "justifications": [
+        "Incorreta. Embora o Art. 261, parágrafo único, preveja a redução de 70% para locação, esta regra é excepcionada pela locação de curto prazo, tratada no Art. 253.",
+        "Incorreta. A lei não prevê isenção para essa hipótese, mas sim um reenquadramento da tributação, conforme o Art. 253.",
+        "Incorreta. A alíquota de 50% refere-se à alienação de imóveis (Art. 261, caput), e não à locação.",
+        "Correta. O Art. 253 é claro ao dispor que \"A locação, cessão onerosa ou arrendamento de bem imóvel residencial por contribuinte sujeito ao regime regular do IBS e da CBS, com período não superior a 90 (noventa) dias ininterruptos, serão tributados de acordo com as mesmas regras aplicáveis aos serviços de hotelaria\".",
+        "Incorreta. A tributação seguirá as regras de hotelaria, que possuem alíquota reduzida em 40% (conforme Art. 281), e não a alíquota integral."
+    ]
+},
+{
+    "id": "LC214-188",
+    "question": "A Lei Complementar nº 214/2025 instituiu, no regime específico de bens imóveis, o \"redutor de ajuste\", que será utilizado para reduzir a base de cálculo nas operações de alienação. Sobre a composição desse redutor, considere:\n\nI. Para imóveis adquiridos após 1º de janeiro de 2027, o valor inicial do redutor de ajuste corresponde ao valor de aquisição do bem imóvel.\nII. O valor do Imposto sobre a Transmissão de Bens Imóveis (ITBI) incidente na aquisição do imóvel integra o redutor de ajuste na data do efetivo pagamento.\nIII. O valor do redutor de ajuste será corrigido pelo IPCA, ou índice substituto, da data de sua constituição até a data em que são devidos o IBS e a CBS na alienação.\nIV. As contrapartidas de ordem urbanística, como a outorga onerosa do direito de construir, não integram o redutor de ajuste, devendo ser apropriadas como crédito regular pelo contribuinte.\n\nEstá correto o que se afirma APENAS em",
+    "difficulty": "Difícil",
+    "format": "Assertiva",
+    "subtopic": "Regimes Específicos",
+    "options": [
+        "I e IV.",
+        "II e III.",
+        "I, II e III.",
+        "I, II e IV.",
+        "II, III e IV."
+    ],
+    "answer": 2,
+    "justifications": [
+        "I) Correto. O Art. 258, III, define que, \"no caso de bens imóveis adquiridos a partir de 1º de janeiro de 2027, ao valor de aquisição do bem imóvel\".",
+        "II) Correto. O Art. 258, § 6º, I, estabelece que integra o redutor de ajuste, na data do efetivo pagamento, \"o valor do Imposto sobre a Transmissão de Bens Imóveis (ITBI) e do laudêmio incidentes na aquisição do imóvel\".",
+        "III) Correto. O Art. 257, § 3º, determina que os valores que compõem o redutor \"serão corrigidos pelo IPCA ou por outro índice que vier a substituí-lo da data de sua constituição até a data em que são devidos o IBS e a CBS\".",
+        "IV) Incorreto. A assertiva está duplamente errada. Primeiro, o Art. 258, § 6º, II, inclui no redutor \"as contrapartidas de ordem urbanística [...] inclusive, mas não limitadas, aos valores despendidos a título de outorga onerosa do direito de construir\". Segundo, o Art. 258, § 8º, veda a apropriação de créditos sobre esses valores: \"Fica vedada a apropriação de créditos em relação ao IBS e à CBS incidentes sobre os bens e serviços adquiridos para a realização das contrapartidas [...] que integrem o redutor de ajuste\"."
+    ]
+},
+{
+    "id": "LC214-189",
+    "question": "Conforme a Lei Complementar nº 214/2025, as sociedades cooperativas podem optar por um regime específico de tributação do IBS e da CBS. Neste regime, as alíquotas dos tributos ficam reduzidas a zero na operação em que",
+    "difficulty": "Fácil",
+    "format": "Direta",
+    "subtopic": "Regimes Específicos",
+    "options": [
+        "a cooperativa fornece um bem a um não associado, desde que este seja contribuinte do regime regular.",
+        "o associado fornece bem ou serviço à cooperativa de que participa.",
+        "a cooperativa fornece um bem a um associado não sujeito ao regime regular, sem qualquer condição adicional.",
+        "a cooperativa realiza operações com outras cooperativas, desde que ambas sejam centrais ou federações.",
+        "o associado, sujeito ao regime regular, anula os créditos das operações antecedentes ao fornecer bens à cooperativa."
+    ],
+    "answer": 1,
+    "justifications": [
+        "Incorreta. O benefício da alíquota zero restringe-se, em regra, a operações entre a cooperativa e seus associados, ou entre cooperativas, conforme Art. 271 .",
+        "Correta. O Art. 271, I, estabelece textualmente que as alíquotas ficam reduzidas a zero na operação em que \"o associado fornece bem ou serviço à cooperativa de que participa\".",
+        "Incorreta. A alternativa apresenta uma condição incompleta. O Art. 271, § 1º, II, permite essa operação, mas impõe uma condição: \"desde que anulados os créditos por ela apropriados referentes ao bem fornecido\".",
+        "Incorreta. A lei é mais ampla. O Art. 271, § 1º, I, estende o benefício \"às operações realizadas entre cooperativas singulares, centrais, federações, confederações\", não se restringindo apenas a centrais ou federações.",
+        "Incorreta. A anulação de créditos é uma condição imposta à cooperativa ao fornecer a um associado não regular (Art. 271, § 1º, II), e não ao associado regular ao fornecer à cooperativa."
+    ]
+},
+{
+    "id": "LC214-190",
+    "question": "No que tange ao regime específico de hotelaria, parques de diversão e parques temáticos, previsto na Lei Complementar nº 214/2025, considere as seguintes afirmações:\n\nI. O regime específico para serviços de hotelaria prevê a redução das alíquotas do IBS e da CBS em 40%.\nII. É permitida a apropriação de créditos de IBS e CBS pelos hotéis e parques nas aquisições de seus bens e serviços (insumos).\nIII. É vedada a apropriação de créditos de IBS e CBS pelo adquirente dos serviços de hotelaria ou parques temáticos (hóspede ou visitante).\nIV. Os serviços de hotelaria, por sua natureza, não permitem a apropriação de créditos de IBS e CBS nem pelo fornecedor (hotel) nem pelo adquirente (hóspede).\n\nEstá correto o que se afirma APENAS em",
+    "difficulty": "Média",
+    "format": "Assertiva",
+    "subtopic": "Regimes Específicos",
+    "options": [
+        "I e IV.",
+        "II e III.",
+        "I e III.",
+        "I, II e III.",
+        "II, III e IV."
+    ],
+    "answer": 3,
+    "justifications": [
+        "I) Correto. O Art. 281 estabelece que \"As alíquotas do IBS e da CBS relativas às operações de que trata este Capítulo [Hotelaria, Parques] ficam reduzidas em 40% (quarenta por cento)\".",
+        "II) Correto. O Art. 282 autoriza o crédito para o fornecedor: \"Ficam permitidas a apropriação e a utilização de créditos de IBS e de CBS nas aquisições de bens e serviços pelos fornecedores de serviços de hotelaria, parques de diversão e parques temáticos\" .",
+        "III) Correto. O Art. 283 veda o crédito para o cliente: \"Fica vedada a apropriação de créditos de IBS e de CBS pelo adquirente dos serviços de hotelaria, parques de diversão e parques temáticos\".",
+        "IV) Incorreto. A assertiva contraria o Art. 282, que permite expressamente a apropriação de créditos pelo fornecedor (hotel/parque) ."
+    ]
+},
+{
+    "id": "LC214-191",
+    "question": "A Lei Complementar nº 214/2025 define um regime específico de tributação para a maioria dos serviços financeiros. No entanto, a mesma lei determina que certos serviços, mesmo que prestados por instituições financeiras, ficam sujeitos às normas gerais de incidência (regime regular de débito e crédito).\nUm exemplo de serviço que, por essa determinação legal, fica sujeito às normas gerais do IBS e da CBS é:",
+    "difficulty": "Difícil",
+    "format": "Direta",
+    "subtopic": "Regimes Específicos",
+    "options": [
+        "O serviço de manutenção de conta de depósito à vista, remunerado por tarifa.",
+        "A operação de arrendamento mercantil (leasing) financeiro.",
+        "A operação de câmbio.",
+        "A administração e gestão de recursos de fundos de investimento.",
+        "A operação de resseguro."
+    ],
+    "answer": 0,
+    "justifications": [
+        "Correta. Esta é a exceção expressamente prevista na lei. O Art. 184, caput, determina: \"Os serviços que, por disposição regulatória, somente possam ser prestados pelas instituições financeiras bancárias e sejam remunerados por tarifas e comissões, incluídos os serviços de abertura, manutenção e encerramento de conta de depósito à vista [...], ficam sujeitos às normas gerais de incidência do IBS e da CBS\".",
+        "Incorreta. O arrendamento mercantil (leasing) está expressamente listado como serviço financeiro sujeito ao regime específico, conforme Art. 182, VI.",
+        "Incorreta. As operações de câmbio estão expressamente listadas como serviço financeiro sujeito ao regime específico, conforme Art. 182, II.",
+        "Incorreta. A gestão e administração de recursos, inclusive de fundos de investimento, estão expressamente listadas como serviço financeiro sujeito ao regime específico, conforme Art. 182, VIII.",
+        "Incorreta. As operações de resseguro estão expressamente listadas como serviço financeiro sujeito ao regime específico, conforme Art. 182, XII."
+    ]
+},
+{
+    "id": "LC214-192",
+    "question": "Uma distribuidora de combustíveis adquire Gasolina A e Etanol Anidro Combustível (EAC). A legislação obriga a mistura de EAC na gasolina em um percentual específico. Em determinado mês, ao realizar a mistura em seus tanques, a distribuidora:\n\nProduz um lote de Gasolina C com percentual de EAC superior ao obrigatório.\nProduz um segundo lote de Gasolina C com percentual de EAC inferior ao obrigatório.\n\nConsiderando o regime específico de tributação de combustíveis da Lei Complementar nº 214/2025, a distribuidora",
+    "difficulty": "Média",
+    "format": "Contexto",
+    "subtopic": "Regimes Específicos",
+    "options": [
+        "terá direito ao ressarcimento do IBS e da CBS em ambas as situações, calculado sobre o volume de biocombustível misturado de forma divergente do obrigatório.",
+        "fica obrigada a recolher o IBS e a CBS sobre o volume de biocombustível que exceder ao percentual obrigatório (lote 1) e terá direito ao ressarcimento do IBS e da CBS sobre o volume misturado a menor (lote 2).",
+        "fica obrigada a recolher o IBS e a CBS sobre o volume excedente (lote 1), mas não terá direito a qualquer ressarcimento pelo volume misturado a menor (lote 2).",
+        "fica obrigada a recolher o IBS e a CBS em ambas as situações, calculado sobre o volume total misturado, por descumprimento da norma técnica.",
+        "não terá qualquer obrigação adicional nem direito a ressarcimento, pois a responsabilidade pelo IBS e CBS do EAC é exclusiva da refinaria que reteve o imposto na origem."
+    ],
+    "answer": 1,
+    "justifications": [
+        "Incorreta. A lei prevê o recolhimento do imposto sobre o volume excedente, e não o ressarcimento. O Art. 179, II, 'a', determina a obrigação de recolher sobre o excesso.",
+        "Correta. A alternativa descreve perfeitamente as duas hipóteses do Art. 179, II. A alínea 'a' dispõe que a distribuidora \"fica obrigada a recolher o IBS e a CBS [...] em relação ao volume de biocombustível correspondente ao que exceder ao percentual obrigatório\". A alínea 'b' dispõe que, no caso de percentual inferior, a distribuidora \"terá direito ao ressarcimento do IBS e da CBS [...] em relação ao volume de biocombustível correspondente ao misturado a menor\".",
+        "Incorreta. A alternativa nega o direito ao ressarcimento, o que contraria o Art. 179, II, 'b' .",
+        "Incorreta. A lei não exige o recolhimento no caso da mistura inferior, mas sim o ressarcimento, conforme Art. 179, II, 'b' .",
+        "Incorreta. Embora a refinaria tenha a responsabilidade pela retenção inicial (Art. 178), o Art. 179 estabelece obrigações e direitos específicos para a distribuidora no momento da mistura, caso ela divirja do percentual obrigatório."
+    ]
+},
+{
+    "id": "LC214-193",
+    "question": "Uma instituição financeira, sujeita ao regime específico de serviços financeiros da LC 214/2025, apura a base de cálculo do IBS e da CBS. Em sua contabilidade, constam as seguintes rubricas para o período de apuração:\n\nReceitas de juros auferidas em operações de crédito.\nDespesas de captação (juros pagos em CDBs para lastrear as operações de crédito).\nDespesas administrativas (salários de gerentes e aluguel de agências).\n\nConsiderando as normas de apuração deste regime específico:\n\nI. As receitas de juros auferidas (rubrica 1) compõem a base de cálculo.\nII. As despesas de captação (rubrica 2) podem ser deduzidas da base de cálculo, desde que realizadas nos limites operacionais da legislação.\nIII. As despesas administrativas (rubrica 3) podem ser deduzidas da base de cálculo, pois são custos necessários à prestação do serviço financeiro.\n\nEstá correto o que se afirma APENAS em",
+    "difficulty": "Média",
+    "format": "Contexto-Assertiva",
+    "subtopic": "Regimes Específicos",
+    "options": [
+        "I, II e III.",
+        "I e II.",
+        "I e III.",
+        "II e III.",
+        "I."
+    ],
+    "answer": 1,
+    "justifications": [
+        "I) Correto. O Art. 185 estabelece que a base de cálculo \"será composta das receitas das operações\", o que inclui as receitas de juros das operações de crédito (Art. 182, I).",
+        "II) Correto. O Art. 187 permite deduções da base de cálculo, desde que \"restrinjam-se a operações autorizadas por órgão governamental, desde que realizadas nos limites operacionais previstos na legislação pertinente\". As despesas de captação (juros pagos) enquadram-se como deduções operacionais, diferentemente de despesas administrativas.",
+        "III) Incorreto. O Art. 187 veda expressamente a dedução de despesas administrativas, mesmo que necessárias: \"vedada a dedução de qualquer despesa administrativa\"."
+    ]
+},
+{
+    "id": "LC214-194",
+    "question": "Uma empresa de gestão imobiliária, contribuinte do regime regular do IBS e da CBS, administra um imóvel residencial cujo contrato de locação é de R$ 2.500,00 mensais. Ao emitir o documento de cobrança para o locatário, a empresa precisa apurar a base de cálculo do IBS e da CBS incidentes sobre esta operação.\nDe acordo com a Lei Complementar nº 214/2025, na apuração do imposto sobre esta locação residencial, a empresa",
+    "difficulty": "Fácil",
+    "format": "Contexto",
+    "subtopic": "Regimes Específicos",
+    "options": [
+        "aplicará as alíquotas reduzidas em 70% sobre R$ 1.900,00, pois pode deduzir da base de cálculo o redutor social de R$ 600,00.",
+        "aplicará as alíquotas reduzidas em 50% sobre R$ 2.500,00, pois o redutor social só se aplica à alienação.",
+        "aplicará as alíquotas reduzidas em 70% sobre R$ 2.500,00, pois o redutor social de R$ 600,00 é vedado para contribuintes pessoa jurídica.",
+        "aplicará as alíquotas reduzidas em 70% sobre R$ 1.500,00, pois pode deduzir da base de cálculo o redutor social de R$ 100.000,00, dividido por 100 meses.",
+        "aplicará as alíquotas integrais (sem redução) sobre R$ 1.900,00, pois a redução de alíquota não é cumulativa com o redutor social."
+    ],
+    "answer": 0,
+    "justifications": [
+        "Correta. A alternativa combina as duas regras aplicáveis. O Art. 260 autoriza a dedução do redutor social na locação residencial: \"poderá ser deduzido da base de cálculo [...] redutor social no valor de R$ 600,00 (seiscentos reais) por bem imóvel\". O Art. 261, parágrafo único, define a alíquota para locação: \"As alíquotas [...] relativas às operações de locação [...] ficam reduzidas em 70% (setenta por cento)\". A base de cálculo será (R$ 2.500,00 - R$ 600,00) = R$ 1.900,00, sobre a qual incide a alíquota com redução de 70%.",
+        "Incorreta. A alíquota para locação é reduzida em 70% (Art. 261, p.u.), não 50%. Além disso, o redutor social de R$ 600,00 aplica-se expressamente à locação (Art. 260) .",
+        "Incorreta. A lei não faz distinção entre pessoa física ou jurídica para a aplicação do redutor social de R$ 600,00, bastando ser \"contribuinte sujeito ao regime regular\", conforme Art. 260.",
+        "Incorreta. O redutor de R$ 100.000,00 (Art. 259) refere-se à alienação (venda) de imóvel residencial novo, não à locação.",
+        "Incorreta. A alíquota aplicável à locação é reduzida em 70% (Art. 261, p.u.), e não a integral. Não há vedação à cumulatividade dos benefícios."
+    ]
+},
+  {
+    "id": "LC214-195",
+    "question": "Uma empresa de extração mineral, contribuinte do Imposto Seletivo (IS), realiza o fornecimento de sua produção de gás natural. Oitenta por cento (80%) da produção é alienada para uma indústria petroquímica, que apresenta a declaração formal de que o gás será utilizado integralmente como insumo em seu processo industrial. Os vinte por cento (20%) restantes são vendidos para uma distribuidora de Gás Natural Veicular (GNV).\nEm procedimento de fiscalização, a Receita Federal do Brasil (RFB) constata que a indústria petroquímica, na verdade, revendeu metade do gás adquirido (40% do total) como combustível, em desacordo com a declaração apresentada.\nCom base nesse cenário e nas disposições da Lei Complementar nº 214/2025 sobre o Imposto Seletivo, é incorreto afirmar que:",
+    "difficulty": "Média",
+    "format": "Contexto",
+    "subtopic": "Imposto Seletivo",
+    "options": [
+        "a empresa de extração mineral é a contribuinte do Imposto Seletivo na operação de extração do gás natural.",
+        "o fornecimento dos 80% da produção para a indústria petroquímica estava beneficiado com alíquota zero do IS, dada a declaração de uso como insumo industrial.",
+        "a RFB é o órgão competente para a administração e fiscalização do Imposto Seletivo.",
+        "a empresa extratora é solidariamente responsável, junto com a indústria petroquímica, pelo recolhimento do imposto sobre a parcela desviada.",
+        "em razão do desvio de finalidade, a indústria petroquímica deverá recolher o Imposto Seletivo sobre o volume desviado, acrescido de multa e juros de mora, na condição de responsável."
+    ],
+    "answer": 3,
+    "justifications": [
+        "Correta. A afirmação está correta. A lei define o produtor-extrativista como o contribuinte do IS no momento da extração.\nArt. 424. O contribuinte do Imposto Seletivo é: ... IV - o produtor-extrativista que realiza a extração;",
+        "Correta. A afirmação está correta. A lei estabelece alíquota zero para o gás natural destinado a insumo industrial, mediante declaração do adquirente.\nArt. 423. Caso o gás natural seja destinado à utilização como insumo em processo industrial [...] a alíquota estabelecida [...] deverá ser fixada em zero. § 1º Para fins de aplicação do disposto no caput, o adquirente ou o importador deverá, na forma do regulamento, declarar que o gás natural será destinado à utilização como insumo em processo industrial.",
+        "Correta. A afirmação está correta. A competência para administrar e fiscalizar o Imposto Seletivo é da RFB.\nArt. 411. Compete à RFB a administração e a fiscalização do Imposto Seletivo.",
+        "Incorreta. A afirmação está incorreta. A lei atribui a responsabilidade pelo recolhimento do imposto desviado ao adquirente que deu causa ao desvio (a indústria petroquímica), não estabelecendo responsabilidade solidária ao extrator original por esse ato.\nArt. 423. ... § 2º Na hipótese de ser dado ao gás natural adquirido [...] destino diverso daquele previsto no caput, o adquirente [...] deverá recolher o Imposto Seletivo [...] na condição de: I - responsável, para o adquirente;",
+        "Correta. A afirmação está correta. Esta é a consequência exata prevista na lei para o desvio de finalidade do gás adquirido com alíquota zero.\nArt. 423. ... § 2º Na hipótese de ser dado ao gás natural adquirido ou importado com redução de alíquota destino diverso daquele previsto no caput, o adquirente ou o importador deverá recolher o Imposto Seletivo [...], acrescida de multa e juros de mora nos termos do § 2º do art. 29 desta Lei Complementar, na condição de: I - responsável, para o adquirente;"
+    ]
+},
+{
+    "id": "LC214-196",
+    "question": "Uma montadora de veículos, contribuinte do Imposto Seletivo (IS), realiza, no mesmo mês, duas operações de primeiro fornecimento de veículos de passageiros: (1) a venda de um veículo esportivo de alta potência para uma concessionária revendedora; e (2) a venda de um veículo adaptado para Ana, pessoa com deficiência, cujo direito ao benefício fiscal foi devidamente reconhecido. Dois anos após a aquisição, Ana vende o veículo adaptado para Carlos, que não possui deficiência.\nCom base nesse cenário e nas disposições da Lei Complementar nº 214/2025 sobre o Imposto Seletivo, considere:\n\nI. A montadora é a contribuinte do IS em ambas as operações de primeiro fornecimento, por ser a fabricante dos bens.\nII. A alíquota do IS incidente sobre a operação (1) poderá ser graduada conforme critérios como a potência do veículo.\nIII. A alíquota do IS incidente sobre a operação (2) é reduzida a zero.\nIV. A revenda do veículo por Ana para Carlos, dois anos após a aquisição, constitui um novo fato gerador do Imposto Seletivo, pois o adquirente não é pessoa com deficiência.\n\nEstá correto o que se afirma APENAS em",
+    "difficulty": "Média",
+    "format": "Contexto-Assertiva",
+    "subtopic": "Imposto Seletivo",
+    "options": [
+        "I e II.",
+        "II e IV.",
+        "I, II e III.",
+        "III e IV.",
+        "I e IV."
+    ],
+    "answer": 2,
+    "justifications": [
+        "I. Correta. A assertiva está correta. A lei define que o contribuinte do Imposto Seletivo, na comercialização, é o fabricante no momento do primeiro fornecimento.\nArt. 424. O contribuinte do Imposto Seletivo é: I - o fabricante, na primeira comercialização, na incorporação do bem ao ativo imobilizado, na tradição do bem em transação não onerosa ou no consumo do bem;",
+        "II. Correta. A assertiva está correta. A lei determina que as alíquotas para veículos serão graduadas por lei ordinária, utilizando a potência como um dos critérios.\nArt. 419. ... Parágrafo único. As alíquotas referidas no caput deste artigo serão graduadas em relação a cada veículo conforme enquadramento nos seguintes critérios, nos termos de lei ordinária: I - potência do veículo;",
+        "III. Correta. A assertiva está correta. A lei estabelece alíquota zero do IS para veículos destinados a adquirentes com deficiência que tenham o benefício reconhecido pela RFB.\nArt. 420. A alíquota do Imposto Seletivo fica reduzida a zero para veículos que sejam destinados a adquirentes cujo direito ao benefício do regime diferenciado de que trata o art. 149 desta Lei Complementar [Nota: Art. 149 trata de PcD e Autista] haja sido reconhecido pela RFB...",
+        "IV. Incorreta. A assertiva está incorreta. O Imposto Seletivo é monofásico, incidindo uma única vez. A revenda do veículo por Ana (operação subsequente ao primeiro fornecimento) não constitui um novo fato gerador, independentemente de quem seja o novo adquirente.\nArt. 410. O Imposto Seletivo incidirá uma única vez sobre o bem ou serviço, sendo vedado qualquer tipo de aproveitamento de crédito do imposto com operações anteriores ou geração de créditos para operações posteriores."
+    ]
+},
+{
+    "id": "LC214-197",
+    "question": "A \"Fumígenos S.A.\", fabricante de cigarros, realiza a primeira comercialização de um lote de seus produtos para a \"Distribuidora Irmã Ltda.\". Sabe-se que a \"Fumígenos S.A.\" detém 25% (vinte e cinco por cento) do capital social da \"Distribuidora Irmã Ltda.\". A venda foi registrada por um valor ad valorem significativamente inferior ao preço de mercado. Em uma ação de fiscalização, a Receita Federal do Brasil (RFB) constata a irregularidade no preço. Na mesma operação, a RFB aborda um caminhão transportando parte deste lote sem a documentação fiscal comprobatória de sua procedência.\nCom base nesse cenário e nas disposições da Lei Complementar nº 214/2025 sobre o Imposto Seletivo (IS), considere:\n\nI. A \"Fumígenos S.A.\" é a contribuinte do IS na referida operação de comercialização, por ser a fabricante do bem.\nII. A fiscalização da operação e a administração do IS são de competência da RFB.\nIII. A \"Fumígenos S.A.\" e a \"Distribuidora Irmã Ltda.\" são consideradas partes relacionadas e, por isso, a base de cálculo do IS não deverá ser o valor declarado, mas sim o valor de mercado dos bens.\nIV. O transportador flagrado com os produtos desacompanhados da documentação fiscal é obrigado ao pagamento do IS na condição de responsável subsidiário.\n\nEstá correto o que se afirma APENAS em",
+    "difficulty": "Difícil",
+    "format": "Contexto-Assertiva",
+    "subtopic": "Imposto Seletivo",
+    "options": [
+        "I e IV.",
+        "II e III.",
+        "III e IV.",
+        "I, II e III.",
+        "I, II, III e IV."
+    ],
+    "answer": 3,
+    "justifications": [
+        "I. Correta. A assertiva está correta. A lei define que o fabricante é o contribuinte do IS na primeira comercialização do bem.\nArt. 424. O contribuinte do Imposto Seletivo é: I - o fabricante, na primeira comercialização...",
+        "II. Correta. A assertiva está correta. A lei atribui expressamente à esfera federal a gestão do IS.\nArt. 411. Compete à RFB a administração e a fiscalização do Imposto Seletivo.",
+        "III. Correta. A assertiva está correta. A participação de 25% caracteriza influência significativa, enquadrando as empresas como coligadas e, portanto, partes relacionadas (conforme Art. 5º, § 3º, II, e § 6º, aplicados por força do Art. 416). Nesses casos, a base de cálculo é o valor de mercado.\nArt. 416. Na comercialização entre partes relacionadas, na hipótese de incidência sujeita à alíquota ad valorem [...], a base de cálculo não deverá ser inferior ao valor de mercado dos bens... Parágrafo único. Para fins do disposto no caput, consideram-se partes relacionadas aquelas definidas no §§ 2º a 5º do art. 5º desta Lei Complementar.",
+        "IV. Incorreta. A assertiva está incorreta. Embora o transportador seja de fato responsável pelo pagamento, a lei não define essa responsabilidade como \"subsidiária\".\nArt. 425. São obrigados ao pagamento do Imposto Seletivo como responsáveis...: I - o transportador, em relação aos produtos tributados que transportar desacompanhados da documentação fiscal comprobatória de sua procedência;"
+    ]
+},
+{
+    "id": "LC214-198",
+    "question": "De acordo com a Lei Complementar nº 214/2025, no que tange à sujeição passiva do Imposto Seletivo (IS), é considerado contribuinte deste imposto",
+    "difficulty": "Fácil",
+    "format": "Direta",
+    "subtopic": "Imposto Seletivo",
+    "options": [
+        "o transportador, em relação aos produtos tributados que transportar desacompanhados da documentação fiscal comprobatória de sua procedência.",
+        "o varejista, na operação de venda de bebida alcoólica ao consumidor final.",
+        "o fabricante, na primeira comercialização do bem, e o importador, na entrada do bem no território nacional.",
+        "o possuidor de produtos tributados que mantiver para fins de venda, desacompanhados da documentação fiscal comprobatória de sua procedência.",
+        "o adquirente do bem, em todas as operações, na qualidade de substituto tributário."
+    ],
+    "answer": 2,
+    "justifications": [
+        "Incorreta. O transportador, nessa hipótese, é classificado como responsável pelo pagamento, e não como contribuinte.\nArt. 425. São obrigados ao pagamento do Imposto Seletivo como responsáveis...: I - o transportador, em relação aos produtos tributados que transportar desacompanhados da documentação fiscal comprobatória de sua procedência;",
+        "Incorreta. O Imposto Seletivo incide uma única vez (monofásico), na primeira comercialização pelo fabricante (Art. 424, I). A revenda pelo varejista não é fato gerador.\nArt. 410. O Imposto Seletivo incidirá uma única vez sobre o bem ou serviço...",
+        "Correta. A alternativa lista corretamente duas das principais hipóteses de contribuinte do IS.\nArt. 424. O contribuinte do Imposto Seletivo é: I - o fabricante, na primeira comercialização... II - o importador na entrada do bem de procedência estrangeira no território nacional;",
+        "Incorreta. O possuidor do bem sem documento fiscal é classificado como responsável pelo pagamento, e não como contribuinte.\nArt. 425. São obrigados ao pagamento do Imposto Seletivo como responsáveis...: ... II - o possuidor ou detentor, em relação aos produtos tributados que possuir ou mantiver para fins de venda ou industrialização, desacompanhados da documentação fiscal comprobatória de sua procedência;",
+        "Incorreta. O contribuinte, regra geral, é o fabricante ou importador (quem dá saída ou entrada do bem no ciclo), e não o adquirente."
+    ]
+},
+{
+    "id": "LC214-199",
+    "question": "A Lei Complementar nº 214/2025 estabelece regras e limites para as alíquotas do Imposto Seletivo (IS). De acordo com estas regras,",
+    "difficulty": "Média",
+    "format": "Direta",
+    "subtopic": "Imposto Seletivo",
+    "options": [
+        "é vedada a cumulação de alíquotas ad valorem com alíquotas específicas para produtos fumígenos e bebidas alcoólicas.",
+        "as alíquotas estabelecidas nas operações com bens minerais extraídos respeitarão o percentual máximo de 1%.",
+        "as alíquotas específicas (ad rem), uma vez fixadas em lei ordinária, serão atualizadas anualmente com base na variação do IPCA.",
+        "a alíquota fica reduzida a zero para veículos destinados a táxis, mas não para aqueles adquiridos por pessoas com deficiência.",
+        "a alíquota do gás natural destinado à utilização como insumo industrial é reduzida em 60%."
+    ],
+    "answer": 2,
+    "justifications": [
+        "Incorreta. A lei prevê expressamente essa cumulação para produtos fumígenos e bebidas alcoólicas.\nArt. 422. ... § 1º Serão aplicadas alíquotas ad valorem cumuladas com alíquotas específicas para: I - produtos fumígenos classificados na posição 24.02 da NCM/SH; e II - bebidas alcoólicas...",
+        "Incorreta. O teto máximo estabelecido para a alíquota sobre a extração de bens minerais é de 0,25%.\nArt. 422. ... § 2º As alíquotas do Imposto Seletivo estabelecidas nas operações com bens minerais extraídos respeitarão o percentual máximo de 0,25% (vinte e cinco centésimos por cento).",
+        "Correta. A lei prevê um mecanismo de atualização monetária anual para as alíquotas específicas (valor fixo por unidade), utilizando o IPCA.\nArt. 436. As alíquotas específicas referidas neste Livro serão atualizadas pelo IPCA uma vez ao ano, nos termos da lei ordinária.",
+        "Incorreta. O benefício da alíquota zero aplica-se a ambos os casos (táxis e PcD/Autistas).\nArt. 420. A alíquota do Imposto Seletivo fica reduzida a zero para veículos que sejam destinados a adquirentes cujo direito ao benefício do regime diferenciado de que trata o art. 149 desta Lei Complementar [Nota: Art. 149 trata de PcD/Autista e Art. 143, VII, de taxistas] haja sido reconhecido pela RFB... Art. 143. ... ficam reduzidas a zero as alíquotas do IBS e da CBS incidentes sobre operações com os seguintes bens e serviços: ... VI - automóveis de passageiros adquiridos por pessoas com deficiência ou com transtorno do espectro autista; VII - automóveis de passageiros adquiridos por motoristas profissionais que destinem o automóvel à utilização na categoria de aluguel (táxi);",
+        "Incorreta. O benefício para o gás natural utilizado como insumo industrial é a alíquota zero, não a redução de 60%.\nArt. 423. Caso o gás natural seja destinado à utilização como insumo em processo industrial [...] a alíquota [...] deverá ser fixada em zero."
+    ]
+},
+{
+    "id": "LC214-200",
+    "question": "No que tange ao Imposto Seletivo (IS) sobre a importação de bens e sua administração, conforme a Lei Complementar nº 214/2025, considere:\n\nI. O imposto deverá ser pago no momento do registro da declaração de importação.\nII. O contencioso administrativo relativo ao IS seguirá as regras e órgãos de julgamento do Comitê Gestor do IBS.\nIII. São isentas do pagamento do IS as bagagens de viajantes e as remessas internacionais, quando submetidas aos regimes de tributação especial ou simplificada, respectivamente.\nIV. O contribuinte do IS na importação por conta e ordem de terceiro é o adquirente dos bens no exterior.\n\nEstá correto o que se afirma APENAS em",
+    "difficulty": "Difícil",
+    "format": "Assertiva",
+    "subtopic": "Imposto Seletivo",
+    "options": [
+        "I e III.",
+        "II e III.",
+        "I e IV.",
+        "II e IV.",
+        "I, III e IV."
+    ],
+    "answer": 0,
+    "justifications": [
+        "I. Correta. A lei estabelece o momento do registro da DI como o prazo limite para o pagamento do IS na importação.\nArt. 434. ... § 3º O Imposto Seletivo, na importação, deverá ser pago no registro da declaração de importação.",
+        "II. Incorreta. A lei determina que o contencioso do IS, por ser um tributo federal administrado pela RFB (Art. 411), seguirá o rito federal (Decreto nº 70.235/1972), e não as regras do Comitê Gestor do IBS.\nArt. 411. ... Parágrafo único. O contencioso administrativo no âmbito do Imposto Seletivo atenderá ao disposto no Decreto nº 70.235, de 6 de março de 1972.",
+        "III. Correta. A lei prevê expressamente essas duas isenções para operações de importação.\nArt. 435. São isentas do pagamento do Imposto Seletivo na importação de bens materiais: I - as bagagens de viajantes e de tripulantes, acompanhadas ou desacompanhadas, quando submetidas ao regime de tributação especial; e II - as remessas internacionais, quando submetidas ao regime de tributação simplificada.",
+        "IV. Incorreta. A lei define o \"importador\" como o contribuinte. Na importação por conta e ordem, o importador (que promove a entrada, registra a DI) é a trading company, e não o adquirente. O Art. 424 não faz a ressalva que o Art. 72 (do IBS/CBS) faz, definindo apenas:\nArt. 424. O contribuinte do Imposto Seletivo é: ... II - o importador na entrada do bem de procedência estrangeira no território nacional;"
+    ]
+},
+{
+    "id": "LC214-201",
+    "question": "A respeito das alíquotas do Imposto Seletivo (IS) aplicáveis a aeronaves e embarcações, a Lei Complementar nº 214/2025 estabelece que:",
+    "difficulty": "Fácil",
+    "format": "Direta",
+    "subtopic": "Imposto Seletivo",
+    "options": [
+        "serão fixas e idênticas para todos os modelos, independentemente de suas características.",
+        "incidirão apenas sobre aeronaves e embarcações de uso recreativo ou esportivo.",
+        "poderão ser graduadas conforme critérios de sustentabilidade ambiental.",
+        "serão reduzidas a zero para todas as aeronaves de uso agrícola.",
+        "serão definidas por resolução do Comitê Gestor do IBS."
+    ],
+    "answer": 2,
+    "justifications": [
+        "Incorreta. A alternativa contraria a lei, que prevê a possibilidade de graduação das alíquotas.\nTexto Legal (Art. 421): \"As alíquotas do Imposto Seletivo aplicáveis às aeronaves e embarcações [...] poderão ser graduadas conforme critérios de sustentabilidade ambiental...\"",
+        "Incorreta. A lei não faz essa restrição. O Art. 409, § 1º, II, indica a incidência sobre \"embarcações e aeronaves\" de forma geral (conforme listado no Anexo XVII), e o Art. 421 não limita a aplicação ao uso recreativo ou esportivo .",
+        "Correta. Esta é a previsão expressa da legislação.\nTexto Legal (Art. 421): \"As alíquotas do Imposto Seletivo aplicáveis às aeronaves e embarcações [...] poderão ser graduadas conforme critérios de sustentabilidade ambiental nos termos da lei ordinária.\"",
+        "Incorreta. A lei não prevê alíquota zero específica para aeronaves de uso agrícola. O Art. 421, Parágrafo único, prevê alíquota zero para embarcações e aeronaves de \"zero emissão de dióxido de carbono ou com alta eficiência energético-ambiental\" , o que é um critério diferente.",
+        "Incorreta. As alíquotas do IS serão estabelecidas em lei ordinária , e sua administração compete à RFB, não ao Comitê Gestor do IBS."
+    ]
+},
+{
+    "id": "LC214-202",
+    "question": "Sobre as alíquotas do Imposto Seletivo (IS) incidentes em operações com bebidas alcoólicas, a Lei Complementar nº 214/2025 dispõe que:\n\nI. Serão aplicadas alíquotas ad valorem cumuladas com alíquotas específicas, que devem considerar o teor alcoólico.\nII. As alíquotas ad valorem não podem ser diferenciadas por categoria de produto, devendo ser uniformes.\nIII. As alíquotas podem ser progressivas em função do volume de produção, para diferenciar as operações de pequenos produtores.\n\nEstá correto o que se afirma APENAS em",
+    "difficulty": "Média",
+    "format": "Assertiva",
+    "subtopic": "Imposto Seletivo",
+    "options": [
+        "I, II e III.",
+        "II.",
+        "I.",
+        "I e III.",
+        "II e III."
+    ],
+    "answer": 3,
+    "justifications": [
+        "I. Correta. A assertiva descreve com precisão a regra de cumulação de alíquotas para bebidas alcoólicas.\nTexto Legal (Art. 422, § 1º, II): \"Serão aplicadas alíquotas ad valorem cumuladas com alíquotas específicas para: [...] II - bebidas alcoólicas, em que as alíquotas específicas devem considerar o produto do teor alcoólico pelo volume dos produtos.\"",
+        "II. Incorreta. A assertiva afirma o oposto do que a lei permite. As alíquotas ad valorem podem, sim, ser diferenciadas.\nTexto Legal (Art. 422, § 4º): \"As alíquotas ad valorem estabelecidas nas operações com bebidas alcoólicas poderão ser diferenciadas por categoria de produto e progressivas em virtude do teor alcoólico.\"",
+        "III. Correta. A lei prevê expressamente este mecanismo como forma de diferenciar a tributação dos pequenos produtores.\nTexto Legal (Art. 422, § 7º e § 8º, I): \"As alíquotas aplicáveis a bebidas alcoólicas poderão ser estabelecidas de modo a diferenciar as operações realizadas pelos pequenos produtores, definidos em lei ordinária.\" \"Para assegurar o disposto no § 7º, as alíquotas poderão ser: I - progressivas em função do volume de produção;\""
+    ]
+},
+  {
+    "id": "LC214-203",
+    "question": "Uma família de baixa renda, beneficiária do cashback e devidamente cadastrada no CadÚnico, efetua o pagamento de sua conta de energia elétrica. A concessionária de energia, ao emitir a fatura, já aplica o mecanismo de devolução.\nCom base nesse cenário e nas disposições da Lei Complementar nº 214/2025 sobre a devolução personalizada (cashback), considere:\n\nI. O valor devolvido à família, tanto da parcela do IBS quanto da CBS, será tratado contabilmente pelos entes federativos como uma despesa orçamentária com transferência de renda.\nII. Para o fornecimento domiciliar de energia elétrica, a devolução personalizada será concedida, preferencialmente, no momento da cobrança, em vez de ser acumulada para um resgate posterior.\nIII. A devolução dos tributos a pessoas físicas será deduzida da arrecadação, mediante anulação da respectiva receita.\n\nEstá correto o que se afirma APENAS em",
+    "difficulty": "Média",
+    "format": "Contexto-Assertiva",
+    "subtopic": "Devolução (Cashback) e Cesta Básica",
+    "options": [
+        "I.",
+        "II.",
+        "I e II.",
+        "II e III.",
+        "I e III."
+    ],
+    "answer": 3,
+    "justifications": [
+        "I. Incorreta. A assertiva descreve a natureza contábil errada. A lei define que a devolução não é uma despesa, mas sim uma anulação de receita.\nArt. 121. As devoluções dos tributos a pessoas físicas de que trata este Capítulo serão deduzidas da arrecadação, mediante anulação da respectiva receita.",
+        "II. Correta. A assertiva descreve a regra específica para o momento da devolução em serviços de fornecimento contínuo.\nArt. 116. ... § 1º Caso se trate de fornecimento domiciliar de energia elétrica, abastecimento de água, esgotamento sanitário e gás canalizado e de fornecimento de serviços de telecomunicações as devoluções serão concedidas no momento da cobrança.",
+        "III. Correta. A assertiva descreve precisamente a natureza contábil da devolução do cashback.\nArt. 121. As devoluções dos tributos a pessoas físicas de que trata este Capítulo serão deduzidas da arrecadação, mediante anulação da respectiva receita."
+    ]
+},
+{
+    "id": "LC214-204",
+    "question": "A gestão do cashback do IBS e da CBS identifica que, em determinadas localidades rurais isoladas, existem dificuldades operacionais que comprometem a eficácia da devolução calculada com base no consumo individualizado (vinculado ao CPF).\nNessa situação excepcional, a Lei Complementar nº 214/2025 autoriza que",
+    "difficulty": "Média",
+    "format": "Contexto",
+    "subtopic": "Devolução (Cashback) e Cesta Básica",
+    "options": [
+        "o benefício seja suspenso nessas localidades até que haja infraestrutura tecnológica adequada para o registro dos documentos fiscais.",
+        "a devolução seja calculada com base em um percentual fixo do salário-mínimo vigente na região, desconsiderando o consumo.",
+        "sejam adotados procedimentos simplificados para o cálculo das devoluções, estimando-se o consumo e a renda média com base nas informações da Pesquisa de Orçamentos Familiares (POF) .",
+        "o prazo para utilização (resgate) das devoluções seja estendido de 24 para 48 meses para os residentes dessas localidades.",
+        "a devolução seja concedida apenas sobre o consumo de energia elétrica e gás de cozinha, excluindo-se os demais casos."
+    ],
+    "answer": 2,
+    "justifications": [
+        "Incorreta. A lei não prevê a suspensão do benefício, mas sim a adoção de um método de cálculo alternativo (Art. 119) .",
+        "Incorreta. A lei não prevê o uso do salário-mínimo como base para o cálculo simplificado, mas sim dados de consumo e renda estimados (Art. 119, § 2º e § 3º) .",
+        "Correta. A alternativa descreve com precisão o procedimento simplificado autorizado pelo Art. 119, caput, e a metodologia de cálculo baseada na POF, prevista no § 3º do mesmo artigo.\nArt. 119. Excepcionalmente, nas localidades com dificuldades operacionais que comprometam a eficácia da devolução do tributo na forma do art. 117 desta Lei Complementar, poderão ser adotados procedimentos simplificados para cálculo das devoluções. ... Art. 119. ... § 3º Os dados relativos ao consumo dos bens e serviços e a renda média [...], serão estimados a partir das informações da Pesquisa de Orçamentos Familiares (POF), produzida pela Fundação Instituto Brasileiro de Geografia e Estatística (IBGE)...",
+        "Incorreta. O prazo máximo de 24 meses (Art. 114, § 1º, VIII) é uma regra geral de normatização, e a lei não prevê sua extensão como parte do procedimento simplificado.",
+        "Incorreta. O procedimento simplificado (Art. 119) é uma forma de cálculo alternativa, mas não restringe os tipos de consumo que dão direito à devolução."
+    ]
+},
+{
+    "id": "LC214-205",
+    "question": "Um Estado, visando ampliar os benefícios sociais em seu território, decide, por meio de lei específica e conforme autorizado pela Lei Complementar nº 214/2025, fixar um percentual de devolução do IBS (cashback) superior ao mínimo nacional. Para a aquisição de produtos de higiene pessoal, a lei estadual estabelece uma devolução de 30% do IBS.\nConsiderando essa situação e as definições da referida Lei Complementar,",
+    "difficulty": "Difícil",
+    "format": "Contexto",
+    "subtopic": "Devolução (Cashback) e Cesta Básica",
+    "options": [
+        "o valor total de 30%, classificado como devolução geral, deverá ser integralmente considerado para fins de cálculo da alíquota de referência do IBS.",
+        "a parcela de 20%, classificada como devolução específica, não será considerada no cálculo da alíquota de referência, mas a parcela adicional de 10%, classificada como devolução geral, será considerada.",
+        "o valor total de 30%, classificado como devolução específica, não será considerado para o cálculo da alíquota de referência do IBS.",
+        "a parcela de 20%, classificada como devolução específica, será considerada para fins de cálculo da alíquota de referência do IBS, enquanto a parcela adicional de 10%, classificada como devolução geral, não será considerada para esse cálculo.",
+        "a parcela de 20%, classificada como devolução geral, será considerada para fins de cálculo da alíquota de referência do IBS, enquanto a parcela adicional de 10%, classificada como devolução específica, não será considerada para esse cálculo."
+    ],
+    "answer": 4,
+    "justifications": [
+        "Incorreta. A \"devolução geral\" é apenas a parcela estabelecida no Art. 118 (que para higiene pessoal é 20%), e não o valor total de 30%.\nArt. 124. I - devolução geral [...] o valor apurado mediante a aplicação dos percentuais estabelecidos no art. 118... [Nota: 20% para \"demais casos\"]",
+        "Incorreta. A alternativa inverte ambos os conceitos e suas consequências. A parcela de 20% é a \"geral\" (e é considerada no cálculo), e a de 10% é a \"específica\" (e não é considerada).",
+        "Incorreta. A \"devolução específica\" é apenas a diferença (10%), e não o valor total.\nArt. 124. ... II - devolução específica [...] a diferença entre o valor apurado mediante a aplicação dos percentuais fixados pelos entes federativos [...] e o valor de que trata o inciso I... [Nota: 30% - 20% = 10%]",
+        "Incorreta. A alternativa inverte os conceitos. A parcela de 20% é a \"geral\" e a de 10% é a \"específica\".",
+        "Correta. A alternativa descreve perfeitamente a distinção legal e suas consequências. A parcela de 20% (Art. 118, II) é a \"devolução geral\" (Art. 124, I) e, portanto, deverá ser considerada para o cálculo da alíquota de referência (Art. 124, Parágrafo único). A parcela adicional de 10% (30% - 20%) é a \"devolução específica\" (Art. 124, II) e não afeta o cálculo da alíquota de referência.\nArt. 124. ... Parágrafo único. A devolução geral de que trata o inciso I do caput deste artigo deverá ser considerada para fins de cálculo das alíquotas de referência..."
+    ]
+},
+{
+    "id": "LC214-206",
+    "question": "Considere que um beneficiário, integrante de família de baixa renda e destinatário da devolução personalizada (cashback), adquire em um supermercado produtos alimentícios classificados como parte da Cesta Básica Nacional de Alimentos. O documento fiscal eletrônico da operação registra corretamente as alíquotas do IBS e da CBS como reduzidas a zero, em razão do benefício legal.\nNessa situação, a respeito do direito à devolução personalizada (cashback) sobre esta aquisição,",
+    "difficulty": "Média",
+    "format": "Direta",
+    "subtopic": "Devolução (Cashback) e Cesta Básica",
+    "options": [
+        "o beneficiário fará jus à devolução do percentual de 20% do IBS e da CBS, por ser regra geral.",
+        "não haverá parcela a ser creditada, pois as alíquotas incidentes sobre os produtos da Cesta Básica foram reduzidas a zero e, portanto, não houve ônus tributário a ser restituído .",
+        "haverá devolução limitada ao valor simbólico mínimo fixado no regulamento federal.",
+        "o lojista deverá destacar no documento fiscal o valor do IBS e da CBS que incidiriam pela alíquota-padrão, para permitir o cálculo da devolução.",
+        "o benefício será concedido apenas se o beneficiário comprovar gasto residencial adicional."
+    ],
+    "answer": 1,
+    "justifications": [
+        "Incorreta. A regra geral de devolução de 20% (vinte por cento) para os \"demais casos\" aplica-se a operações tributadas, conforme o Art. 118, II. A operação em questão não foi tributada, mas sim beneficiada com alíquota zero.\nArt. 118. O percentual a ser aplicado nos termos do art. 117 desta Lei Complementar será de: [...] II - 20% (vinte por cento) para a CBS e para o IBS, nos demais casos.",
+        "Correta. A devolução personalizada (cashback) é uma restituição do tributo pago. O Art. 120 estabelece que a devolução não pode ser maior que o ônus (o imposto) efetivamente suportado. Como o Art. 125 define que os produtos da Cesta Básica Nacional têm alíquota zero, o ônus suportado foi R$ 0,00. Logo, não há valor a ser devolvido.\nArt. 125. Ficam reduzidas a zero as alíquotas do IBS e da CBS incidentes sobre as vendas de produtos destinados à alimentação humana [...] que compõem a Cesta Básica Nacional de Alimentos... Art. 120. Em nenhuma hipótese a parcela creditada individualmente à família beneficiária nos termos deste Capítulo poderá superar o ônus do tributo suportado [...] incidentes sobre o consumo das famílias.",
+        "Incorreta. Não há qualquer previsão na Lei Complementar nº 214/2025 para a devolução de um \"valor simbólico mínimo\" na ausência de tributo.",
+        "Incorreta. O documento fiscal deve refletir a operação real, que, conforme o Art. 125, é de alíquota zero. A devolução está condicionada ao ônus efetivamente suportado (Art. 120), que neste caso é zero.",
+        "Incorreta. O cálculo do cashback, conforme o Art. 117, baseia-se nos documentos fiscais vinculados ao CPF que acobertem operações de aquisição de bens ou serviços, não exigindo comprovação de outros gastos."
+    ]
+},
+  {
+    "id": "LC214-207",
+    "question": "De acordo com a Lei Complementar nº 214/2025, a administração tributária poderá determinar a aplicação de um Regime Especial de Fiscalização (REF) para o cumprimento de obrigações tributárias em determinadas hipóteses. Considere as seguintes situações:\n\nI. Resistência à fiscalização, caracterizada pela negativa de acesso do agente fiscal ao estabelecimento ou ao domicílio fiscal do sujeito passivo.\nII. A ocorrência de infração à legislação tributária, em um único período de apuração, desde que constatada a utilização de artifício, ardil ou qualquer outro meio fraudulento com o fim de suprimir o pagamento de tributo.\nIII. Evidências de que a pessoa jurídica esteja constituída por interpostas pessoas que não sejam os verdadeiros sócios ou acionistas.\nIV. Prática reiterada de infração, assim considerada a segunda ocorrência de idênticas infrações à legislação tributária, verificada em relação aos últimos 5 (cinco) anos-calendário.\n\nEstá correto o que se afirma em",
+    "difficulty": "Média",
+    "format": "Assertiva",
+    "subtopic": "Administração e Fiscalização",
+    "options": [
+        "I e II, apenas.",
+        "II e IV, apenas.",
+        "I, III e IV, apenas.",
+        "I, II e III, apenas.",
+        "I, II, III e IV."
+    ],
+    "answer": 2,
+    "justifications": [
+        "I – Correta. A assertiva descreve exatamente uma das hipóteses previstas na lei para a aplicação do REF.\nTexto Legal (Art. 338, II): O REF poderá ser determinado na hipótese de \"resistência à fiscalização, caracterizada pela negativa de acesso ao estabelecimento, ao domicílio fiscal ou a qualquer outro local onde se desenvolvam as atividades do sujeito passivo...\".",
+        "II – Incorreta. A assertiva está errada porque, para a caracterização da prática reiterada por meio fraudulento, a lei exige que ela ocorra em mais de um período de apuração.\nTexto Legal (Art. 338, § 2º, II): Considera-se prática reiterada (hipótese do inciso V do caput) \"a ocorrência, em 2 (dois) ou mais períodos de apuração, consecutivos ou alternados, de infrações à legislação tributária, caso seja constatada a utilização de artifício, ardil ou qualquer outro meio fraudulento...\". A ocorrência em \"um único período\" não preenche o requisito legal.",
+        "III – Correta. Esta é uma das hipóteses taxativas que autorizam a instituição do REF.\nTexto Legal (Art. 338, III): O REF poderá ser determinado na hipótese de \"evidências de que a pessoa jurídica esteja constituída por interpostas pessoas que não sejam os verdadeiros sócios ou acionistas, ou o titular, no caso de firma individual;\".",
+        "IV – Correta. A assertiva descreve corretamente uma das definições de \"prática reiterada\" que justifica o REF.\nTexto Legal (Art. 338, V c/c § 2º, I): O REF pode ser aplicado na \"prática reiterada de infração da legislação tributária\" , considerando-se como tal \"a segunda ocorrência de idênticas infrações à legislação tributária, verificada em relação aos últimos 5 (cinco) anos- calendário, formalizadas por intermédio de auto de infração;\"."
+    ]
+},
+{
+    "id": "LC214-208",
+    "question": "Conforme a Lei Complementar nº 214/2025, diversas situações caracterizam omissão de receita e ocorrência de operações sujeitas à incidência da CBS e do IBS.\nAssinale a alternativa que NÃO apresenta uma dessas presunções legais.",
+    "difficulty": "Média",
+    "format": "Direta",
+    "subtopic": "Administração e Fiscalização",
+    "options": [
+        "A manutenção, no passivo, de obrigações já pagas ou cuja exigibilidade não seja comprovada.",
+        "O saldo credor na conta caixa, apresentado na escrituração ou apurado em procedimento fiscal.",
+        "Os valores creditados em conta de depósito mantida em instituição financeira, em relação aos quais o titular, regularmente intimado, não comprove, mediante documentação idônea, a origem dos recursos.",
+        "O suprimento de caixa fornecido à empresa por sócio ou administrador, se a efetividade da entrega e a origem dos recursos não forem satisfatoriamente demonstrados.",
+        "A escrituração, no passivo, de obrigações cuja exigibilidade esteja suspensa por depósito judicial ou recurso administrativo, desde que devidamente comprovada a ação."
+    ],
+    "answer": 4,
+    "justifications": [
+        "Incorreta. A alternativa descreve uma presunção legal de omissão de receita prevista expressamente na lei.\nTexto Legal (Art. 335, III): \"Caracteriza omissão de receita e ocorrência de operações sujeitas à incidência da CBS e do IBS: [...] III - manutenção, no passivo, de obrigações já pagas ou cuja exigibilidade não seja comprovada;\"",
+        "Incorreta. A alternativa descreve uma presunção legal de omissão de receita prevista expressamente na lei.\nTexto Legal (Art. 335, II): \"Caracteriza omissão de receita e ocorrência de operações sujeitas à incidência da CBS e do IBS: [...] II - saldo credor na conta caixa, apresentado na escrituração ou apurado em procedimento fiscal;\"",
+        "Incorreta. A alternativa descreve uma presunção legal de omissão de receita prevista expressamente na lei.\nTexto Legal (Art. 335, VII): \"Caracteriza omissão de receita e ocorrência de operações sujeitas à incidência da CBS e do IBS: [...] VII - valores creditados em conta de depósito ou de investimento mantida em instituição financeira, em relação aos quais o titular, pessoa física ou jurídica, regularmente intimado, não comprove, mediante documentação idônea, a origem dos recursos utilizados nessas operações;\"",
+        "Incorreta. A alternativa descreve uma presunção legal de omissão de receita prevista expressamente na lei.\nTexto Legal (Art. 335, VIII): \"Caracteriza omissão de receita e ocorrência de operações sujeitas à incidência da CBS e do IBS: [...] VIII - suprimento de caixa fornecido à empresa por administrador, sócio, titular da firma individual, acionista controlador da companhia, inclusive por terceiros, se a efetividade da entrega e a origem dos recursos não forem satisfatoriamente demonstrados;\"",
+        "Correta. Esta situação não constitui presunção de omissão de receita. A escrituração de uma obrigação cuja exigibilidade está suspensa por um procedimento legal (como depósito judicial ou impugnação administrativa) é um registro contábil legítimo e esperado, e não um indício de irregularidade, diferentemente do que prevê o inciso III do Art. 335 (obrigações já pagas ou cuja exigibilidade não seja comprovada)."
+    ]
+},
+{
+    "id": "LC214-209",
+    "question": "A Lei Complementar nº 214/2025 prevê instâncias para garantir a harmonização do IBS e da CBS, incluindo o Comitê de Harmonização das Administrações Tributárias.\nNos termos da referida lei, compete a este Comitê",
+    "difficulty": "Média",
+    "format": "Direta",
+    "subtopic": "Administração e Fiscalização",
+    "options": [
+        "atuar como órgão consultivo do Fórum de Harmonização Jurídica das Procuradorias, analisando controvérsias jurídicas suscitadas pelos entes federativos.",
+        "propor a delegação recíproca do julgamento do contencioso administrativo relativo ao lançamento de ofício de pequeno valor.",
+        "deliberar sobre obrigações acessórias e procedimentos comuns, desde que suas resoluções sejam posteriormente homologadas pelo Ministro de Estado da Fazenda.",
+        "uniformizar a regulamentação e a interpretação da legislação relativa ao IBS e à CBS em relação às matérias comuns.",
+        "analisar relevantes e disseminadas controvérsias jurídicas relativas ao IBS e à CBS, desde que suscitadas pelo Ministro de Estado da Fazenda."
+    ],
+    "answer": 3,
+    "justifications": [
+        "Incorreta. A alternativa inverte as funções. É o Fórum de Harmonização Jurídica que atua como órgão consultivo do Comitê de Harmonização, e não o contrário.\nTexto Legal (Art. 322, I): \"Compete ao Fórum de Harmonização Jurídica das Procuradorias: I - atuar como órgão consultivo do Comitê de Harmonização das Administrações Tributárias...\".",
+        "Incorreta. A delegação do julgamento do contencioso é objeto de convênio específico entre o Ministério da Fazenda e o Comitê Gestor do IBS, não sendo uma competência do Comitê de Harmonização.\nTexto Legal (Art. 327): \"O Ministério da Fazenda e o Comitê Gestor do IBS poderão celebrar convênio para delegação recíproca do julgamento do contencioso administrativo...\".",
+        "Incorreta. Embora o Comitê delibere sobre obrigações acessórias (Art. 321, III), a lei não exige homologação pelo Ministro da Fazenda. Pelo contrário, as resoluções do Comitê vinculam diretamente as administrações tributárias.\nTexto Legal (Art. 321, Parágrafo único): \"As resoluções aprovadas pelo Comitê de Harmonização das Administrações Tributárias, a partir de sua publicação no Diário Oficial da União, vincularão as administrações tributárias...\".",
+        "Correta. A alternativa descreve com exatidão uma das competências centrais do Comitê de Harmonização.\nTexto Legal (Art. 321, I): \"Compete ao Comitê de Harmonização das Administrações Tributárias: I - uniformizar a regulamentação e a interpretação da legislação relativa ao IBS e à CBS em relação às matérias comuns;\".",
+        "Incorreta. A análise de \"relevantes e disseminadas controvérsias jurídicas\" é atribuição do Fórum de Harmonização Jurídica das Procuradorias, não do Comitê de Harmonização das Administrações Tributárias.\nTexto Legal (Art. 322, II c/c § 1º, II): \"Compete ao Fórum de Harmonização Jurídica das Procuradorias: [...] II - analisar relevantes e disseminadas controvérsias jurídicas relativas ao IBS e à CBS suscitadas [...] II - pelo Ministro de Estado da Fazenda.\""
+    ]
+},
+{
+    "id": "LC214-210",
+    "question": "Durante um complexo procedimento fiscal em 2030, a empresa \"Importadora Global Ltda.\" foi instada a apresentar documentos. A fiscalização, conduzida por uma autoridade fiscal estadual, apurou infrações relativas ao IBS e, com base nos mesmos fatos, identificou infrações relativas à CBS.\nConsiderando as normas de administração e fiscalização da Lei Complementar nº 214/2025:\n\nI. A fiscalização do IBS e da CBS, neste caso, pode ser realizada integralmente pela autoridade fiscal estadual, desde que haja convênio de delegação recíproca com a RFB, independentemente do valor do lançamento.\nII. A autoridade fiscal deverá lavrar autos de infração distintos para a exigência do crédito tributário do IBS e para a exigência do crédito tributário da CBS.\nIII. O sujeito passivo é obrigado a conservar os comprovantes da escrituração, relativos a fatos que repercutam em lançamentos contábeis de exercícios futuros, até que se opere a decadência do direito de a Fazenda Pública constituir os créditos tributários relativos a esses exercícios.\nIV. Caso haja dúvida sobre a aplicação de uma norma comum ao IBS e à CBS, a competência para editar o regulamento de ambos os tributos é do Comitê Gestor do IBS.\n\nEstá correto o que se afirma APENAS em",
+    "difficulty": "Difícil",
+    "format": "Contexto-Assertiva",
+    "subtopic": "Administração e Fiscalização",
+    "options": [
+        "I e III.",
+        "II e III.",
+        "I e IV.",
+        "II e IV.",
+        "II, III e IV."
+    ],
+    "answer": 1,
+    "justifications": [
+        "I – Incorreta. A assertiva está errada ao afirmar que a delegação independe do valor. A lei restringe essa delegação recíproca de fiscalização apenas aos processos de pequeno valor.\nTexto Legal (Art. 326): \"A RFB e as administrações tributárias dos Estados, do Distrito Federal e dos Municípios poderão celebrar convênio para delegação recíproca da atividade de fiscalização do IBS e da CBS nos processos fiscais de pequeno valor...\"",
+        "II – Correta. A assertiva está correta. A lei veda a consolidação de diferentes tributos em um único auto de infração, exigindo lançamentos separados.\nTexto Legal (Art. 331): \"A exigência do crédito tributário e a aplicação de penalidade isolada serão objeto de autos de infração distintos para cada tributo ou penalidade.\"",
+        "III – Correta. A assertiva descreve precisamente a regra de guarda de documentos de longo prazo (ex: aquisição de ativo imobilizado, cuja depreciação afeta exercícios futuros).\nTexto Legal (Art. 336): \"Os comprovantes da escrituração da pessoa jurídica, relativos a fatos que repercutam em lançamentos contábeis de exercícios futuros, serão conservados até que se opere a decadência do direito de a Fazenda Pública constituir os créditos tributários relativos a esses exercícios.\"",
+        "IV – Incorreta. A assertiva erra a competência para editar o regulamento da CBS. A competência é dividida: o Comitê Gestor edita o regulamento do IBS, e o Poder Executivo da União edita o da CBS.\nTexto Legal (Art. 317): \"Compete: I - ao Comitê Gestor do IBS editar o regulamento do IBS; e II - ao Poder Executivo da União editar o regulamento da CBS.\""
+    ]
+},
+{
+    "id": "LC214-211",
+    "question": "A Lei Complementar nº 214/2025 prevê que o Comitê Gestor do IBS e a RFB poderão instituir programas de incentivo à cidadania fiscal por meio de estímulo à exigência, pelos consumidores, da emissão de documentos fiscais.\nDe acordo com o texto legal, esses programas",
+    "difficulty": "Fácil",
+    "format": "Direta",
+    "subtopic": "Administração e Fiscalização",
+    "options": [
+        "poderão ser financiados pelo montante equivalente a até 0,05% (cinco centésimos por cento) da arrecadação do IBS e da CBS.",
+        "serão financiados pelo montante de 0,5% (cinco décimos por cento) da arrecadação exclusiva do IBS.",
+        "têm como objetivo principal financiar o desenvolvimento e a manutenção do sistema de split payment.",
+        "poderão utilizar as informações do adquirente para identificá-lo no documento fiscal, vedada a opção do adquirente por outra forma de identificação.",
+        "serão financiados por dotação orçamentária própria da União, sendo vedado o uso da arrecadação do IBS ou da CBS para este fim."
+    ],
+    "answer": 0,
+    "justifications": [
+        "Correta. A alternativa descreve com precisão o limite e a base de financiamento dos programas de cidadania fiscal.\nArt. 61. ... § 1º Os programas de que trata o caput deste artigo poderão ser financiados pelo montante equivalente a até 0,05% (cinco centésimos por cento) da arrecadação do IBS e da CBS.",
+        "Incorreta. O percentual está incorreto (0,5% vs 0,05%) e o financiamento provém de ambos os tributos (IBS e CBS), não apenas do IBS.",
+        "Incorreta. O objetivo expresso dos programas é o estímulo à exigência de documentos fiscais pelos consumidores.\nArt. 61. O Comitê Gestor do IBS e a RFB poderão instituir programas de incentivo à cidadania fiscal por meio de estímulo à exigência, pelos consumidores, da emissão de documentos fiscais.",
+        "Incorreta. A lei expressamente garante ao adquirente a opção de escolher outra forma de identificação.\nArt. 61. ... § 2º O regulamento poderá prever hipóteses em que as informações [...] poderão ser utilizadas para identificar o adquirente [...] nos respectivos documentos fiscais eletrônicos, garantida a opção do adquirente por outra forma de identificação.",
+        "Incorreta. A lei autoriza expressamente o financiamento por meio de um percentual da arrecadação dos próprios tributos, conforme Art. 61, § 1º."
+    ]
+},
+{
+    "id": "LC214-212",
+    "question": "O Município Alfa, a partir de 1º de janeiro de 2026, decide manter seu sistema próprio de emissão de notas fiscais de serviços e se recusa a autorizar a emissão da NFS-e de padrão nacional ou a compartilhar os documentos fiscais eletrônicos gerados em seu sistema para o ambiente de dados nacional, conforme leiaute padronizado.\nConsiderando essa situação hipotética e as disposições transitórias da Lei Complementar nº 214/2025, o não atendimento a essa obrigação",
+    "difficulty": "Média",
+    "format": "Contexto",
+    "subtopic": "Administração e Fiscalização",
+    "options": [
+        "implicará a suspensão temporária das transferências voluntárias ao Município Alfa .",
+        "resultará na aplicação de multa administrativa pelo Comitê Gestor do IBS (CGIBS).",
+        "transferirá a competência de fiscalização do ISS daquele município para a Receita Federal do Brasil.",
+        "não gerará sanção, pois a obrigação de adesão plena só se inicia em 31 de dezembro de 2032.",
+        "impedirá que os contribuintes do Município Alfa possam apurar ou recolher o IBS."
+    ],
+    "answer": 0,
+    "justifications": [
+        "Correta. A lei estabelece uma sanção federativa clara para o descumprimento dessa obrigação de compartilhamento de dados fiscais .\nArt. 62. ... § 7º O não atendimento ao disposto no caput deste artigo implicará a suspensão temporária das transferências voluntárias .",
+        "Incorreta. A sanção prevista no Art. 62, § 7º, é a suspensão de transferências voluntárias, não a aplicação de multa pelo CGIBS .",
+        "Incorreta. A lei não prevê a transferência de competência de fiscalização do ISS (tributo em extinção) como sanção .",
+        "Incorreta. A obrigação de autorizar a NFS-e padrão nacional ou compartilhar os dados inicia-se em 1º de janeiro de 2026 (Art. 62, § 1º). O prazo de 31/12/2032 (Art. 62, § 2º) é o limite final dessa regra transitória, não o seu início.",
+        "Incorreta. A sanção é institucional (para o Município), não recaindo diretamente sobre os contribuintes na forma de impedimento de apuração ."
+    ]
+},
+{
+    "id": "LC214-213",
+    "question": "Considerando as normas de operacionalização do IBS e da CBS previstas na Lei Complementar nº 214/2025,\n\nI. o Domicílio Tributário Eletrônico (DTE) será unificado e obrigatório para todas as pessoas jurídicas com fins lucrativos, sendo de adesão facultativa para as entidades sem personalidade jurídica e sem fins lucrativos.\nII. para fins de identificação única dos sujeitos passivos e bens, a lei estabelece o CPF para pessoas físicas, o CNPJ para pessoas jurídicas e entidades sem personalidade jurídica, e o Cadastro Imobiliário Brasileiro (CIB) para imóveis rurais e urbanos .\nIII. a obrigação dos Municípios de autorizar a emissão da Nota Fiscal de Serviços Eletrônica de padrão nacional (NFS-e) ou compartilhar seus documentos fiscais em leiaute padronizado é facultativa até 31 de dezembro de 2032 .\nIV. o contribuinte acessará as informações da apuração e do pagamento do IBS e da CBS em plataforma eletrônica unificada, com gestão compartilhada entre o Comitê Gestor do IBS e a RFB, a qual disponibilizará canal de atendimento ao contribuinte .\n\nEstá correto o que se afirma APENAS em",
+    "difficulty": "Difícil",
+    "format": "Assertiva",
+    "subtopic": "Administração e Fiscalização",
+    "options": [
+        "I e III.",
+        "I e II.",
+        "II e III.",
+        "I, III e IV.",
+        "II e IV."
+    ],
+    "answer": 4,
+    "justifications": [
+        "I. Incorreta. A assertiva está incorreta ao criar uma exceção para entidades sem fins lucrativos. A lei é clara ao determinar a obrigatoriedade para todas as entidades sujeitas ao CNPJ.\nArt. 59. ... § 5º O Domicílio Tributário Eletrônico (DTE) [...] será unificado e obrigatório para todas as entidades e demais pessoas jurídicas sujeitas à inscrição no CNPJ .",
+        "II. Correta. A assertiva descreve corretamente os três cadastros que servem como identificação única.\nArt. 59. ... § 1º Para efeitos do disposto no caput deste artigo, consideram-se os seguintes cadastros administrados pela RFB: I - de pessoas físicas, o Cadastro de Pessoas Físicas (CPF); II - de pessoas jurídicas e entidades sem personalidade jurídica, o Cadastro Nacional da Pessoa Jurídica (CNPJ); e III - de imóveis rurais e urbanos, o Cadastro Imobiliário Brasileiro (CIB) .",
+        "III. Incorreta. A obrigação não é facultativa. O Art. 62, § 1º, estabelece que os Municípios e o DF ficam obrigados a esta adesão/compartilhamento a partir de 1º de janeiro de 2026. O descumprimento, inclusive, gera sanção .\nArt. 62. ... § 7º O não atendimento ao disposto no caput deste artigo implicará a suspensão temporária das transferências voluntárias.",
+        "IV. Correta. A assertiva descreve corretamente a natureza da plataforma unificada e do canal de atendimento.\nArt. 58. ... § 1º O contribuinte acessará as informações da apuração e do pagamento do IBS e da CBS em plataforma eletrônica unificada, com gestão compartilhada entre o Comitê Gestor do IBS e a RFB. Art. 58. ... § 2º A plataforma eletrônica unificada de que trata o § 1º deste artigo disponibilizará canal de atendimento ao contribuinte... ."
+    ]
+},
+  {
+    "id": "LC214-214",
+    "question": "Uma construtora, contribuinte do regime regular do IBS e da CBS, finalizou a construção de uma unidade residencial (apartamento) em 2028, tendo apropriado R$ 50.000,00 em créditos de IBS e CBS referentes aos materiais e serviços utilizados na obra. Em 2029, a construtora decide realizar a doação pura e simples deste imóvel, sem qualquer contraprestação, a uma fundação de assistência social. A legislação estadual prevê a incidência do ITCD sobre esta doação.\nCom base nesse cenário e nas disposições da Lei Complementar nº 214/2025,",
+    "difficulty": "Média",
+    "format": "Contexto",
+    "subtopic": "Não Cumulatividade e Créditos",
+    "options": [
+        "a construtora (doador) deverá optar entre tributar a doação com base no valor de mercado do imóvel ou anular os créditos de R$ 50.000,00 que foram apropriados .",
+        "a base de cálculo do ITCD devido pela fundação será reduzida do valor do IBS que incidir sobre a doação.",
+        "a operação é uma doação sem contraprestação, configurando hipótese de não incidência, não cabendo qualquer cobrança de IBS ou anulação de créditos.",
+        "a construtora fica obrigada a anular os R$ 50.000,00 em créditos, não lhe sendo facultada η opção de tributar a operação .",
+        "a incidência do IBS sobre a doação, caso a construtora opte por tributá-la, altera a base de cálculo do ITCD."
+    ],
+    "answer": 0,
+    "justifications": [
+        "Correta. Embora a doação sem contraprestação seja, em regra, uma hipótese de não incidência (Art. 6º, VIII), o § 2º do mesmo artigo estabelece uma condição:\nArt. 6º ... § 2º Caso as doações de que trata o inciso VIII do caput deste artigo tenham por objeto bens ou serviços que tenham permitido a apropriação de créditos pelo doador, inclusive na produção: I - a doação será tributada com base no valor de mercado do bem ou serviço doado; ou II - por opção do contribuinte, os créditos serão anulados.",
+        "Incorreta. A lei proíbe expressamente que a incidência do IBS altere a base de cálculo do ITCD, conforme o Art. 4º, § 5º, I:\nArt. 4º ... § 5º A incidência do IBS e da CBS sobre as operações de que trata o caput deste artigo não altera a base de cálculo do: I - Imposto sobre a Transmissão Causa Mortis e Doação de Quaisquer Bens ou Direitos (ITCD)...",
+        "Incorreta. A afirmativa ignora a regra específica do Art. 6º, § 2º, que se aplica exatamente ao caso descrito (doação de bem que gerou crédito), criando uma obrigação para o doador.",
+        "Incorreta. A lei, no Art. 6º, § 2º, II, concede ao contribuinte uma \"opção\" (\"por opção do contribuinte\"), não o obrigando a anular os créditos, pois ele pode, alternativamente, tributar a operação conforme o inciso I do mesmo parágrafo.",
+        "Incorreta. A lei veda expressamente que a incidência do IBS altere a base de cálculo do ITCD, conforme o Art. 4º, § 5º, I."
+    ]
+},
+{
+    "id": "LC214-215",
+    "question": "A indústria de alimentos 'Sabor do Campo S.A.', contribuinte do regime regular, adquire toda a produção de laranjas do Sr. José, produtor rural pessoa física que aufere receita anual de R$ 2.000.000,00 e não optou por ser contribuinte do IBS/CBS. De acordo com a Lei Complementar nº 214/2025, a 'Sabor do Campo S.A.' terá direito a",
+    "difficulty": "Média",
+    "format": "Contexto",
+    "subtopic": "Não Cumulatividade e Créditos",
+    "options": [
+        "solicitar o ressarcimento integral dos tributos que incidirão na sua própria venda, por ter adquirido insumos de produtor não-tributado.",
+        "apropriar crédito presumido do IBS, mas não da CBS, cuja apropriação é vedada em aquisições de pessoas físicas.",
+        "apropriar crédito do IBS e da CBS com base nos valores destacados em nota fiscal emitida pelo Sr. José.",
+        "apropriar crédito presumido do IBS e da CBS, calculado mediante a aplicação de percentuais sobre o valor de aquisição.",
+        "nenhum crédito, pois a operação anterior (venda pelo Sr. José) foi realizada por não contribuinte e, portanto, não gerou débito."
+    ],
+    "answer": 3,
+    "justifications": [
+        "Incorreta. O direito concedido pela lei não é o ressarcimento de tributos futuros da própria venda, mas sim a apropriação de um crédito presumido referente à aquisição do insumo (laranjas), conforme o Art. 168 .",
+        "Incorreta. A lei concede o crédito presumido para ambos os tributos, IBS e CBS.\nTexto Legal (Art. 168, caput): \"O contribuinte de IBS e de CBS sujeito ao regime regular poderá apropriar créditos presumidos dos referidos tributos [IBS e CBS] relativos às aquisições de bens e serviços de produtor rural... não contribuintes...\"",
+        "Incorreta. O Sr. José é um não contribuinte e, portanto, não recolhe nem destaca o IBS/CBS em suas notas. O crédito não é baseado em destaque, mas sim \"presumido\" por lei.",
+        "Correta. Esta alternativa descreve exatamente o mecanismo criado pela lei. Como o Sr. José é produtor rural com receita inferior a R$ 3.600.000,00, ele é \"não contribuinte\" (Art. 164) . Para manter a não cumulatividade da cadeia, o Art. 168 permite que o adquirente (Sabor do Campo S.A.) se credite de um valor presumido, calculado por percentuais definidos sobre o valor da aquisição.\nTexto Legal (Art. 168, caput): \"O contribuinte de IBS e de CBS sujeito ao regime regular poderá apropriar créditos presumidos dos referidos tributos relativos às aquisições de bens e serviços de produtor rural [...] não contribuintes...\"\nTexto Legal (Art. 168, § 3º): \"O valor do crédito presumido [...] será o resultado da aplicação dos percentuais de que trata o § 4º deste artigo sobre o valor da operação...\"",
+        "Incorreta. Esta alternativa descreve a regra geral de não cumulatividade (sem débito anterior, não há crédito), mas ignora a exceção legal específica do crédito presumido, criada exatamente para esta situação (Art. 168) ."
+    ]
+},
+{
+    "id": "LC214-216",
+    "question": "De acordo com a Lei Complementar nº 214/2025, o valor da operação constitui a base de cálculo do IBS e da CBS, compreendendo o valor integral cobrado pelo fornecedor. Conforme expressa disposição legal, NÃO integram a referida base de cálculo:",
+    "difficulty": "Fácil",
+    "format": "Direta",
+    "subtopic": "Base de Cálculo e Apuração",
+    "options": [
+        "os juros, multas, acréscimos e encargos cobrados a qualquer título.",
+        "os descontos concedidos sob condição.",
+        "os descontos incondicionais, o montante do IPI e o montante do próprio IBS e da CBS incidentes sobre a operação.",
+        "o valor do transporte cobrado como parte do valor da operação, quando efetuado pelo próprio fornecedor.",
+        "os seguros e taxas cobrados ou recebidos como parte do valor da operação."
+    ],
+    "answer": 2,
+    "justifications": [
+        "Incorreta. Esta parcela integra a base de cálculo, conforme o Art. 12, § 1º, inciso II:\n§ 1º O valor da operação compreende o valor integral cobrado pelo fornecedor a qualquer título, inclusive os valores correspondentes a: [...] II - juros, multas, acréscimos e encargos;",
+        "Incorreta. Esta parcela integra a base de cálculo, conforme o Art. 12, § 1º, inciso III:\n§ 1º O valor da operação compreende o valor integral cobrado pelo fornecedor a qualquer título, inclusive os valores correspondentes a: [...] III - descontos concedidos sob condição;",
+        "Correta. A alternativa lista corretamente três parcelas que são expressamente excluídas da base de cálculo do IBS e da CBS, conforme o Art. 12, § 2º, incisos I, II e III:\n§ 2º Não integram a base de cálculo do IBS e da CBS: I - o montante do IBS e da CBS incidentes sobre a operação; II - o montante do Imposto sobre Produtos Industrializados (IPI); III - os descontos incondicionais;",
+        "Incorreta. Esta parcela integra a base de cálculo, conforme o Art. 12, § 1º, inciso IV:\n§ 1º O valor da operação compreende o valor integral cobrado pelo fornecedor a qualquer título, inclusive os valores correspondentes a: [...] IV - valor do transporte cobrado como parte do valor da operação, no transporte efetuado pelo próprio fornecedor ou no transporte por sua conta e ordem;",
+        "Incorreta. Esta parcela integra a base de cálculo, conforme o Art. 12, § 1º, inciso VI:\n§ 1º O valor da operação compreende o valor integral cobrado pelo fornecedor a qualquer título, inclusive os valores correspondentes a: [...] VI - demais importâncias cobradas ou recebidas como parte do valor da operação, inclusive seguros e taxas."
+    ]
+},
+{
+    "id": "LC214-217",
+    "question": "Conforme a Lei Complementar nº 214/2025, a imunidade do IBS e da CBS sobre a exportação de bens materiais aplica-se a certas operações sem saída do território nacional. Uma dessas hipóteses é a venda de bens quando estes forem:",
+    "difficulty": "Média",
+    "format": "Direta",
+    "subtopic": "Tributação sobre Comércio Exterior",
+    "options": [
+        "vendidos a uma empresa comercial exportadora que não possua certificação no Programa OEA.",
+        "entregues a um estaleiro no Brasil para serem incorporados a uma plataforma em construção, contratada por empresa sediada no exterior.",
+        "entregues a uma empresa de logística para posterior armazenamento antes do embarque.",
+        "vendidos para outra empresa nacional que irá processá-los antes de exportar o produto final.",
+        "vendidos a um turista estrangeiro em uma loja varejista comum."
+    ],
+    "answer": 1,
+    "justifications": [
+        "Incorreta. A venda para empresa comercial exportadora é tratada no Art. 82 como hipótese de suspensão do pagamento (e não imunidade por exportação ficta), e a lei exige que a empresa possua a certificação OEA, entre outros requisitos .",
+        "Correta. Esta é uma das hipóteses de \"exportação sem saída\" (exportação ficta) expressamente previstas na lei, que goza de imunidade.\nTexto Legal (Art. 81, VI): \"A imunidade do IBS e da CBS sobre a exportação de bens materiais [...] aplica-se às exportações sem saída do território nacional [...] quando os bens exportados forem: [...] VI - entregues no País para ser incorporados a embarcação ou plataforma em construção ou conversão contratada por empresa sediada no exterior...\"",
+        "Incorreta. A simples entrega a um armazém logístico é uma etapa intermediária, não se enquadrando nas hipóteses de destinação final que caracterizam a exportação ficta previstas no Art. 81 .",
+        "Incorreta. A venda para outra empresa nacional para processamento intermediário (industrialização) antes da exportação final não está listada nas hipóteses de imunidade por exportação ficta do Art. 81 .",
+        "Incorreta. A venda a um turista estrangeiro em varejo comum é uma operação interna, não se caracterizando como exportação ficta nos termos do Art. 81 ."
+    ]
+},
+{
+    "id": "LC214-218",
+    "question": "A empresa \"Navegar S.A.\", contribuinte do regime regular, importa uma embarcação de lazer (iate) da Itália, bem sujeito à incidência do Imposto Seletivo. Na Declaração de Importação, a empresa declara o Valor Aduaneiro de R$ 2.000.000,00 e recolhe o Imposto de Importação de R$ 400.000,00. A fiscalização aduaneira, contudo, constata que o valor declarado é \"notoriamente inferior\" ao valor de mercado da embarcação, que é de R$ 5.000.000,00.\nCom base nesse cenário e na Lei Complementar nº 214/2025, considere:\n\nI. A constatação de que o valor declarado é notoriamente inferior ao de mercado autoriza a administração tributária a arbitrar o valor da operação para fins de cálculo do IBS e da CBS.\nII. A base de cálculo do IS na importação será o VA acrescido do Imposto de Importação , devendo ambos ser calculados sobre o valor arbitrado.\nIII. A base de cálculo do IBS e da CBS na importação será composta pelo Valor Aduaneiro acrescido do Imposto de Importação e do Imposto Seletivo incidente.\nIV. Após o desembaraço, a \"Navegar S.A.\" poderá apropriar créditos do IS pago na importação para compensar débitos do IBS, mas não poderá se creditar do IBS e da CBS pagos no mesmo desembaraço.\n\nEstá correto o que se afirma APENAS em",
+    "difficulty": "Difícil",
+    "format": "Contexto-Assertiva",
+    "subtopic": "Mista",
+    "options": [
+        "I e II.",
+        "II e IV.",
+        "I, III e IV.",
+        "I, II e III.",
+        "III e IV."
+    ],
+    "answer": 3,
+    "justifications": [
+        "I. Correta. O Art. 13, I, 'b', autoriza o arbitramento pela administração tributária quando:\nArt. 13. O valor da operação será arbitrado pela administração tributária quando: I - não forem exibidos à fiscalização... os elementos necessários à comprovação do valor da operação nos casos em que: ... b) for declarado em documento fiscal valor notoriamente inferior ao valor de mercado da operação;",
+        "II. Correta. O Art. 434, § 2º, define a base de cálculo do IS na importação. Se o Valor Aduaneiro foi arbitrado com base no Art. 13, os tributos subsequentes incidirão sobre esse novo valor.\nArt. 434. ... § 2º Caso a alíquota do Imposto Seletivo seja ad valorem, a sua base de cálculo, na importação, será o valor aduaneiro acrescido do montante do Imposto sobre a Importação.",
+        "III. Correta. O Art. 69 estabelece que a base de cálculo do IBS e da CBS na importação de bens materiais é o:\nArt. 69. ... valor aduaneiro acrescido de: I - Imposto sobre a Importação; II - Imposto Seletivo (IS);",
+        "IV. Incorreta. A lógica está invertida. O Art. 78 permite o crédito de IBS/CBS pagos na importação, enquanto o Art. 410 veda o crédito do IS.\nArt. 78. Quando estiverem sujeitos ao regime regular do IBS e da CBS, os contribuintes [...] poderão apropriar e utilizar créditos correspondentes aos valores do IBS e da CBS efetivamente pagos na importação de bens materiais... Art. 410. O Imposto Seletivo incidirá uma única vez sobre o bem ou serviço, sendo vedado qualquer tipo de aproveitamento de crédito do imposto..."
+    ]
 }
 ]
