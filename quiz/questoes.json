@@ -4720,5 +4720,115 @@
         "Incorreta. A aplicação da multa não encerra o REF. O REF persiste enquanto houver motivos para sua aplicação, conforme Art. 340, § 1º, II .",
         "Incorreta. A fiscalização ininterrupta (Art. 339, I) é outra medida que pode ser imposta pelo REF, mas ela não substitui a penalidade (multa) decorrente da infração ."
     ]
-}
+},
+  {
+    "id": "LC214-220",
+    "question": "Com base na Lei Complementar nº 214/2025, a respeito da avaliação quinquenal da eficiência, eficácia e efetividade dos regimes e políticas instituídos, considere:\n\nI. A avaliação será realizada conjuntamente pelo Poder Executivo da União e pelo Comitê Gestor do IBS.\nII. A avaliação deverá considerar, entre outros pontos, o impacto da legislação do IBS e da CBS na promoção da igualdade entre homens e mulheres e étnico-racial.\nIII. A Cesta Básica Nacional de Alimentos está entre os itens que serão objeto da avaliação quinquenal, devendo-se utilizar como critério o privilégio a alimentos in natura ou minimamente processados.\nIV. A avaliação do impacto da devolução personalizada (cashback) sobre as famílias de baixa renda deverá considerar o impacto sobre as desigualdades de renda.\n\nEstá correto o que se afirma em",
+    "difficulty": "Média",
+    "format": "Assertiva",
+    "subtopic": "Transição",
+    "options": [
+      "I, II, III e IV.",
+      "I, II e III, apenas.",
+      "I e IV, apenas.",
+      "II e III, apenas.",
+      "III e IV, apenas."
+    ],
+    "answer": 0,
+    "justifications": [
+      "Correta. Todos os itens estão corretos.\nI: Conforme o Art. 475, caput, a avaliação será realizada \"pelo Poder Executivo da União e o Comitê Gestor do IBS\".\nII: Conforme o Art. 475, § 1º, a avaliação \"deverá considerar, inclusive, o impacto da legislação do IBS e da CBS na promoção da igualdade entre homens e mulheres e étnico-racial\" .\nIII: Conforme o Art. 475, caput, III, a Cesta Básica é objeto da avaliação. O § 3º, I, do mesmo artigo, estabelece o critério de \"privilegiar alimentos in natura ou minimamente processados\" .\nIV: Conforme o Art. 475, caput, II, a devolução personalizada (cashback) é objeto da avaliação , e o § 2º determina que essa avaliação \"deverá considerar o impacto sobre as desigualdades de renda\".",
+      "Incorreta. O item IV também está correto.",
+      "Incorreta. Os itens II e III também estão corretos.",
+      "Incorreta. Os itens I e IV também estão corretos.",
+      "Incorreta. Os itens I e II também estão corretos."
+    ]
+  },
+  {
+    "id": "LC214-221",
+    "question": "No que tange à avaliação quinquenal dos regimes, políticas e tributos instituídos pela Lei Complementar nº 214/2025, é incorreto afirmar que:",
+    "difficulty": "Difícil",
+    "format": "Direta",
+    "subtopic": "Transição",
+    "options": [
+      "a primeira avaliação quinquenal será realizada com base nos dados disponíveis no ano-calendário de 2030, e eventual projeto de lei complementar com recomendações de revisão deverá ser enviado ao Congresso Nacional até o último dia útil de março de 2031 .",
+      "o Poder Executivo da União realizará uma avaliação quinquenal da eficácia do Imposto Seletivo, e esta avaliação ocorrerá de forma simultânea à avaliação do IBS e da CBS .",
+      "a avaliação quinquenal abrangerá os regimes diferenciados e específicos do IBS e da CBS, a Cesta Básica Nacional de Alimentos e a devolução personalizada (cashback) .",
+      "para fins da avaliação da Cesta Básica, o critério para definir alimentos consumidos por famílias de baixa renda utilizará como referência o limite de renda familiar per capita de até meio salário-mínimo, com base na POF do IBGE .",
+      "caso a primeira avaliação estime que a soma das alíquotas de referência ultrapasse 26,5%, o Comitê Gestor do IBS deverá encaminhar ao Congresso Nacional projeto de lei complementar propondo medidas para reduzir o percentual ."
+    ],
+    "answer": 4,
+    "justifications": [
+      "Correta. A alternativa está em conformidade com o Art. 475. O § 9º estabelece que \"A primeira avaliação quinquenal será realizada com base nos dados disponíveis no ano-calendário de 2030\" e que o projeto de lei complementar (consequência prevista no § 8º ) será \"enviado até o último dia útil de março de 2031\".",
+      "Correta. A alternativa está em conformidade com o Art. 476. O caput do artigo define que \"O Poder Executivo da União realizará avaliação quinquenal [...] da incidência do Imposto Seletivo\" , e o § 1º determina que \"A avaliação de que trata este artigo será realizada simultaneamente à avaliação de que trata o art. 475\" .",
+      "Correta. A alternativa está em conformidade com o Art. 475, caput, que lista no escopo da avaliação quinquenal, entre outros, a \"devolução personalizada do IBS e da CBS\" (inciso II) , a \"Cesta Básica Nacional de Alimentos\" (inciso III) , os \"regimes diferenciados\" (inciso IV) e os \"regimes específicos\" (inciso V).",
+      "Correta. A alternativa está em conformidade com o Art. 475. O § 4º, II, estabelece o critério de alimentos \"consumidos majoritariamente pelas famílias de baixa renda\" , e o § 5º define os parâmetros para essa análise: \"serão utilizadas as informações da POF do IBGE e, para a delimitação das famílias de baixa renda, será tomado como referência o limite de renda monetária familiar per capita de até meio salário-mínimo\" .",
+      "Incorreta. A alternativa erra o responsável pela proposição. Conforme o Art. 475, § 11, \"o Poder Executivo da União, ouvido o Comitê Gestor do IBS, deverá encaminhar ao Congresso Nacional projeto de lei complementar\" propondo as medidas de redução. A competência para encaminhar o projeto de lei é do Poder Executivo da União, e não do Comitê Gestor do IBS."
+    ]
+  },
+  {
+    "id": "LC214-222",
+    "question": "Conforme a Lei Complementar nº 214/2025, em relação ao Imposto sobre Bens e Serviços (IBS) arrecadado durante o ano de 2026, cuja alíquota será de 0,1% ,",
+    "difficulty": "Média",
+    "format": "Direta",
+    "subtopic": "Transição",
+    "options": [
+      "será integralmente destinada ao financiamento do Comitê Gestor do IBS (CGIBS), não podendo ser utilizada para outra finalidade.",
+      "será destinada integralmente para compor o Fundo de Compensação de Benefícios Fiscais ou Financeiro-Fiscais do ICMS.",
+      "deverá ser repartida entre os Estados e Municípios, na proporção de 50% para cada, observadas as destinações constitucionais vigentes.",
+      "não observará as vinculações e repartições constitucionais, devendo ser aplicada, integral e sucessivamente, para o financiamento do Comitê Gestor do IBS e para compor o Fundo de Compensação de Benefícios Fiscais ou Financeiro-Fiscais do ICMS.",
+      "será destinada ao Fundo de Compensação de Benefícios Fiscais ou Financeiro-Fiscais do ICMS, enquanto o financiamento do Comitê Gestor do IBS caberá exclusivamente à arrecadação da CBS de 0,9% do mesmo período."
+    ],
+    "answer": 3,
+    "justifications": [
+      "Incorreta. A destinação não é integral apenas para o CGIBS; ela é sucessiva. Conforme o Art. 343, Parágrafo único, a arrecadação será aplicada para \"I - o financiamento do Comitê Gestor do IBS...\" e \"II - compor o Fundo de Compensação de Benefícios Fiscais ou Financeiro-Fiscais do ICMS.\".",
+      "Incorreta. A destinação não é integral apenas para o Fundo de Compensação. O Art. 343, Parágrafo único, inciso I, estabelece que a arrecadação deve, prioritariamente, ser usada para \"o financiamento do Comitê Gestor do IBS\" .",
+      "Incorreta. A alternativa afirma o oposto da lei. O Art. 343, Parágrafo único, estabelece que \"Durante o período indicado no caput deste artigo a arrecadação do IBS não observará as vinculações, repartições e destinações previstas na Constituição Federal...\" .",
+      "Correta. A alternativa descreve precisamente a regra de exceção e a ordem sucessiva de destinação. Conforme o Art. 343, Parágrafo único: \"Durante o período indicado no caput deste artigo a arrecadação do IBS não observará as vinculações, repartições e destinações previstas na Constituição Federal, devendo ser aplicada, integral e sucessivamente, para: I - o financiamento do Comitê Gestor do IBS...; e II - compor o Fundo de Compensação de Benefícios Fiscais ou Financeiro-Fiscais do ICMS.\" .",
+      "Incorreta. A alternativa cria uma destinação incorreta. O Art. 343, Parágrafo único, inciso I, determina que a arrecadação do IBS de 2026 é que financia o CGIBS . A alíquota de 0,9% refere-se à CBS (Art. 346) , que não possui essa destinação específica na lei."
+    ]
+  },
+  {
+    "id": "LC214-223",
+    "question": "A \"Indústria Alfa Ltda.\", contribuinte do regime regular, adquire no mercado interno um novo equipamento para sua linha de produção, classificado como bem de capital. A operação é realizada ao amparo de um ato conjunto do Poder Executivo da União e do Comitê Gestor do IBS, que autoriza a aquisição com suspensão do pagamento do IBS e da CBS . A empresa efetivamente incorpora o equipamento ao seu ativo imobilizado.\nNessa situação, de acordo com a Lei Complementar nº 214/2025, o benefício da suspensão",
+    "difficulty": "Média",
+    "format": "Contexto",
+    "subtopic": "Alíquotas e Regras de Arrecadação",
+    "options": [
+      "exige que a \"Indústria Alfa Ltda.\" realize o pagamento do imposto suspenso e solicite o crédito integral e imediato no mesmo período de apuração.",
+      "converte-se em alíquota zero após a incorporação do bem ao ativo imobilizado do adquirente.",
+      "converte-se em isenção, o que obriga a empresa a anular os créditos de IBS e CBS relativos aos serviços de instalação do equipamento.",
+      "converte-se em alíquota zero, mas caso a empresa não incorporasse o bem ao ativo, ela ficaria obrigada a recolher o imposto suspenso na condição de contribuinte.",
+      "aplica-se apenas a bens do ativo imobilizado classificados contabilmente como tal, não se aplicando a bens que sejam contabilizados por concessionárias como ativo de contrato ou intangível."
+    ],
+    "answer": 1,
+    "justifications": [
+      "Incorreta. O regime de suspensão do Art. 109 é uma alternativa ao crédito imediato do Art. 108. O próprio Art. 109, caput, determina que neste regime \"não se aplicando o disposto no art. 108\" .",
+      "Correta. A alternativa descreve exatamente o mecanismo previsto na lei. Conforme o Art. 109, § 2º: \"A suspensão do pagamento do IBS e da CBS prevista no caput deste artigo converte-se em alíquota zero após a incorporação do bem ao ativo imobilizado do adquirente...\" .",
+      "Incorreta. O benefício é a conversão em \"alíquota zero\" (Art. 109, § 2º) , e não \"isenção\". A alíquota zero permite a manutenção dos créditos (Art. 52) , enquanto a isenção exigiria sua anulação (Art. 51) .",
+      "Incorreta. A alternativa erra a condição do sujeito passivo em caso de descumprimento. O Art. 109, § 3º, II, estabelece que, em relação às aquisições no mercado interno (caso do enunciado), o recolhimento é feito na condição de \"responsável\", e não de contribuinte .",
+      "Incorreta. A alternativa afirma o oposto da lei. O Art. 111 é expresso ao incluir no conceito de ativo imobilizado, para fins desta Seção, \"aqueles [...] contabilizados por concessionárias de serviços públicos como ativo de contrato, intangível ou financeiro\" ."
+    ]
+  },
+  {
+    "id": "LC214-224",
+    "question": "A \"Indústria de Alimentos Sabor Real S.A.\", contribuinte do regime regular, apurou, em determinado mês, um saldo a recuperar de IBS e CBS no valor de R$ 100.000,00. Desse total, R$ 60.000,00 são originados de créditos presumidos pela aquisição de produtos de um produtor rural pessoa física não contribuinte, e R$ 40.000,00 são originados de créditos presumidos pela aquisição de serviços de um transportador autônomo pessoa física não contribuinte. A empresa pretende solicitar o ressarcimento do valor total.\nConsiderando essa situação e as disposições da Lei Complementar nº 214/2025, a empresa",
+    "difficulty": "Média",
+    "format": "Contexto",
+    "subtopic": "Não Cumulatividade e Créditos",
+    "options": [
+      "poderá solicitar o ressarcimento dos R$ 100.000,00, pois ambos os créditos presumidos geram direito a ressarcimento.",
+      "não poderá solicitar o ressarcimento de nenhum valor, devendo utilizar o saldo total de R$ 100.000,00 apenas para dedução de débitos futuros.",
+      "poderá solicitar o ressarcimento apenas da parcela de R$ 40.000,00 , devendo a parcela de R$ 60.000,00 ser utilizada apenas para dedução.",
+      "não poderá solicitar o ressarcimento, pois o crédito presumido na aquisição de produtor rural só pode ser utilizado pela sociedade cooperativa de que ele participe.",
+      "poderá solicitar o ressarcimento apenas da parcela de R$ 60.000,00 , devendo a parcela de R$ 40.000,00 ser utilizada apenas para dedução de débitos futuros."
+    ],
+    "answer": 4,
+    "justifications": [
+      "Incorreta. A alternativa erra ao tratar os dois créditos de forma igual. O Art. 169, § 7º, veda o ressarcimento do crédito do transportador autônomo .",
+      "Incorreta. A alternativa erra ao vedar o ressarcimento do crédito do produtor rural, que é expressamente permitido pelo Art. 168, § 8º .",
+      "Incorreta. A alternativa inverte as regras legais, tratando o crédito do transportador como ressarcível e o do produtor rural como não ressarcível.",
+      "Incorreta. O direito ao crédito presumido pela aquisição de produtor rural é do \"contribuinte de IBS e de CBS sujeito ao regime regular\" (Art. 168, caput) , não sendo restrito a cooperativas.",
+      "Correta. A alternativa aplica corretamente as duas regras distintas. O crédito do produtor rural (Art. 168, § 8º) permite o ressarcimento: \"Os créditos presumidos [...] poderão ser utilizados para dedução, [...] permitido o ressarcimento...\" . Já o crédito do transportador autônomo (Art. 169, § 7º) é restrito: \"Os créditos presumidos [...] somente poderão ser utilizados para dedução, respectivamente, do valor do IBS e da CBS devidos pelo contribuinte\" , não mencionando η permissão de ressarcimento."
+    ]
+  }
 ]
