@@ -5090,5 +5090,113 @@
       "III. Correta. Conforme o Art. 171, § 1º, inciso II, alínea 'b', para o crédito presumido de CBS em aquisições realizadas a partir de 1º de janeiro de 2027, utiliza-se a alíquota vigente na \"data da aquisição\".",
       "IV. Correta. Esta é a definição exata de bem móvel usado trazida pelo Art. 171, § 4º da lei."
     ]
+  },
+  {
+    "id": "LC214-237",
+    "question": "De acordo com a Lei Complementar nº 214/2025,",
+    "difficulty": "Média",
+    "format": "Direta",
+    "subtopic": "Misto",
+    "options": [
+      "as energias que tenham valor econômico, para os fins desta lei, equiparam-se a bens imateriais.",
+      "para a caracterização das operações sobre as quais incidem o IBS e a CBS, é relevante a obtenção de lucro pelo fornecedor.",
+      "o IBS e a CBS não incidem sobre a baixa, liquidação e transmissão de participação societária, ressalvadas hipóteses específicas.",
+      "a imunidade de livros e jornais abrange o papel e todos os demais insumos, máquinas e equipamentos destinados à sua impressão.",
+      "o local da operação para o serviço de transporte de carga é considerado o local de início do transporte."
+    ],
+    "answer": 2,
+    "justifications": [
+      "A) Incorreta. O Art. 3º, § 1º, estabelece que as energias com valor econômico equiparam-se a bens materiais.",
+      "B) Incorreta. O Art. 4º, § 3º, III, estabelece que a obtenção de lucro é irrelevante para a caracterização da operação.",
+      "C) Correta. Esta é a regra geral de não incidência prevista no Art. 6º, III. A ressalva (mencionada na alternativa) refere-se ao Art. 5º, III (transmissão para sócio de bem que gerou crédito).",
+      "D) Incorreta. A imunidade do Art. 9º, IV, é específica: abrange livros, jornais, periódicos e apenas \"o papel destinado a sua impressão\".",
+      "E) Incorreta. O local de início do transporte é a regra para o transporte de passageiros (Art. 11, VI). Para o transporte de carga, o local é o da entrega ou disponibilização do bem ao destinatário (Art. 11, VII)."
+    ]
+  },
+  {
+    "id": "LC214-238",
+    "question": "Roberto é motorista profissional devidamente habilitado para operar na categoria de aluguel (táxi). Em 2029, ele decide adquirir um automóvel de passageiros novo, zero-quilômetro, que será utilizado exclusivamente para o exercício de sua atividade profissional. Considerando o cenário apresentado e as disposições da Lei Complementar nº 214/2025, na aquisição deste veículo, Roberto",
+    "difficulty": "Média",
+    "format": "Contexto",
+    "subtopic": "Misto",
+    "options": [
+      "pagará o IBS e a CBS integralmente, mas terá as alíquotas do Imposto Seletivo (IS) reduzidas a zero.",
+      "terá as alíquotas do IBS, da CBS e também do Imposto Seletivo (IS) reduzidas a zero.",
+      "pagará todos os tributos (IBS, CBS e IS) integralmente, pois o benefício se aplica apenas a pessoas com deficiência.",
+      "terá as alíquotas do IBS e da CBS reduzidas em 60%, por se tratar de serviço de transporte, e a alíquota do IS reduzida a zero.",
+      "terá as alíquotas do IBS e da CBS reduzidas a zero, mas pagará o Imposto Seletivo (IS) integralmente, por se tratar de um veículo."
+    ],
+    "answer": 1,
+    "justifications": [
+      "A) Incorreta. O benefício da alíquota zero se estende tanto ao IBS/CBS (conforme Art. 143, VII ) quanto ao IS (conforme Art. 420 ).",
+      "B) Correta. A alternativa combina corretamente os dois benefícios. O Art. 143, VII, reduz a zero as alíquotas do IBS e da CBS para automóveis adquiridos por motoristas de táxi. Complementarmente, o Art. 420 (que remete ao regime diferenciado) reduz a zero a alíquota do Imposto Seletivo (IS) para o mesmo público .",
+      "C) Incorreta. O benefício é expressamente estendido aos taxistas .",
+      "D) Incorreta. A redução para IBS e CBS é de 100% (alíquota zero), e não 60%.",
+      "E) Incorreta. O benefício da alíquota zero também se aplica ao Imposto Seletivo nesta hipótese ."
+    ]
+  },
+  {
+    "id": "LC214-239",
+    "question": "Considerando as normas de harmonização e administração do IBS e da CBS previstas na Lei Complementar nº 214/2025,",
+    "difficulty": "Média",
+    "format": "Direta",
+    "subtopic": "Misto",
+    "options": [
+      "compete ao Comitê Gestor do IBS editar o regulamento do IBS, e ao Poder Executivo da União editar o regulamento da CBS.",
+      "o Fórum de Harmonização Jurídica das Procuradorias é composto por 4 representantes da Receita Federal do Brasil (RFB) e 4 do Comitê Gestor do IBS.",
+      "as resoluções aprovadas pelo Comitê de Harmonização das Administrações Tributárias devem ser homologadas pelo Ministro de Estado da Fazenda para terem validade.",
+      "compete ao Comitê de Harmonização das Administrações Tributárias analisar relevantes controvérsias jurídicas suscitadas pelo Presidente do Comitê Gestor do IBS.",
+      "o Comitê de Harmonização das Administrações Tributárias e o Fórum de Harmonização Jurídica das Procuradorias decidirão por maioria absoluta de seus membros."
+    ],
+    "answer": 0,
+    "justifications": [
+      "A) Correta. A alternativa descreve com precisão a divisão de competências para a regulamentação dos novos tributos .\nCitação: \"Art. 317. Compete: I - ao Comitê Gestor do IBS editar o regulamento do IBS; e II - ao Poder Executivo da União editar o regulamento da CBS.\"",
+      "B) Incorreta. A composição do Fórum Jurídico é de representantes da PGFN e das Procuradorias dos entes, não da RFB e do Comitê Gestor .\nCitação: \"Art. 319. ... II - Fórum de Harmonização Jurídica das Procuradorias composto de: a) 4 (quatro) representantes da Procuradoria-Geral da Fazenda Nacional... e b) 4 (quatro) representantes das Procuradorias, indicados pelo Comitê Gestor do IBS...\"",
+      "C) Incorreta. As resoluções do Comitê de Harmonização vinculam as administrações a partir de sua publicação, não dependendo de homologação ministerial.\nCitação: \"Art. 321. ... Parágrafo único. As resoluções aprovadas pelo Comitê de Harmonização das Administrações Tributárias, a partir de sua publicação no Diário Oficial da União, vincularão as administrações tributárias...\"",
+      "D) Incorreta. A análise de \"relevantes e disseminadas controvérsias jurídicas\" é competência do Fórum de Harmonização Jurídica, e não do Comitê de Harmonização das Administrações.\nCitação: \"Art. 322. Compete ao Fórum de Harmonização Jurídica das Procuradorias: ... II - analisar relevantes e disseminadas controvérsias jurídicas...\"",
+      "E) Incorreta. O quórum de deliberação para ambos os órgãos de harmonização é a unanimidade dos presentes, não a maioria absoluta.\nCitação: \"Art. 320. Os órgãos colegiados de que trata o art. 319: ... II - decidirão, na forma de seu regimento, por unanimidade dos presentes;\""
+    ]
+  },
+  {
+    "id": "LC214-240",
+    "question": "Considerando as diversas disposições da Lei Complementar nº 214/2025,",
+    "difficulty": "Média",
+    "format": "Direta",
+    "subtopic": "Misto",
+    "options": [
+      "o contribuinte sujeito ao regime regular poderá apropriar créditos presumidos de IBS e CBS nas aquisições de serviços de transporte de carga de transportador autônomo pessoa física, sendo o valor apurado permitido para ressarcimento em caso de acúmulo.",
+      "o período de apuração do IBS e da CBS será trimestral, e a apuração consolidará as operações realizadas apenas pela matriz do contribuinte.",
+      "as alíquotas do IBS e da CBS relativas aos serviços de hotelaria e parques de diversão ficam reduzidas em 40% (quarenta por cento), sendo vedada a apropriação de créditos pelo adquirente desses serviços.",
+      "as informações prestadas pelo sujeito passivo no documento fiscal eletrônico possuem caráter meramente declaratório, não constituindo confissão do valor devido de IBS e de CBS nele consignados.",
+      "a restituição do IBS e da CBS em caso de pagamento indevido será devida ao contribuinte, mesmo que a operação tenha gerado crédito para o adquirente dos bens ou serviços."
+    ],
+    "answer": 2,
+    "justifications": [
+      "A) Incorreta. A alternativa erra ao permitir o ressarcimento. O Art. 169, § 7º, restringe o uso desse crédito presumido específico: \"Os créditos presumidos [...] somente poderão ser utilizados para dedução [...] do valor do IBS e da CBS devidos pelo contribuinte\".",
+      "B) Incorreta. A alternativa erra em dois pontos. O período de apuração é mensal (Art. 43) , e a apuração consolida todos os estabelecimentos, não apenas a matriz (Art. 42).",
+      "C) Correta. A alternativa combina corretamente duas regras do regime específico de hotelaria e parques. O Art. 281 estabelece a redução de 40%, e o Art. 283 veda o crédito ao adquirente.",
+      "D) Incorreta. A alternativa afirma o oposto da lei. O Art. 60, § 1º, estabelece que as informações no documento fiscal eletrônico constituem confissão do valor devido.",
+      "E) Incorreta. A alternativa contraria uma condição essencial para a restituição. O Art. 38, I, veda a restituição ao contribuinte se a operação tiver gerado crédito para o adquirente ."
+    ]
+  },
+  {
+    "id": "LC214-241",
+    "question": "Uma indústria de alimentos, contribuinte do regime regular, realizou as seguintes operações:\n1. Adquiriu, para sua frota de entregas, um caminhão movido a diesel de um transportador autônomo pessoa física (não contribuinte), que o utilizava para trabalho.\n2. Contratou os serviços de um escritório de advocacia, sociedade uniprofissional, para uma consultoria tributária.\n3. Vendeu um lote de produtos classificados como \"alimentos destinados ao consumo humano\" (não incluídos na Cesta Básica Nacional) para um supermercado.\nConsiderando as operações descritas e a LC 214/2025:\n\nI. Na operação 1, a indústria poderá apropriar crédito presumido de IBS e CBS, calculado sobre o valor da aquisição do caminhão.\nII. Na operação 2, o serviço de advocacia contratado terá as alíquotas de IBS e CBS reduzidas em 30% (trinta por cento).\nIII. Na operação 3, os alimentos destinados ao consumo humano terão as alíquotas de IBS e CBS reduzidas em 60% (sessenta por cento).\n\nEstá correto o que se afirma APENAS em",
+    "difficulty": "Média",
+    "format": "Contexto-Assertiva",
+    "subtopic": "Misto",
+    "options": [
+      "I e II.",
+      "II e III.",
+      "I e III.",
+      "III.",
+      "I."
+    ],
+    "answer": 1,
+    "justifications": [
+      "I) Incorreta. O crédito presumido para aquisição de transportador autônomo (Art. 169) refere-se à aquisição de serviço de transporte de carga, e não à aquisição de seus bens (como o caminhão). A aquisição de bem móvel usado de pessoa física não contribuinte (Art. 171) se aplica a bens adquiridos para revenda, e não para a frota (ativo). Portanto, não há crédito presumido nessa operação.",
+      "II) Correta. Os serviços prestados por advogados estão expressamente listados no Art. 127, inciso II, que prevê a redução de 30% nas alíquotas.",
+      "III) Correta. Os alimentos destinados ao consumo humano (que não estão na Cesta Básica de alíquota zero) estão listados no Art. 128, inciso VI, que prevê a redução de 60% nas alíquotas."
+    ]
   }
 ]
