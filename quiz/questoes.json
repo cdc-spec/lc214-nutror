@@ -4984,5 +4984,111 @@
     "Correta. A alternativa descreve com precisão a definição de \"operações com serviços\" estabelecida no Art. 3º, I, alínea 'b' , que as define por exclusão às \"operações com bens\" (definidas na alínea 'a' ).",
     "Incorreta. Os descontos incondicionais não integram a base de cálculo, conforme o Art. 12, § 2º, inciso III ."
   ]
-}
+},
+  {
+    "id": "LC214-232",
+    "question": "A \"Indústria Alfa S.A.\" realizou as seguintes operações em determinado mês:\nI. Enviou, como cortesia de fim de ano e sem registro em Nota Fiscal, um brinde (um relógio) para seu melhor cliente.\nII. Na venda de 1.000 computadores (produto de alíquota ad valorem), incluiu na Nota Fiscal 50 monitores como \"bonificação\", sem custo adicional ou condição futura.\nIII. Na venda de 10.000 litros de um solvente (produto de alíquota específica), incluiu na Nota Fiscal 200 litros como \"bonificação\", sem custo adicional ou condição futura.\nDe acordo com a LC nº 214/2025, o IBS e a CBS incidirão sobre",
+    "difficulty": "Média",
+    "format": "Contexto-Assertiva",
+    "subtopic": "Princípios, Conceitos e Incidência",
+    "options": [
+      "I, II e III.",
+      "I e III, apenas.",
+      "II e III, apenas.",
+      "I, apenas.",
+      "II, apenas."
+    ],
+    "answer": 1,
+    "justifications": [
+      "Item I (Tributado): Correto. Trata-se de um brinde fornecido separadamente, que não se enquadra na exceção de \"bonificação em nota fiscal\". Aplica-se a regra geral da incidência.\nTexto Legal (Art. 5º, II): \"O IBS e a CBS também incidem sobre as seguintes operações: [...] II - fornecimento de brindes e bonificações;\" .",
+      "Item II (Não Tributado): Incorreto. A operação enquadra-se perfeitamente na exceção legal. Como o produto é ad valorem e a bonificação constou na NF sem depender de evento posterior, a incidência é afastada.\nTexto Legal (Art. 5º, § 1º, I): \"O disposto no inciso II do caput deste artigo: I - não se aplica às bonificações que constem do respectivo documento fiscal e que não dependam de evento posterior;\" .",
+      "Item III (Tributado): Correto. Embora a bonificação conste na NF (atendendo ao inciso I), o produto é de alíquota específica. Nesses casos, a \"exceção da exceção\" determina que a tributação deve ocorrer.\nTexto Legal (Art. 5º, § 1º, II): \"O disposto no inciso II do caput deste artigo: [...] II - aplica-se ao bem dado em bonificação sujeito a alíquota específica por unidade de medida, inclusive na hipótese do inciso I deste parágrafo.\" ."
+    ]
+  },
+  {
+    "id": "LC214-233",
+    "question": "Nos termos da Lei Complementar nº 214/2025, a compensação da União aos Estados, ao Distrito Federal e aos Municípios por eventual redução no montante de IPI entregue, em razão da sua substituição pelo Imposto Seletivo,",
+    "difficulty": "Média",
+    "format": "Direta",
+    "subtopic": "Transição",
+    "options": [
+      "será apurada anualmente, com base na média de arrecadação do Imposto Seletivo, e paga em cota única no exercício subsequente.",
+      "terá início em 2027, será apurada mensalmente, e eventual valor positivo apurado será entregue no segundo mês subsequente ao da apuração.",
+      "será apurada mensalmente, e eventual valor negativo apurado será deduzido do montante apurado no mesmo mês do ano subsequente, corrigido pelo IPCA.",
+      "será paga no mês subsequente ao da apuração, e o valor de referência para o ano de 2027 corresponderá à média mensal de 2026, corrigida apenas pela taxa Selic.",
+      "terá início em 2029, de forma simultânea à transição do IBS, sendo o valor apurado entregue no primeiro decêndio do mês subsequente."
+    ],
+    "answer": 1,
+    "justifications": [
+      "A) Incorreta. A apuração é mensal, não anual. A lei dispõe: \"Art. 477. [...] § 1º A compensação de que trata o caput será apurada mensalmente, a partir de janeiro de 2027...\".",
+      "B) Correta. A alternativa está em total conformidade com a lei. O Art. 477, § 1º, estabelece que a apuração será \"mensalmente, a partir de janeiro de 2027\". O § 2º, inciso II, do mesmo artigo complementa que o valor positivo \"será entregue no segundo mês subsequente ao da apuração\".",
+      "C) Incorreta. O valor negativo é deduzido no mês seguinte, não no ano seguinte. O Art. 477, § 2º, I, determina: \"quando negativo, será deduzido do montante apurado na forma do § 1º no mês subsequente\".",
+      "D) Incorreta. A alternativa erra o prazo de pagamento (que é no segundo mês subsequente ) e o critério de correção (que é o IPCA mais um acréscimo, e não a Selic). A lei define: \"Art. 478. [...] I - para os meses de janeiro a dezembro de 2027, corresponderá ao valor médio mensal de 2026, [...] corrigido pela variação do IPCA até o mês da apuração e acrescido de 2% (dois por cento)\" .",
+      "E) Incorreta. O início é em 2027, não 2029. Conforme o Art. 477, § 1º, a apuração se dá \"a partir de janeiro de 2027\"."
+    ]
+  },
+  {
+    "id": "LC214-234",
+    "question": "Considere as seguintes assertivas sobre as regras de compensação da União pela substituição do IPI pelo Imposto Seletivo, conforme a Lei Complementar nº 214/2025:\nI. O valor de referência para os meses de 2027 corresponderá ao valor médio mensal de 2026, corrigido pela variação do IPCA até o mês da apuração e acrescido de 2%.\nII. A partir de janeiro de 2028, o valor de referência será fixado em valor equivalente ao valor de referência do décimo segundo mês anterior, corrigido pela variação em 12 meses do produto da arrecadação da CBS, calculada com base na alíquota de referência.\nIII. É vedada a vinculação dos recursos da compensação a órgão, fundo ou despesa, sem quaisquer ressalvas, em observância estrita ao disposto no art. 160 da Constituição Federal.\nIV. Os recursos da compensação poderão ser vinculados para os percentuais mínimos a serem aplicados na manutenção e desenvolvimento do ensino, conforme o art. 212 da Constituição Federal.\nEstá correto o que se afirma APENAS em",
+    "difficulty": "Difícil",
+    "format": "Assertiva",
+    "subtopic": "Transição",
+    "options": [
+      "I e III.",
+      "II e IV.",
+      "I, III e IV.",
+      "I, II e IV.",
+      "II e III."
+    ],
+    "answer": 3,
+    "justifications": [
+      "I. Correta. A assertiva é a transcrição literal do disposto no Art. 478, inciso I: \"para os meses de janeiro a dezembro de 2027, corresponderá ao valor médio mensal de 2026, calculado nos termos do § 1º deste artigo, corrigido pela variação do IPCA até o mês da apuração e acrescido de 2% (dois por cento)\" .",
+      "II. Correta. A assertiva é a transcrição literal do disposto no Art. 478, inciso II: \"a partir de janeiro de 2028, será fixado em valor equivalente ao valor de referência do décimo segundo mês anterior, corrigido pela variação em 12 (doze) meses do produto da arrecadação da CBS, calculada com base na alíquota de referência\" .",
+      "III. Incorreta. A afirmação \"sem quaisquer ressalvas\" está errada. O Art. 479, § 1º, estabelece a regra da vedação, mas imediatamente lista seis exceções (ressalvas) .",
+      "IV. Correta. Esta é uma das ressalvas expressamente previstas na lei. O Art. 479, § 1º, V, afirma que a vedação de vinculação é \"ressalvados: [...] V - os percentuais mínimos a serem aplicados na manutenção e desenvolvimento do ensino conforme art. 212 da Constituição Federal\"."
+    ]
+  },
+  {
+    "id": "LC214-235",
+    "question": "Nos termos da Lei Complementar nº 214/2025, no que tange ao regime de créditos presumidos na aquisição de bens móveis usados para revenda, o contribuinte sujeito ao regime regular poderá se apropriar desses créditos",
+    "difficulty": "Média",
+    "format": "Direta",
+    "subtopic": "Não Cumulatividade e Créditos",
+    "options": [
+      "em relação a qualquer bem móvel usado adquirido, independentemente da condição do alienante, desde que o bem retorne à comercialização.",
+      "apenas se o bem for adquirido de outra pessoa jurídica, também sujeita ao regime regular, que tenha emitido o documento fiscal da aquisição original.",
+      "relativamente às aquisições de pessoa física que não seja contribuinte dos referidos tributos ou que seja inscrita como MEI.",
+      "desde que o valor do crédito seja calculado sobre o valor da revenda do bem, e não sobre o valor de aquisição.",
+      "e utilizá-los para compensação com quaisquer débitos do IBS e da CBS, ou solicitar seu ressarcimento em caso de acúmulo."
+    ],
+    "answer": 2,
+    "justifications": [
+      "A) Incorreta. A lei restringe a origem do bem. Conforme o Art. 171, caput, a aquisição deve ser de \"pessoa física que não seja contribuinte dos referidos tributos ou que seja inscrita como MEI\".",
+      "B) Incorreta. A regra do Art. 171 destina-se justamente ao oposto: aquisições feitas de pessoa física não contribuinte ou MEI, e não de outra pessoa jurídica no regime regular.",
+      "C) Correta. Esta alternativa descreve exatamente a hipótese prevista no caput do Art. 171 da LC 214/2025.",
+      "D) Incorreta. O cálculo é feito sobre o valor da aquisição, não da revenda. Conforme o Art. 171, § 1º, os créditos \"serão calculados mediante aplicação dos seguintes percentuais sobre o valor da aquisição\".",
+      "E) Incorreta. O uso do crédito é restrito. O Art. 171, § 2º, estabelece que os créditos \"somente poderão ser utilizados para deduzir, respectivamente, o IBS e a CBS devidos pelo contribuinte, por ocasião da revenda do bem usado sobre o qual tenham sido calculados\"."
+    ]
+  },
+  {
+    "id": "LC214-236",
+    "question": "Considere as seguintes assertivas sobre o regime de créditos presumidos na aquisição de bens móveis usados de pessoa física não contribuinte, conforme a Lei Complementar nº 214/2025:\nI. Os créditos presumidos somente poderão ser utilizados para deduzir o IBS e a CBS devidos pelo contribuinte por ocasião da revenda do bem usado sobre o qual tenham sido calculados os respectivos créditos.\nII. Para o crédito presumido de IBS, nas aquisições realizadas até 31 de dezembro de 2032, o percentual a ser aplicado será o das alíquotas de IBS vigentes na data da aquisição do bem.\nIII. Para o crédito presumido de CBS, nas aquisições realizadas a partir de 1º de janeiro de 2027, o percentual a ser aplicado será o da alíquota da CBS vigente na data da aquisição do bem.\nIV. Para os fins deste regime, considera-se bem móvel usado aquele que tenha sido objeto de fornecimento para consumo final de pessoa física e tenha voltado à comercialização.\nEstá correto o que se afirma APENAS em",
+    "difficulty": "Difícil",
+    "format": "Assertiva",
+    "subtopic": "Não Cumulatividade e Créditos",
+    "options": [
+      "I, III e IV.",
+      "I e II.",
+      "II e IV.",
+      "I, II e III.",
+      "II e III."
+    ],
+    "answer": 0,
+    "justifications": [
+      "I. Correta. O Art. 171, § 2º, limita o uso dos créditos exatamente a esta situação: \"somente poderão ser utilizados para deduzir, respectivamente, o IBS e a CBS devidos pelo contribuinte, por ocasião da revenda do bem usado sobre o qual tenham sido calculados os respectivos créditos\".",
+      "II. Incorreta. A assertiva inverte a regra temporal. Para aquisições de IBS até 31 de dezembro de 2032, a alíquota utilizada é a vigente na \"data da revenda\", e não na data da aquisição.",
+      "III. Correta. Conforme o Art. 171, § 1º, inciso II, alínea 'b', para o crédito presumido de CBS em aquisições realizadas a partir de 1º de janeiro de 2027, utiliza-se a alíquota vigente na \"data da aquisição\".",
+      "IV. Correta. Esta é a definição exata de bem móvel usado trazida pelo Art. 171, § 4º da lei."
+    ]
+  }
 ]
