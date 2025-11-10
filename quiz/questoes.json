@@ -4918,5 +4918,71 @@
     "Incorreta. Os itens I e IV também estão corretos.",
     "Incorreta. O item II também está correto."
   ]
+},
+  {
+  "id": "LC214-229",
+  "question": "De acordo com a Lei Complementar nº 214/2025,",
+  "difficulty": "Média",
+  "format": "Direta",
+  "subtopic": "Misto",
+  "options": [
+    "o local da operação para o serviço de transporte de passageiros é considerado o do domicílio principal do adquirente do serviço.",
+    "o condomínio edilício e o consórcio são considerados contribuintes do IBS e da CBS, independentemente de exercerem a opção pelo regime regular.",
+    "o fornecimento de brindes e bonificações é uma hipótese de incidência, exceto se a bonificação constar do respectivo documento fiscal e não depender de evento posterior.",
+    "o local da operação para um serviço prestado fisicamente sobre um bem móvel material é o do domicílio do proprietário do bem.",
+    "a sociedade em conta de participação, caso não exerça a opção pelo regime regular, fica isenta do IBS e da CBS, assim como seus sócios."
+  ],
+  "answer": 2,
+  "justifications": [
+    "Incorreta. O local da operação para o serviço de transporte de passageiros é o local de início do transporte, conforme o Art. 11, inciso VI.",
+    "Incorreta. O Art. 26, incisos I e II, estabelece que, em regra, o condomínio edilício e o consórcio não são contribuintes (embora possam optar por sê-lo, conforme § 1º do mesmo artigo ).",
+    "Correta. A alternativa descreve a regra geral e a exceção. O Art. 5º, II, estabelece a incidência sobre brindes e bonificações. O Art. 5º, § 1º, I, excepciona \"as bonificações que constem do respectivo documento fiscal e que não dependam de evento posterior\".",
+    "Incorreta. O local da operação para serviço prestado fisicamente sobre bem móvel material é o local da prestação do serviço, conforme o Art. 11, inciso V.",
+    "Incorreta. A operação não fica isenta. Caso a sociedade em conta de participação não opte pelo regime regular, \"o sócio ostensivo ficará obrigado ao pagamento do IBS e da CBS\" , conforme o Art. 26, § 4º."
+  ]
+},
+  {
+  "id": "LC214-230",
+  "question": "Nos termos da Lei Complementar nº 214/2025, sobre as normas gerais do IBS e da CBS,",
+  "difficulty": "Média",
+  "format": "Direta",
+  "subtopic": "Misto",
+  "options": [
+    "nas operações sujeitas a alíquota zero, ocorrerá a anulação dos créditos relativos às operações anteriores, de forma idêntica às operações isentas .",
+    "a imunidade concedida aos partidos políticos e templos aplica-se tanto aos fornecimentos por eles realizados quanto às suas aquisições de bens e serviços.",
+    "o IBS e a CBS não incidem sobre a transferência de bens entre estabelecimentos do mesmo contribuinte, sendo, nesse caso, facultativa a emissão de documento fiscal eletrônico .",
+    "o adquirente deverá estornar o crédito apropriado caso o bem adquirido venha a perecer ou ser objeto de furto, e, no caso de bem do ativo imobilizado, esse estorno será proporcional .",
+    "no transporte internacional de passageiros, caso os trechos de ida e volta sejam vendidos em conjunto, a base de cálculo será o valor total cobrado pela operação."
+  ],
+  "answer": 3,
+  "justifications": [
+    "Incorreta. A alternativa inverte as regras. Nas operações com alíquota zero, \"serão mantidos os créditos relativos às operações anteriores\" (Art. 52). A anulação de créditos ocorre nas operações imunes e isentas (Art. 51) .",
+    "Incorreta. A imunidade dessas entidades (Art. 9º, II e III) \"não se aplica às suas aquisições de bens materiais e imateriais, inclusive direitos, e serviços\", conforme o Art. 9º, § 4º .",
+    "Incorreta. Embora a não incidência na transferência esteja correta (Art. 6º, II) , a emissão do documento fiscal eletrônico é obrigatória, conforme expressa ressalva no mesmo dispositivo.",
+    "Correta. A alternativa descreve corretamente a regra geral de estorno por perecimento ou furto (Art. 47, § 6º) e a regra específica de estorno proporcional para o ativo imobilizado (Art. 47, § 7º) .",
+    "Incorreta. A base de cálculo, nesse caso, será a metade do valor cobrado, conforme o Art. 12, § 8º: \"No transporte internacional de passageiros, caso os trechos de ida e volta sejam vendidos em conjunto, a base de cálculo será a metade do valor cobrado\"."
+  ]
+},
+  {
+  "id": "LC214-231",
+  "question": "Considerando as normas gerais do Imposto sobre Bens e Serviços (IBS) e da Contribuição Social sobre Bens e Serviços (CBS) na Lei Complementar nº 214/2025, é correto afirmar que",
+  "difficulty": "Média",
+  "format": "Direta",
+  "subtopic": "Misto",
+  "options": [
+    "o princípio da neutralidade veda expressamente a criação de regimes diferenciados, ainda que previstos na Constituição Federal, pois estes distorcem as decisões de consumo.",
+    "a alíquota do IBS será fixada por Resolução do Senado Federal, enquanto a alíquota da CBS será fixada por lei específica da União.",
+    "a incidência do IBS e da CBS depende da obtenção de lucro com a operação, não alcançando fornecimentos realizados a título gratuito ou abaixo do custo.",
+    "as operações com serviços são definidas por exclusão, como todas as demais operações que não se enquadrem como operações com bens (móveis, imóveis, materiais ou imateriais).",
+    "integram a base de cálculo do IBS e da CBS os descontos incondicionais, desde que constem do respectivo documento fiscal ."
+  ],
+  "answer": 3,
+  "justifications": [
+    "Incorreta. O Art. 2º da LC 214/2025 afirma que o princípio da neutralidade deve observar \"as exceções previstas na Constituição Federal e nesta Lei Complementar\", que são justamente os regimes diferenciados.",
+    "Incorreta. Ambas as esferas de competência fixam suas alíquotas por \"lei específica\" do respectivo ente. Conforme o Art. 14, II e III, cada Estado e cada Município fixará sua alíquota do IBS . A competência do Senado (Art. 18) é para as alíquotas de referência.",
+    "Incorreta. A obtenção de lucro é irrelevante para a caracterização da operação tributável, conforme o Art. 4º, § 3º, III.",
+    "Correta. A alternativa descreve com precisão a definição de \"operações com serviços\" estabelecida no Art. 3º, I, alínea 'b' , que as define por exclusão às \"operações com bens\" (definidas na alínea 'a' ).",
+    "Incorreta. Os descontos incondicionais não integram a base de cálculo, conforme o Art. 12, § 2º, inciso III ."
+  ]
 }
 ]
