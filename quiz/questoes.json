@@ -5198,5 +5198,201 @@
       "II) Correta. Os serviços prestados por advogados estão expressamente listados no Art. 127, inciso II, que prevê a redução de 30% nas alíquotas.",
       "III) Correta. Os alimentos destinados ao consumo humano (que não estão na Cesta Básica de alíquota zero) estão listados no Art. 128, inciso VI, que prevê a redução de 60% nas alíquotas."
     ]
-  }
+  },
+  {
+  "id": "LC214-242",
+  "question": "Conforme a Lei Complementar nº 214/2025, o Imposto Seletivo",
+  "difficulty": "Fácil",
+  "format": "Direta",
+  "subtopic": "Imposto Seletivo",
+  "options": [
+    "não incide sobre as operações com energia elétrica e com telecomunicações.",
+    "incide sobre bebidas alcoólicas, mas não sobre produtos fumígenos.",
+    "incide sobre todas as operações de extração mineral, sem exceções.",
+    "não incide sobre veículos e aeronaves, por serem bens de capital.",
+    "permite a apropriação de créditos nas operações subsequentes."
+  ],
+  "answer": 0,
+  "justifications": [
+    "A) Correta. A alternativa é uma transcrição literal da hipótese de não incidência prevista na lei.\nArt. 413. O Imposto Seletivo não incide sobre: [...] II - as operações com energia elétrica e com telecomunicações;",
+    "B) Incorreta. O Imposto Seletivo incide sobre ambos, conforme o Art. 409, § 1º, incisos III (produtos fumígenos) e IV (bebidas alcoólicas).",
+    "C) Incorreta. A lei prevê regras específicas para bens minerais, como a alíquota zero para gás natural destinado a insumo industrial, não sendo uma incidência absoluta.",
+    "D) Incorreta. Veículos, embarcações e aeronaves são hipóteses expressas de incidência do Imposto Seletivo, conforme o Art. 409, § 1º, incisos I e II.",
+    "E) Incorreta. O Art. 410 veda expressamente qualquer tipo de aproveitamento de crédito do Imposto Seletivo."
+  ]
+},
+{
+  "id": "LC214-243",
+  "question": "Uma entidade religiosa (templo de qualquer culto), buscando ampliar seu salão principal, adquire 1.000 sacos de cimento de uma loja de materiais de construção. A entidade religiosa invoca sua imunidade tributária para não pagar o IBS e a CBS destacados na nota fiscal pelo fornecedor.\nCom base na Lei Complementar nº 214/2025, a cobrança do IBS e da CBS na operação é",
+  "difficulty": "Fácil",
+  "format": "Contexto",
+  "subtopic": "Princípios, Conceitos e Incidência",
+  "options": [
+    "indevida, pois a imunidade de templos é absoluta e se aplica tanto aos fornecimentos quanto às aquisições.",
+    "devida, mas o imposto deve ser pago pelo fornecedor (loja) e restituído imediatamente à entidade religiosa.",
+    "devida, pois a imunidade das entidades religiosas não se aplica às suas aquisições de bens e serviços.",
+    "indevida, pois a aquisição de material de construção se relaciona com a finalidade essencial do templo.",
+    "devida, mas a alíquota será reduzida a zero, por se tratar de entidade de assistência social."
+  ],
+  "answer": 2,
+  "justifications": [
+    "A) Incorreta. A imunidade não é absoluta. O Art. 9º, § 4º, limita sua aplicação, estabelecendo que ela não se aplica às aquisições.",
+    "B) Incorreta. A lei não prevê esse mecanismo de \"restituição imediata\" para aquisições de imunes. A cobrança é devida e o ônus é do adquirente (embutido no preço).",
+    "C) Correta. A alternativa reflete a limitação expressa da imunidade. O Art. 9º, caput, II, concede imunidade aos fornecimentos realizados pela entidade, mas o Art. 9º, § 4º, estabelece que \"As imunidades das entidades previstas nos incisos I a III do caput deste artigo não se aplicam às suas aquisições de bens materiais e imateriais, inclusive direitos, e serviços\".",
+    "D) Incorreta. A regra de \"finalidades essenciais\" (Art. 9º, § 1º, I) aplica-se aos entes públicos (inciso I do caput ), e, mesmo assim, o § 4º veda a imunidade na aquisição para todos os entes dos incisos I a III.",
+    "E) Incorreta. A alíquota zero não se aplica a essa operação. A imunidade para instituições de assistência social (Art. 9º, III) também está sujeita à restrição do § 4º."
+  ]
+},
+{
+  "id": "LC214-244",
+  "question": "A respeito da operacionalização do IBS e da CBS, conforme a Lei Complementar nº 214/2025,",
+  "difficulty": "Fácil",
+  "format": "Direta",
+  "subtopic": "Administração e Fiscalização",
+  "options": [
+    "a obrigação de emissão de documento fiscal eletrônico é dispensada nas operações imunes ou isentas, por não gerarem débito.",
+    "o Domicílio Tributário Eletrônico (DTE) será unificado, mas sua adesão é facultativa para as pessoas jurídicas, dependendo de termo de opção.",
+    "as informações prestadas no documento fiscal eletrônico têm caráter meramente informativo, não constituindo confissão do valor devido.",
+    "as informações prestadas no documento fiscal eletrônico constituem confissão do valor devido, e a obrigação de emissão se aplica inclusive à transferência de bens entre estabelecimentos do mesmo contribuinte.",
+    "a obrigação de emissão de documento fiscal eletrônico é dispensada na transferência de bens entre estabelecimentos do mesmo contribuinte."
+  ],
+  "answer": 3,
+  "justifications": [
+    "A) Incorreta. A obrigação de emissão aplica-se inclusive a operações imunes ou isentas, conforme o Art. 60, § 2º, I.",
+    "B) Incorreta. O Domicílio Tributário Eletrônico (DTE) é obrigatório para todas as entidades e demais pessoas jurídicas sujeitas à inscrição no CNPJ, conforme o Art. 59, § 5º.",
+    "C) Incorreta. O Art. 60, § 1º, estabelece expressamente o oposto: \"As informações prestadas pelo sujeito passivo nos termos deste artigo possuem caráter declaratório e constituem confissão do valor devido de IBS e de CBS consignados no documento fiscal\".",
+    "D) Correta. A alternativa combina duas afirmações corretas. O Art. 60, § 1º, define o caráter de confissão do documento fiscal. O Art. 60, § 2º, II, estende a obrigação de emissão à transferência de bens entre estabelecimentos do mesmo contribuinte.",
+    "E) Incorreta. A obrigação de emissão aplica-se expressamente à transferência de bens entre estabelecimentos do mesmo contribuinte, conforme o Art. 60, § 2º, II."
+  ]
+},
+  {
+  "id": "LC214-245",
+  "question": "Conforme a Lei Complementar nº 214/2025, para fins de vedação à apropriação de créditos do IBS e da CBS, consideram-se de uso ou consumo pessoal as operações com",
+  "difficulty": "Fácil",
+  "format": "Direta",
+  "subtopic": "Não Cumulatividade e Créditos",
+  "options": [
+    "uniformes e fardamentos.",
+    "joias, pedras e metais preciosos.",
+    "equipamentos de proteção individual.",
+    "alimentação não alcoólica disponibilizada no estabelecimento do contribuinte.",
+    "serviços de creche disponibilizados no estabelecimento do contribuinte."
+  ],
+  "answer": 1,
+  "justifications": [
+    "Incorreta. Esta é uma exceção expressa. Não são considerados de uso ou consumo pessoal.\nArt. 57. [...] § 3º Não se consideram bens e serviços de uso ou consumo pessoal aqueles utilizados preponderantemente na atividade econômica do contribuinte, de acordo com os seguintes critérios: [...] IV - os bens e serviços previstos no inciso II do caput deste artigo que consistam em: a) uniformes e fardamentos;",
+    "Correta. A alternativa lista itens expressamente classificados como de uso ou consumo pessoal pela lei, sobre os quais é vedada a apropriação de créditos.\nArt. 57. Consideram-se de uso ou consumo pessoal: I - os seguintes bens e serviços: a) joias, pedras e metais preciosos;",
+    "Incorreta. Esta é uma exceção expressa. Não são considerados de uso ou consumo pessoal.\nArt. 57. [...] § 3º Não se consideram bens e serviços de uso ou consumo pessoal [...] IV - os bens e serviços previstos no inciso II do caput deste artigo que consistam em: [...] b) equipamentos de proteção individual;",
+    "Incorreta. Esta é uma exceção expressa. Não é considerada de uso ou consumo pessoal.\nArt. 57. [...] § 3º Não se consideram bens e serviços de uso ou consumo pessoal [...] IV - os bens e serviços previstos no inciso II do caput deste artigo que consistam em: [...] c) alimentação e bebida não alcoólica disponibilizada no estabelecimento do contribuinte para seus empregados e administradores durante a jornada de trabalho;",
+    "Incorreta. Esta é uma exceção expressa. Não são considerados de uso ou consumo pessoal.\nArt. 57. [...] § 3º Não se consideram bens e serviços de uso ou consumo pessoal [...] IV - os bens e serviços previstos no inciso II do caput deste artigo que consistam em: [...] e) serviços de creche disponibilizados no estabelecimento do contribuinte para seus empregados e administradores durante a jornada de trabalho;"
+  ]
+},
+{
+  "id": "LC214-246",
+  "question": "Conforme a Lei Complementar nº 214/2025, para fins de incidência do IBS e da CBS, considera-se operação onerosa o fornecimento com contraprestação, incluindo o decorrente de:\nI. Locação.\nII. Arrendamento mercantil.\nIII. Doação com contraprestação em benefício do doador.\nIV. Transferência de bens entre estabelecimentos pertencentes ao mesmo contribuinte.\nV. Recebimento de dividendos e de juros sobre capital próprio.\nEstá correto o que se afirma APENAS em",
+  "difficulty": "Fácil",
+  "format": "Assertiva",
+  "subtopic": "Princípios, Conceitos e Incidência",
+  "options": [
+    "I, II, III, IV e V.",
+    "II, IV e V.",
+    "I, II e III.",
+    "III, IV e V.",
+    "I, IV e V."
+  ],
+  "answer": 2,
+  "justifications": [
+    "Incorreta. Os itens IV e V são hipóteses de não incidência.",
+    "Incorreta. Os itens IV e V são hipóteses de não incidência.",
+    "Correta. Os itens I, II e III são expressamente listados no Art. 4º, § 2º, como exemplos de operações onerosas.\nArt. 4º. [...] § 2º Para fins do disposto neste artigo, considera-se operação onerosa com bens ou com serviços qualquer fornecimento com contraprestação, incluindo o decorrente de: [...] II - locação; [...] V - doação com contraprestação em benefício do doador; [...] VII - arrendamento, inclusive mercantil;",
+    "Incorreta. Os itens IV e V são hipóteses de não incidência.",
+    "Incorreta. Os itens IV e V são hipóteses de não incidência."
+  ]
+},
+  {
+  "id": "LC214-247",
+  "question": "A empresa \"Viação Sul S.A.\" realiza um serviço de transporte rodoviário de passageiros. Um passageiro embarca no dia 10 de agosto na rodoviária de Porto Alegre/RS, com destino à cidade de Florianópolis/SC, onde desembarca no mesmo dia.\nConsiderando essa situação e as disposições da Lei Complementar nº 214/2025:\nI. O momento de ocorrência do fato gerador do IBS e da CBS é o do início do transporte, em 10 de agosto.\nII. O local da operação, para fins de incidência do IBS, é considerado o do destino final da viagem (Florianópolis/SC).\nIII. O momento de ocorrência do fato gerador do IBS e da CBS é o do término do transporte, em Florianópolis/SC.\nIV. O local da operação, para fins de incidência do IBS, é considerado o de início do transporte (Porto Alegre/RS).\nEstá correto o que se afirma APENAS em",
+  "difficulty": "Fácil",
+  "format": "Contexto-Assertiva",
+  "subtopic": "Princípios, Conceitos e Incidência",
+  "options": [
+    "I e II.",
+    "II e III.",
+    "I e IV.",
+    "III e IV.",
+    "II, III e IV."
+  ],
+  "answer": 2,
+  "justifications": [
+    "I. (Correta): A assertiva está em conformidade com a lei, que define o momento de ocorrência do fato gerador na prestação de serviço de transporte iniciado no País como o do \"início do transporte\".\nTexto Legal (Art. 10, § 1º, I): \"Art. 10. [...] § 1º Para fins do disposto no caput deste artigo, considera-se ocorrido o fornecimento no momento: I - do início do transporte, na prestação de serviço de transporte iniciado no País;\"",
+    "II. (Incorreta): A assertiva contraria a lei, que define o local da operação para o serviço de transporte de passageiros como o \"local de início do transporte\", e não o destino final.\nTexto Legal (Art. 11, VI): \"Art. 11. Considera-se local da operação com: [...] VI - serviço de transporte de passageiros, o local de início do transporte;\"",
+    "III. (Incorreta): A assertiva contraria o Art. 10, § 1º, I. O término do transporte é o critério para o transporte de carga iniciado no exterior (inciso II ), mas não para o transporte de passageiros iniciado no País.",
+    "IV. (Correta): A assertiva está em conformidade com a lei, que define o local da operação para o serviço de transporte de passageiros como o \"local de início do transporte\" (Porto Alegre/RS).\nTexto Legal (Art. 11, VI): \"Art. 11. Considera-se local da operação com: [...] VI - serviço de transporte de passageiros, o local de início do transporte;\""
+  ]
+},
+  {
+  "id": "LC214-248",
+  "question": "A 'Holding Inova S.A.', um conglomerado empresarial, realiza uma complexa reestruturação societária e de ativos em 2028. Durante o processo, sua subsidiária 'InovaTech', dedicada ao desenvolvimento de tecnologia, vende uma licença de uso perpétuo de seu principal software de gestão para um cliente no exterior. Simultaneamente, a 'InovaRealty', outra empresa do grupo focada no patrimônio, finaliza a venda de sua antiga sede administrativa, um edifício comercial de dez andares, para um fundo de investimento. \n\nPor fim, a própria 'Inova S.A.', em processo de modernização, vende 500 computadores usados de seu parque tecnológico e cede onerosamente, por cinco anos, o direito de exploração de uma patente de processo industrial que havia registrado. \n\nO diretor jurídico, ao revisar a apuração do IBS/CBS, precisa classificar a natureza fundamental de todas essas transações. De acordo com a definição legal estrita da Lei Complementar nº 214/2025, todas essas transações se enquadram no conceito de",
+  "difficulty": "Média",
+  "format": "Contexto",
+  "subtopic": "Princípios, Conceitos e Incidência",
+  "options": [
+    "fornecimento de bens imateriais.",
+    "operações com serviços.",
+    "operações de execução continuada.",
+    "operações de não incidência.",
+    "operações com bens."
+  ],
+  "answer": 4,
+  "justifications": [
+    "A) Incorreta. O conceito de \"fornecimento de bens imateriais\" (como o software e a patente) é restrito e não abrange a venda do edifício (bem imóvel) nem dos computadores (bens materiais).",
+    "B) Incorreta. \"Operações com serviços\" são definidas por exclusão, como \"todas as demais que não sejam enquadradas como operações com bens\". Todas as operações listadas no enunciado enquadram-se na definição de \"bens\".",
+    "C) Incorreta. As operações de venda e a cessão de direito não se caracterizam como de execução continuada (como fornecimento de energia ou telecomunicações, previstos no Art. 10, § 3º).",
+    "D) Incorreta. Esta alternativa está incorreta. Todas as operações descritas (venda, cessão onerosa) são exemplos de \"operações onerosas com bens\", que são a hipótese de incidência padrão do IBS e da CBS (Art. 4º) , e não de não incidência (listadas no Art. 6º).",
+    "E) Correta. A alternativa apresenta a definição legal precisa e abrangente. O conceito de \"operações com bens\" é o único que engloba todas as transações, pois a lei o define como \"todas e quaisquer que envolvam bens móveis [computadores] ou imóveis [edifício], materiais [computadores, edifício] ou imateriais [software], inclusive direitos [patente]\".\nTexto Legal (Art. 3º, I, 'a'): \"Para fins desta Lei Complementar, consideram-se: I - operações com: a) bens todas e quaisquer que envolvam bens móveis ou imóveis, materiais ou imateriais, inclusive direitos;\""
+  ]
+},
+  {
+  "id": "LC214-249",
+  "question": "No que tange às normas de funcionamento do Comitê Gestor do Imposto sobre Bens e Serviços (CGIBS), a Lei Complementar nº 214/2025 estabelece que",
+  "difficulty": "Fácil",
+  "format": "Direta",
+  "subtopic": "Comitê Gestor do IBS (CGIBS)",
+  "options": [
+    "o CGIBS é dotado de independência técnica e administrativa, mas subordinado hierarquicamente ao Ministério da Fazenda para fins de controle orçamentário.",
+    "o regulamento único do IBS definirá o prazo máximo para a realização das atividades de cobrança administrativa, desde que não superior a 24 (vinte e quatro) meses.",
+    "o CGIBS observará o princípio da publicidade, mas seus atos normativos terão circulação restrita, sendo vedada a veiculação por meio eletrônico.",
+    "as licitações e as contratações realizadas pelo CGIBS serão regidas por um regime jurídico próprio a ser definido em seu regulamento, para assegurar sua autonomia.",
+    "o regulamento único do IBS, a ser editado pelo CGIBS, preverá regras uniformes de conformidade tributária, de orientação, de autorregularização e de tratamento diferenciado a contribuintes."
+  ],
+  "answer": 4,
+  "justifications": [
+    "A) Incorreta. A lei é expressa ao garantir a total independência do Comitê, vedando qualquer subordinação.\nTexto Legal (Art. 480, § 1º): \"O CGIBS, nos termos da Constituição Federal e desta Lei Complementar, terá sua atuação caracterizada pela ausência de vinculação, tutela ou subordinação hierárquica a qualquer órgão da administração pública.\"",
+    "B) Incorreta. O prazo máximo para a cobrança administrativa é de 12 (doze) meses, e não 24.\nTexto Legal (Art. 480, § 2º): \"O regulamento único do IBS definirá o prazo máximo para a realização das atividades de cobrança administrativa, desde que não superior a 12 (doze) meses, contado da constituição definitiva do crédito tributário...\"",
+    "C) Incorreta. A alternativa inverte a regra de publicidade. A lei determina que a veiculação será, preferencialmente, por meio eletrônico.\nTexto Legal (Art. 480, § 7º): \"O CGIBS observará o princípio da publicidade, mediante veiculação de seus atos normativos, preferencialmente por meio eletrônico, disponibilizado na internet.\"",
+    "D) Incorreta. A lei não prevê um regime próprio, mas sim a submissão às normas gerais de licitação.\nTexto Legal (Art. 480, § 6º): \"As licitações e as contratações realizadas pelo CGIBS serão regidas pelas normas gerais de licitação e contratação aplicáveis às administrações públicas diretas, autárquicas e fundacionais da União, dos Estados, do Distrito Federal e dos Municípios.\"",
+    "E) Correta. A alternativa descreve com precisão o conteúdo obrigatório do regulamento do IBS referente às normas de compliance fiscal.\nTexto Legal (Art. 480, § 5º): \"O regulamento único do IBS preverá regras uniformes de conformidade tributária, de orientação, de autorregularização e de tratamento diferenciado a contribuintes que atendam a programas de conformidade do IBS estabelecidos pelos entes federativos.\""
+  ]
+},
+  {
+  "id": "LC214-250",
+  "question": "Cenário: a “CorpBeta S.A.” celebrou contrato único com a “AlfaCom Ltda.” para fornecer 200 unidades de um equipamento, incluindo, no mesmo preço, a instalação indispensável ao funcionamento; no mesmo mês, a CorpBeta concedeu “1 unidade a cada 20” como bonificação expressa no documento fiscal, sem condição futura; também determinou que 50 kits de brindes fossem entregues, por conta e ordem da AlfaCom, diretamente a clientes pessoa física indicados pela contratante; por fim, doou 100 unidades do equipamento a uma organização sem fins lucrativos, sendo que tais bens, quando adquiridos pela CorpBeta, permitiram apropriação de créditos. \n\nConsiderando a Lei Complementar nº 214/2025, avalie as afirmações:\nI. Bonificações que constem do documento fiscal e não dependam de evento posterior não se sujeitam à incidência pelo inciso de bonificações do art. 5º.\n\nII. Nas doações sem contraprestação cujo objeto tenha permitido créditos ao doador, é possível a tributação pelo valor de mercado ou, por opção do contribuinte, a anulação dos créditos.\n\nIII. Na entrega de brindes a terceiros por conta e ordem do adquirente, o destinatário é, para fins fiscais, o adquirente, por ser quem paga a operação.\n\nIV. Havendo fornecimento principal (o bem) e fornecimento acessório indispensável (instalação), considera-se fornecimento único, aplicando-se o tratamento do fornecimento principal.",
+  "difficulty": "Média",
+  "format": "Contexto-Assertiva",
+  "subtopic": "Misto",
+  "options": [
+    "I e II",
+    "I e IV",
+    "I, III e IV",
+    "II, III e IV",
+    "I, II e IV"
+  ],
+  "answer": 4,
+  "justifications": [
+    "I. Correta. O art. 5º, II, prevê incidência sobre “brindes e bonificações”, mas o § 1º, I afasta essa regra “às bonificações que constem do respectivo documento fiscal e que não dependam de evento posterior” (logo, não se sujeitam pela via do inciso II).",
+    "II. Correta. O art. 6º, VIII, trata das doações sem contraprestação; quando o bem doado permitiu créditos, o § 2º estabelece duas vias: (I) tributação “com base no valor de mercado do bem ou serviço doado” ou (II), por opção do contribuinte, “os créditos serão anulados”.",
+    "III. Incorreta. Pelas definições do art. 3º: adquirente é “aquele obrigado ao pagamento” (inc. IV, “a” e “b”), e destinatário é “aquele a quem for fornecido o bem ou serviço” (inc. V). Na operação “por conta e ordem”, quem paga (AlfaCom) é o adquirente; quem recebe (os clientes indicados) é o destinatário. Não se confunde destinatário com adquirente.",
+    "IV. Correta. O art. 7º, II, prevê que, havendo fornecimento principal e acessório (“condição ou meio para o principal”, § 2º), considera-se fornecimento único, aplicando-se o tratamento do principal."
+  ]
+}
 ]
